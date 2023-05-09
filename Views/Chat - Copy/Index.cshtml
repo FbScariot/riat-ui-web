@@ -1,0 +1,28 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using RIAT.DAL.Entity.Models;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<div id="divContainer">
+    <div id="divChat" class="chatRoom">
+        <div class="title">
+            Welcome to Chat Room [<span id='spanUser'></span>]
+        </div>
+        <div class="content">
+            <div id="divChatWindow" class="chatWindow">
+            </div>
+        </div>
+        <div class="messageBar">
+            <input class="textbox" type="text" id="txtMessage" />
+            <input id="btnSendMsg" type="button" value="Send" class="submitButton" />
+        </div>
+    </div>
+
+    <input id="hdId" type="hidden" />
+    <input id="hdUserName" type="hidden" />
+</div>
+
+<script src="~/lib/jquery/dist/jquery-3.6.0.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>

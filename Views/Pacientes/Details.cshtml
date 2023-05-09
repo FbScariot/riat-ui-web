@@ -1,0 +1,134 @@
+﻿@model RIAT.DAL.Entity.Models.Paciente
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<div class="container">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h1>@Localizer["PageType"]</h1>
+            <div class="modal-header">
+                <h4>@ViewData["Title"]</h4>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.IdPessoa):
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.IdPessoa)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.NomePaciente):
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.NomePaciente)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email):
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfIdProfissionalResponsavelNavigation.NomeProfissional):
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfIdProfissionalResponsavelNavigation.NomeProfissional)
+                    </dd>
+
+                    @*<dt>
+                            @Html.DisplayNameFor(model => model.PaciTipoDocumento):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciTipoDocumento)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciNrDocumento):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciNrDocumento)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciStEstadoCivil):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciStEstadoCivil)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciNmMae):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciNmMae)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciNmPai):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciNmPai)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciNmProfissao):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciNmProfissao)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciTxEncaminhadoPor):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciTxEncaminhadoPor)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciStAtivo):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciStAtivo)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciDtAtivacao):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciDtAtivacao)
+                        </dd>
+                        @if (Model.PaciDtDesativacao.HasValue)
+                        {
+                            <dt>
+                                @Html.DisplayNameFor(model => model.PaciDtDesativacao):
+                            </dt>
+                            <dd>
+                                @Html.DisplayFor(model => model.PaciDtDesativacao)
+                            </dd>
+                        }
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PaciTpContratacaoNavigation.TiprNmTipoContratacao):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PaciTpContratacaoNavigation.TiprNmTipoContratacao)
+                        </dd>
+
+                        @*<dt>
+                            @Html.DisplayNameFor(model => model.GrinIdGrauInstrucaoNavigation.GrinNmGrauInstrucao):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.GrinIdGrauInstrucaoNavigation.GrinNmGrauInstrucao)
+                        </dd>
+                    *@
+                </dl>
+            </div>
+            <div class="modal-footer">
+                @if (User.IsInRole("Pacientes") || User.IsInRole("Administradores"))
+                {
+                    <a asp-action="Edit" asp-route-id="@Model.IdPessoa">@Localizer["btnEdit"]</a>
+                }
+                | <a asp-action="Index">@Localizer["btnBackList"]</a>
+            </div>
+        </div>
+    </div>
+</div>

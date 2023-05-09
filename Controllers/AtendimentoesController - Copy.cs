@@ -1,0 +1,461 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Net.Mail;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
+using RIAT.DAL.Entity.Data;
+using RIAT.DAL.Entity.Models;
+using RIAT.UI.Web.Models;
+using RIAT.UI.Web.Services;
+
+namespace RIAT.UI.Web.Controllers
+{
+    [Authorize]
+    public class AtendimentoesController : Controller
+    {
+        private readonly RIATContext _context;
+        private IConfiguration _config;
+        private readonly IMyEmailSender _emailSender;
+        private readonly EmailSettings _emailSettings;
+
+        public AtendimentoesController(RIATContext context, IConfiguration Configuration,
+            IMyEmailSender emailSender, IOptions<EmailSettings> emailSettings)
+        {
+            _context = context;
+            _config = Configuration;
+            _emailSender = emailSender;
+            _emailSettings = emailSettings.Value;
+        }
+
+        // GET: Atendimentoes
+        public async Task<IActionResult> Index()
+        {
+            IQueryable<Atendimento> atendimentos = _context.Atendimentos.Include(a => a.PaciIdPacienteNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                                                        .Include(a => a.ProfIdProfissionalNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                                                        .Include(a => a.TipaIdTipoAtendimentoNavigation);
+
+            if (User.IsInRole("Administradores"))
+            {
+
+            }
+            else if (User.IsInRole("Pacientes"))
+            {
+                atendimentos = atendimentos.Where(a => a.PaciIdPacienteNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.UserName == User.Identity.Name);
+            }
+            else if (User.IsInRole("Profissionais"))
+            {
+                atendimentos = atendimentos.Where(a => a.ProfIdProfissionalNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.UserName == User.Identity.Name);
+            }
+
+            return View(await atendimentos.OrderByDescending(a =>a.AtenDtAgendamento).ToListAsync());
+        }
+
+        // GET: Atendimentoes/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var atendimento = await _context.Atendimentos
+                                            .Include(a => a.PaciIdPacienteNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                            .Include(a => a.ProfIdProfissionalNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                            .Include(a => a.TipaIdTipoAtendimentoNavigation)
+                                            .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (atendimento == null)
+            {
+                return NotFound();
+            }
+
+            return View(atendimento);
+        }
+
+        // GET: Atendimentoes/Create
+        [Authorize(Roles = "Administradores, Profissionais")]
+        public IActionResult Create()
+        {
+            ViewData["PaciIdPaciente"] = new SelectList(ListarPacientes(), "IdPessoa", "NomePaciente");
+
+            ViewData["ProfIdProfissional"] = new SelectList(ListarProfissionais(), "IdPessoa", "NomeProfissional");
+
+            ViewData["TipaIdTipoAtendimento"] = new SelectList(_context.TipoAtendimentos, "Id", "TipaNmTipoAtendimento");
+
+            return View();
+        }
+
+        // POST: Atendimentoes/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administradores, Profissionais")]
+        public async Task<IActionResult> Create([Bind("Id,TipaIdTipoAtendimento,AtenDtAgendamento,AtenStAgendamento,AtenDtCancelamento,AtenTxMotivoCancelamento,AtenDtRealizadaInicio,AtenTxObservacoes,AtenDtRealizadaFim,PaciIdPaciente,ProfIdProfissional")] Atendimento atendimento)
+        {
+            if (atendimento.AtenStAgendamento == null)
+            {
+                atendimento.AtenStAgendamento = "A";
+            }
+
+            if (atendimento.TipaIdTipoAtendimento == 0)
+            {
+                atendimento.TipaIdTipoAtendimento = 3;
+            }
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(atendimento);
+                await _context.SaveChangesAsync();
+
+                atendimento = _context.Atendimentos.Include(a => a.ProfIdProfissionalNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                                   .Include(a => a.PaciIdPacienteNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                                                        .Where(a => a.Id == atendimento.Id).FirstOrDefault();
+                atendimento.VideoConferencia = CreateRedirectUrl(atendimento);
+
+                await _context.SaveChangesAsync();
+                Sendmail_With_IcsAttachment(atendimento);
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            ViewData["PaciIdPaciente"] = new SelectList(ListarPacientes(), "IdPessoa", "NomePaciente", atendimento.PaciIdPaciente);
+
+            ViewData["ProfIdProfissional"] = new SelectList(ListarProfissionais(), "IdPessoa", "NomeProfissional", atendimento.ProfIdProfissional);
+
+            ViewData["TipaIdTipoAtendimento"] = new SelectList(_context.TipoAtendimentos, "Id", "TipaNmTipoAtendimento", atendimento.TipaIdTipoAtendimento);
+
+            return View(atendimento);
+        }
+
+
+        // GET: Atendimentoes/Edit/5
+        [Authorize(Roles = "Administradores, Profissionais")]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var atendimento = await _context.Atendimentos.FindAsync(id);
+            if (atendimento == null)
+            {
+                return NotFound();
+            }
+
+            ViewData["PaciIdPaciente"] = new SelectList(ListarPacientes(), "IdPessoa", "NomePaciente", atendimento.PaciIdPaciente);
+
+            ViewData["ProfIdProfissional"] = new SelectList(ListarProfissionais(), "IdPessoa", "NomeProfissional", atendimento.ProfIdProfissional);
+
+            ViewData["TipaIdTipoAtendimento"] = new SelectList(_context.TipoAtendimentos, "Id", "TipaNmTipoAtendimento", atendimento.TipaIdTipoAtendimento);
+
+            return View(atendimento);
+        }
+
+        // POST: Atendimentoes/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administradores, Profissionais")]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,TipaIdTipoAtendimento,AtenDtAgendamento,AtenStAgendamento,AtenDtCancelamento,AtenTxMotivoCancelamento,AtenDtRealizadaInicio,AtenTxObservacoes,AtenDtRealizadaFim,PaciIdPaciente,ProfIdProfissional")] Atendimento atendimento)
+        {
+            if (id != atendimento.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    if (atendimento.AtenStAgendamento == null)
+                    {
+                        atendimento.AtenStAgendamento = "A";
+                    }
+
+                    if (atendimento.TipaIdTipoAtendimento == 0)
+                    {
+                        atendimento.TipaIdTipoAtendimento = 3;
+                    }
+
+                    _context.Update(atendimento);
+                    await _context.SaveChangesAsync();
+
+                    atendimento = _context.Atendimentos.Include(a => a.ProfIdProfissionalNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                                       .Include(a => a.PaciIdPacienteNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                                                       .Where(a => a.Id == atendimento.Id).FirstOrDefault();
+
+                    atendimento.VideoConferencia = CreateRedirectUrl(atendimento);
+
+                    await _context.SaveChangesAsync();
+
+                    Sendmail_With_IcsAttachment(atendimento);
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!AtendimentoExists(atendimento.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+
+            ViewData["PaciIdPaciente"] = new SelectList(ListarPacientes(), "IdPessoa", "NomePaciente", atendimento.PaciIdPaciente);
+
+            ViewData["ProfIdProfissional"] = new SelectList(ListarProfissionais(), "IdPessoa", "NomeProfissional", atendimento.ProfIdProfissional);
+
+            ViewData["TipaIdTipoAtendimento"] = new SelectList(_context.TipoAtendimentos, "Id", "TipaNmTipoAtendimento");
+
+            return View(atendimento);
+        }
+
+        // GET: Atendimentoes/Delete/5
+        [Authorize(Roles = "Administradores, Profissionais")]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var atendimento = await _context.Atendimentos
+                                            .Include(a => a.PaciIdPacienteNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                            .Include(a => a.ProfIdProfissionalNavigation).ThenInclude(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation)
+                                            .Include(a => a.TipaIdTipoAtendimentoNavigation)
+                                            .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (atendimento == null)
+            {
+                return NotFound();
+            }
+
+            return View(atendimento);
+        }
+
+        // POST: Atendimentoes/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administradores, Profissionais")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var atendimento = await _context.Atendimentos.FindAsync(id);
+            _context.Atendimentos.Remove(atendimento);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        [Authorize(Roles = "Administradores, Profissionais")]
+        public async Task<IActionResult> AleatoryRoom()
+        {
+            Atendimento atendimento = new Atendimento();
+
+            atendimento.VideoConferencia = CreateRedirectUrl();
+
+            return View(atendimento);
+        }
+
+        private bool AtendimentoExists(int id)
+        {
+            return _context.Atendimentos.Any(e => e.Id == id);
+        }
+
+        private List<Paciente> ListarPacientes()
+        {
+            IQueryable<Paciente> listaPacientes = _context.Pacientes.Include(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation);
+
+            if (User.IsInRole("Administradores"))
+            {
+
+            }
+            else if (User.IsInRole("Pacientes"))
+            {
+                listaPacientes = listaPacientes.Where(p => p.IdPessoaNavigation.AspuIdAspnetuserNavigation.UserName == User.Identity.Name);
+            }
+            else if (User.IsInRole("Profissionais"))
+            {
+                //listaPacientes = listaPacientes.Where(p => p.ProfIdProfissionalNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.UserName == User.Identity.Name || p.ProfIdProfissionalNavigation == null);
+                listaPacientes = listaPacientes.Where(p => p.ProfIdProfissionalNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.UserName == User.Identity.Name);
+            }
+
+            return listaPacientes.OrderBy(p => p.IdPessoaNavigation.AspuIdAspnetuserNavigation.FirstName).ThenBy(p => p.IdPessoaNavigation.AspuIdAspnetuserNavigation.LastName).ToList();
+        }
+
+        private List<Profissional> ListarProfissionais()
+        {
+            IQueryable<Profissional> listaProfissionais = _context.Profissionals.Include(p => p.IdPessoaNavigation).ThenInclude(p => p.AspuIdAspnetuserNavigation);
+
+            if (User.IsInRole("Administradores"))
+            {
+
+            }
+            else if (User.IsInRole("Pacientes"))
+            {
+                listaProfissionais = listaProfissionais.Where(p => p.Pacientes.Any(p => p.IdPessoaNavigation.AspuIdAspnetuserNavigation.UserName == User.Identity.Name));
+            }
+            else if (User.IsInRole("Profissionais"))
+            {
+                listaProfissionais = listaProfissionais.Where(p => p.IdPessoaNavigation.AspuIdAspnetuserNavigation.UserName == User.Identity.Name);
+            }
+
+            return listaProfissionais.OrderBy(p => p.IdPessoaNavigation.AspuIdAspnetuserNavigation.FirstName).ThenBy(p => p.IdPessoaNavigation.AspuIdAspnetuserNavigation.LastName).ToList();
+        }
+
+
+        private void Sendmail_With_IcsAttachment(Atendimento atendimento)
+        {
+            MailMessage msg = new MailMessage();
+            string subject = "Consulta RISM " + atendimento.AtenDtAgendamento.ToString("dd/MM/yyyy HH:mm");
+
+            string body = String.Format(@"<html><body> " +
+                                         "A consulta está agendada para " + atendimento.AtenDtAgendamento.ToString("dd/MM/yyyy HH:mm") + "</strong> Horário de Brasília</strong><br/> " +
+                                         "<a href='{0}'>Link para o Paciente</a > " +
+                                         "< br/><a href='{1}'>Link para o Pisicólogo</a > " +
+                                         "</body></html>", atendimento.VideoConferencia.Split('?')[0], atendimento.VideoConferencia);
+
+            TimeZoneInfo timeZone = System.TimeZoneInfo.Local;
+
+            // Now Contruct the ICS file using string builder
+            StringBuilder str = new StringBuilder();
+            str.AppendLine("BEGIN:VCALENDAR");
+            str.AppendLine("PRODID:-//Agende a reunião");
+            str.AppendLine("VERSION:2.0");
+            str.AppendLine("METHOD:REQUEST");
+            str.AppendLine("BEGIN:VEVENT");
+            str.AppendLine(string.Format("TZID:{0}", System.TimeZoneInfo.Local.Id));
+            str.AppendLine(string.Format("DTSTAMP: {0:yyyyMMddTHHmmss}", DateTime.UtcNow));
+            str.AppendLine(string.Format("DTSTART:{0:yyyyMMddTHHmmss}", atendimento.AtenDtAgendamento));
+            str.AppendLine(string.Format("DTEND:{0:yyyyMMddTHHmmss}", atendimento.AtenDtAgendamento.AddHours(1)));
+            //str.AppendLine("LOCATION:  " + atendimento.VideoConferencia);
+            str.AppendLine(string.Format("UID:{0}", Guid.NewGuid()));
+            str.AppendLine(string.Format("DESCRIPTION:{0}", body));
+            str.AppendLine(string.Format("X-ALT-DESC;FMTTYPE=text/html:{0}", body));
+            str.AppendLine(string.Format("SUMMARY:{0}", "Consulta RISM"));
+            str.AppendLine(string.Format("ORGANIZER:MAILTO:{0}", _emailSettings.Sender));
+            str.AppendLine(string.Format("ATTENDEE;CN=\"{0}\";RSVP=TRUE:mailto:{1}", atendimento.ProfIdProfissionalNavigation.NomeProfissional,
+                                                                                     atendimento.ProfIdProfissionalNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.Email));
+            str.AppendLine("BEGIN:VALARM");
+            str.AppendLine("TRIGGER:-PT15M");
+            str.AppendLine("ACTION:DISPLAY");
+            str.AppendLine("DESCRIPTION:Reminder");
+            str.AppendLine("END:VALARM");
+            str.AppendLine("END:VEVENT");
+            str.AppendLine("END:VCALENDAR");
+
+            string emails = String.Format("{0},{1}", atendimento.ProfIdProfissionalNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.Email,
+                                                     atendimento.PaciIdPacienteNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.Email);
+
+            _emailSender.SendEmailAsyncWithIcsAttachment(emails, "admrism@gmail.com", subject, body, str.ToString());
+        }
+
+        private string CreateRedirectUrl(Atendimento atendimento)
+        {
+            var header = new
+            {
+                alg = "HS256",
+                typ = "JWT"
+            };
+
+            var headerPart = Base64UrlEncoder.Encode(JsonConvert.SerializeObject(header));
+
+            var payload = new
+            {
+                context = new
+                {
+                    user = new
+                    {
+                        avatar = "",
+                        name = atendimento.ProfIdProfissionalNavigation.NomeProfissional,
+                        email = atendimento.ProfIdProfissionalNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.Email,
+                        id = atendimento.ProfIdProfissionalNavigation.IdPessoaNavigation.AspuIdAspnetuserNavigation.Id
+                    }
+                },
+                aud = _config["Jwt:Audience"],
+                iss = _config["Jwt:Issuer"],
+                sub = _config["Jwt:Sub"],
+                room = "room" + atendimento.Id,
+                iat = ConvertToTimestamp(atendimento.AtenDtAgendamento.AddDays(-1)),
+                exp = ConvertToTimestamp(atendimento.AtenDtAgendamento.AddDays(1))
+            };
+
+            var payloadPart = Base64UrlEncoder.Encode(JsonConvert.SerializeObject(payload));
+
+            var secret = _config["Jwt:SecretKey"];
+            var sha256 = new HMACSHA256(Encoding.UTF8.GetBytes(secret));
+            var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes($"{headerPart}.{payloadPart}"));
+            var hash = Base64UrlEncoder.Encode(hashBytes);
+
+            var jwt = $"{headerPart}.{payloadPart}.{hash}";
+
+            return "https://" + _config["Jwt:Sub"] + "/room" + atendimento.Id + "?jwt=" + jwt;
+        }
+
+        private string CreateRedirectUrl()
+        {
+            var header = new
+            {
+                alg = "HS256",
+                typ = "JWT"
+            };
+
+            var headerPart = Base64UrlEncoder.Encode(JsonConvert.SerializeObject(header));
+            string roomId = new Random().Next().ToString();
+
+            var payload = new
+            {
+                context = new
+                {
+                    user = new
+                    {
+                        avatar = "",
+                        name = "",
+                        email = "",
+                        id = ""
+                    }
+                },
+                aud = _config["Jwt:Audience"],
+                iss = _config["Jwt:Issuer"],
+                sub = _config["Jwt:Sub"],
+                room = "room" + roomId,
+                iat = ConvertToTimestamp(DateTime.Today.AddDays(-1)),
+                exp = ConvertToTimestamp(DateTime.Today.AddDays(1))
+            };
+
+            var payloadPart = Base64UrlEncoder.Encode(JsonConvert.SerializeObject(payload));
+
+            var secret = _config["Jwt:SecretKey"];
+            var sha256 = new HMACSHA256(Encoding.UTF8.GetBytes(secret));
+            var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes($"{headerPart}.{payloadPart}"));
+            var hash = Base64UrlEncoder.Encode(hashBytes);
+
+            var jwt = $"{headerPart}.{payloadPart}.{hash}";
+
+            return "https://" + _config["Jwt:Sub"] + "/room" + roomId + "?jwt=" + jwt;
+        }
+
+        private long ConvertToTimestamp(DateTime value)
+        {
+            long epoch = (value.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
+            return epoch;
+        }
+
+    }
+}

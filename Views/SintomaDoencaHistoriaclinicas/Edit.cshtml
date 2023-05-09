@@ -1,0 +1,49 @@
+﻿@model RIAT.DAL.Entity.Models.SintomaDoencaHistoriaclinica
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>SintomaDoencaHistoriaclinica</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="DohcIdDoencaHistoriaClinica" class="control-label"></label>
+                <select asp-for="DohcIdDoencaHistoriaClinica" class="form-control" asp-items="ViewBag.DohcIdDoencaHistoriaClinica"></select>
+                <span asp-validation-for="DohcIdDoencaHistoriaClinica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SintIdSintoma" class="control-label"></label>
+                <select asp-for="SintIdSintoma" class="form-control" asp-items="ViewBag.SintIdSintoma"></select>
+                <span asp-validation-for="SintIdSintoma" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SidhCdPeso" class="control-label"></label>
+                <input asp-for="SidhCdPeso" class="form-control" />
+                <span asp-validation-for="SidhCdPeso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdAtendimento" class="control-label"></label>
+                <select asp-for="IdAtendimento" class="form-control" asp-items="ViewBag.IdAtendimento"></select>
+                <span asp-validation-for="IdAtendimento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

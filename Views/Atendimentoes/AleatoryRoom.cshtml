@@ -1,0 +1,35 @@
+﻿@model RIAT.DAL.Entity.Models.Atendimento
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="media-container-column col-lg-8">
+            <h1>@ViewData["Title"]</h1>
+            <h4>@Localizer["PageType"]</h4>
+            <hr />
+            <div class="mbr-form form-with-styler">
+                <table>
+                    <tr>
+                        <td>
+                            @Localizer["VideoConferenciaProfessional"]:
+                        </td>
+                        <td>
+                            <a href="@Model.VideoConferencia" target="_blank">Abrir sala de atendimento</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Localizer["VideoConferenciaPatient"]:
+                        </td>
+                        <td>
+                            @Model.VideoConferencia.Split('?')[0]
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

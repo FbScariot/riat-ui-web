@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	@*<meta name="generator" content="Mobirise v4.12.3, mobirise.com">*@
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="description" content="">
+
+	<title>@ViewData["Title"] - RISM</title>
+	<link rel="stylesheet" href="~/assets/web/assets/mobirise-icons/mobirise-icons.css">
+	<link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="~/assets/socicon/css/styles.css">
+	<link rel="stylesheet" href="~/assets/dropdown/css/style.css">
+	<link rel="stylesheet" href="~/assets/tether/tether.min.css">
+	<link rel="stylesheet" href="~/assets/theme/css/style.css">
+	<link rel="preload" as="style" href="~/assets/mobirise/css/mbr-additional.css">
+	<link rel="stylesheet" href="~/assets/mobirise/css/mbr-additional.css" type="text/css">
+	<link rel="stylesheet" href="~/css/siteNovo.css" />
+
+	@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTFV9C53VZ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-QTFV9C53VZ');
+	</script>
+</head>
+<body>
+
+	<section class="menu cid-smnbhWOrrR" once="menu" id="menu2-0">
+		<nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm navbar-short">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="menu-logo">
+				<div class="navbar-brand">
+					<span class="navbar-logo">
+						<a asp-area="" asp-controller="Home" asp-action="Index">
+							<img src="~/images/logo-rism.png" alt="RIAT" title="" style="height: 3.8rem;">
+						</a>
+					</span>
+				</div>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+					@if (User.Identity.IsAuthenticated == false)
+					{
+		 <li class="nav-item">
+		  <a class="nav-link link text-black display-4" asp-area="" asp-controller="Home" asp-action="Index">@Localizer["Home"]</a>
+		 </li>
+
+					}
+
+					@if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+					{
+		 <li class="nav-item dropdown">
+		  <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">@Localizer["Administration"]</a>
+		  <div class="dropdown-menu">
+		   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Profissionals" asp-action="Index">@Localizer["Professionals"]</a>
+
+								@if (User.IsInRole("Administradores"))
+								{
+			   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Doencas" asp-action="Index">@Localizer["Diseases"]</a>
+			   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Sintomas" asp-action="Index">@Localizer["Symptoms"]</a>
+			   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="AlternativaAdls" asp-action="Index">@Localizer["ADLAlternatives"]</a>
+								}
+		  </div>
+		 </li>
+					}
+
+					@if (User.IsInRole("Profissionais") || User.IsInRole("Administradores") || User.IsInRole("Pacientes"))
+					{
+		 <li class="nav-item dropdown">
+		  <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">@Localizer["Appointments"]</a>
+		  <div class="dropdown-menu">
+		   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Atendimentoes" asp-action="Index">@Localizer["AppointmentsList"]</a>
+
+								@if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+								{
+			   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Atendimentoes" asp-action="Create">@Localizer["AppointmentsCreateNew"]</a>
+								}
+		  </div>
+		 </li>
+		 <li class="nav-item dropdown">
+		  <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">@Localizer["Patients"]</a>
+		  <div class="dropdown-menu">
+		   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Pacientes" asp-action="Index">@Localizer["PatientsList"]</a>
+
+								@if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+								{
+			   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="DoencaPacientes" asp-action="Index">@Localizer["PatientsDiseases"]</a>
+			   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="SintomaAtendimentoes" asp-action="Index">@Localizer["SymptomsOfAppointments"]</a>
+			   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="AlternativaAtendimentoes" asp-action="Index">@Localizer["ADLAlternativesOfAppointments"]</a>
+									@*<a class="text-black dropdown-item display-4" asp-area="" asp-controller="Video" asp-action="Index">@Localizer["VideoConference"]</a>*@
+								}
+		  </div>
+		 </li>
+		 <li class="nav-item">
+							@*<a class="nav-link link text-black display-4" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>*@
+		  <a class="nav-link link text-black display-4" asp-area="" asp-controller="Chat" asp-action="IndexNovo">Chat Novo</a>
+		 </li>
+					}
+
+					@if (User.Identity.IsAuthenticated == false)
+					{
+		 <li class="nav-item dropdown">
+		  <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">@Localizer["Privacy"]</a>
+		  <div class="dropdown-menu">
+		   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Home" asp-action="ProfessionalPrivacy">@Localizer["ProfessionalPrivacy"]</a>
+		   <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Home" asp-action="PatientPrivacy">@Localizer["PatientPrivacy"]</a>
+		  </div>
+		 </li>
+					}
+
+					@if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+					{
+		 <li class="nav-item">
+		  <a class="nav-link link text-black display-4" asp-area="" asp-controller="Atendimentoes" asp-action="AleatoryRoom">@Localizer["AleatoryRoom"]</a>
+		 </li>
+					}
+
+					@if (User.Identity.IsAuthenticated == false)
+					{
+		 <li class="nav-item">
+		  <a class="nav-link link text-black display-4" asp-area="" asp-controller="Home" asp-action="Cursos">@Localizer["Cursos"]</a>
+		 </li>
+		 <li class="nav-item">
+		  <a class="nav-link link text-black display-4" asp-area="" asp-controller="Home" asp-action="FAQ">@Localizer["FAQ"]</a>
+		 </li>
+
+		 <li class="nav-item">
+		  <a class="nav-link link text-black display-4" asp-area="" asp-controller="Home" asp-action="About">@Localizer["About"]</a>
+		 </li>
+					}
+
+	 <partial name="_LoginPartial" />
+
+	 <li class="nav-item">
+	  <a class="nav-link link text-black display-4" asp-route-culture="pt-BR" asp-controller="Home" asp-action="SetLanguage">
+	   <img src="~/images/bandeira-do-brasil.png" width="25" height="16" alt=@Localizer["Portuguese"] title=@Localizer["Portuguese"] />
+	  </a>
+	 </li>
+	 <li class="nav-item">
+	  <a class="nav-link link text-black display-4" asp-route-culture="es-AR" asp-controller="Home" asp-action="SetLanguage">
+	   <img src="~/images/bandeira-argentina.png" width="25" height="16" alt=@Localizer["Spanish"] title=@Localizer["Spanish"] />
+	  </a>
+	 </li>
+	 <li class="nav-item">
+	  <a class="nav-link link text-black display-4" asp-route-culture="en-US" asp-controller="Home" asp-action="SetLanguage">
+	   <img src="~/images/bandeira-dos-estados-unidos-eua.png" width="25" height="16" alt=@Localizer["English"] title=@Localizer["English"] />
+	  </a>
+	 </li>
+	</ul>
+   </div>
+  </nav>
+ </section>
+
+ <section class="mbr-section form1 cid-smnhYhFqkG" id="form1-8">
+  <div class="">
+   <main role="main" class="pb-3" style="overflow:auto;">
+				@RenderBody()
+   </main>
+  </div>
+ </section>
+
+ <section class="cid-smni0yNmCL" id="footer1-8">
+  <div class="container">
+   <div class="footer-lower">
+	<div class="media-container-row mbr-white">
+	 <div class="col-sm-6 copyright">
+	  <p class="mbr-text mbr-fonts-style display-7">
+	   © Copyright 2020 - RISM - All Rights Reserved
+	  </p>
+	 </div>
+	 <div class="col-md-6">
+	  <div class="social-list align-right">
+	   <div class="soc-item">
+		<a href="https://wa.me/5491160382166" target="_blank">
+		 <span class="socicon-whatsapp socicon mbr-iconfont mbr-iconfont-social"></span>
+		</a>
+	   </div>
+	   <div class="soc-item">
+		<a href="https://www.instagram.com/rism_saude_mental/" target="_blank">
+		 <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+		</a>
+	   </div>
+	   <div class="soc-item">
+		<a href="https://www.facebook.com/rism-117253480116105" target="_blank">
+		 <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+		</a>
+	   </div>
+	   <div class="soc-item">
+		<a href="https://www.youtube.com/channel/UCPxrkEzDSLesSkFi0wIB3yA" target="_blank">
+		 <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+		</a>
+	   </div>
+	   <div class="soc-item">
+		<a href="https://www.linkedin.com/company/rism" target="_blank">
+		 <span class="socicon-linkedin socicon mbr-iconfont mbr-iconfont-social"></span>
+		</a>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </section>
+
+ <script src="~/assets/web/assets/jquery/jquery.min.js"></script>
+	@*<script src="~/lib/jquery/dist/jquery-3.6.0.min.js"></script>*@
+ <script src="~/assets/popper/popper.min.js"></script>
+	@*<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>*@
+ <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+ <script src="~/assets/smoothscroll/smooth-scroll.js"></script>
+ <script src="~/assets/dropdown/js/nav-dropdown.js"></script>
+ <script src="~/assets/dropdown/js/navbar-dropdown.js"></script>
+ <script src="~/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+ <script src="~/assets/parallax/jarallax.min.js"></script>
+ <script src="~/assets/tether/tether.min.js"></script>
+ <script src="~/assets/theme/js/script.js"></script>
+ <script src="~/assets/formoid/formoid.min.js"></script>
+ <script src="~/assets/tether/tether.min.js"></script>
+ <script src="~/assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+
+	@*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+		<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+ <script src="~/js/site.js" asp-append-version="true"></script>
+	@RenderSection("Scripts", required: false)
+
+ <!--Start of Tawk.to Script-->
+	@*<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+		var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+		s1.async = true;
+		s1.src = 'https://embed.tawk.to/5fc7fa21920fc91564cce581/default';
+		s1.charset = 'UTF-8';
+		s1.setAttribute('crossorigin', '*');
+		s0.parentNode.insertBefore(s1, s0);
+		})();
+		</script>*@
+ <!--End of Tawk.to Script-->
+ <!-- Start of HubSpot Embed Code -->
+ <!--<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8151820.js"></script>-->
+ <!-- End of HubSpot Embed Code -->
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Projetos\RIAT Argentina\Aplicações\RIAT-ui-web\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2022-11-15T18:23:15.6865049Z;True|2022-10-14T00:04:04.5129463-03:00;True|2022-10-13T22:32:54.5078159-03:00;True|2022-10-05T18:24:28.7902584-03:00;True|2022-09-19T18:55:01.6730199-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

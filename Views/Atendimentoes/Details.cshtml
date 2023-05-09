@@ -1,0 +1,93 @@
+﻿@model RIAT.DAL.Entity.Models.Atendimento
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<div class="container">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h1>@Localizer["PageType"]</h1>
+            <div class="modal-header">
+                <h4>@ViewData["Title"]</h4>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfIdProfissionalNavigation.NomeProfissional)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfIdProfissionalNavigation.NomeProfissional)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.PaciIdPacienteNavigation.NomePaciente)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.PaciIdPacienteNavigation.NomePaciente)
+                    </dd>
+                    @*<dt>
+                            @Html.DisplayNameFor(model => model.TipaIdTipoAtendimentoNavigation.TipaNmTipoAtendimento)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.TipaIdTipoAtendimentoNavigation.TipaNmTipoAtendimento)
+                        </dd>*@
+                    <dt>
+                        @Html.DisplayNameFor(model => model.AtenDtAgendamento)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.AtenDtAgendamento)
+                    </dd>
+                    @*<dt>
+                            @Html.DisplayNameFor(model => model.AtenStAgendamento)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.AtenStAgendamento)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.AtenDtCancelamento)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.AtenDtCancelamento)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.AtenTxMotivoCancelamento)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.AtenTxMotivoCancelamento)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.AtenDtRealizadaInicio)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.AtenDtRealizadaInicio)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.AtenTxObservacoes)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.AtenTxObservacoes)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.AtenDtRealizadaFim)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.AtenDtRealizadaFim)
+                        </dd>*@
+                  @*  <dt>
+                        @Html.DisplayNameFor(model => model.VideoConferencia)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.VideoConferencia)
+                    </dd>*@
+                </dl>
+            </div>
+            <div class="modal-footer">
+                @if (User.IsInRole("Pacientes") || User.IsInRole("Administradores"))
+                {
+                    <a asp-action="Edit" asp-route-id="@Model.Id">@Localizer["btnEdit"]</a>
+                }
+                | <a asp-action="Index">@Localizer["btnBackList"]</a>
+            </div>
+        </div>
+    </div>
+</div>

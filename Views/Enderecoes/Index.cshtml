@@ -1,0 +1,65 @@
+﻿@model IEnumerable<RIAT.DAL.Entity.Models.Endereco>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EndeNmLogradouro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndeCdNumero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndeNmComplemento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndeNmBairro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndeNmCidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstaIdSiglaNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndeNmLogradouro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndeCdNumero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndeNmComplemento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndeNmBairro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndeNmCidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstaIdSiglaNavigation.EstaIdSigla)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

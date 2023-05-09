@@ -1,0 +1,70 @@
+﻿@model RIAT.DAL.Entity.Models.Atendimento
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="media-container-column col-lg-8">
+            <h1>@ViewData["Title"]</h1>
+            <form asp-action="Create" class="mbr-form form-with-styler">
+                <h4>@Localizer["PageType"]</h4>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">@Localizer["ProfessionalName"]</label>
+                    <select asp-for="ProfIdProfissional" class="form-control" asp-items="ViewBag.ProfIdProfissional">
+                        @if (User.IsInRole("Administradores"))
+                        {
+                            <option value="">Selecione um Profissional</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">@Localizer["PatientName"]</label>
+                    <select asp-for="PaciIdPaciente" class="form-control" asp-items="ViewBag.PaciIdPaciente">
+                        <option value="">Selecione um Paciente</option>
+                    </select>
+                </div>
+                @*<div class="form-group">
+                    <label class="control-label">@Localizer["AppointmentType"]</label>
+                    <select asp-for="TipaIdTipoAtendimento" class="form-control" asp-items="ViewBag.TipaIdTipoAtendimento"></select>
+                </div>*@
+                <div class="form-group">
+                    <label class="control-label">@Localizer["AppointmentSchedulingDateStart"]</label>
+                    <input asp-for="AtenDtAgendamento" class="form-control" />
+                    <span asp-validation-for="AtenDtAgendamento" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">@Localizer["AppointmentSchedulingDateFinish"]</label>
+                    <input asp-for="AtenDtAgendamentoFim" class="form-control" />
+                    <span asp-validation-for="AtenDtAgendamentoFim" class="text-danger"></span>
+                </div>
+                @*<div class="form-group">
+                        <label class="control-label">@Localizer["AppointmentStatus"]</label>
+                        <input asp-for="AtenStAgendamento" class="form-control" />
+                        <span asp-validation-for="AtenStAgendamento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AtenTxObservacoes" class="control-label"></label>
+                        <input asp-for="AtenTxObservacoes" class="form-control" />
+                        <span asp-validation-for="AtenTxObservacoes" class="text-danger"></span>
+                    </div>*@
+                <div class="form-group">
+                    <div class="col-md-12 input-group-btn align-center">
+                        <input type="submit" class="btn btn-primary btn-form display-4" value=@Localizer["btnCreate"] />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a asp-action="Index">@Localizer["btnBackList"]</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

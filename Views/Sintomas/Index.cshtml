@@ -1,0 +1,56 @@
+﻿@model IEnumerable<RIAT.DAL.Entity.Models.Sintoma>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create">@Localizer["CreateNew"]</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Localizer["SymptomId"]
+            </th>
+            <th>
+                @Localizer["DiseaseCode"]
+            </th>
+            <th>
+                @Localizer["SymptomCode"]
+            </th>
+            <th>
+                @Localizer["SymptomName"]
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DoenIdDoencaNavigation.DoenCodDoenca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SintCodSintoma)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SintNomeSintoma)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">@Localizer["Edit"]</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">@Localizer["Details"]</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">@Localizer["Delete"]</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

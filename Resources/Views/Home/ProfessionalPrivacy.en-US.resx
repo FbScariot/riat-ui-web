@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Description_Privacy" xml:space="preserve">
+    <value>&lt;p&gt; RIAT SERVIÇOS DE SAÚDE LTDA. - ME, is a legal entity under private law, registered with CNPJ under number 09.253.654/0001-00, with headquarters at Avenida São Jorge, 2960, sala 202, São Jorge, in Manaus/AM, CEP 69.030-680. &lt;/p&gt;
+                    &lt;p&gt; The purpose of RIAT is to offer a fully digital platform for centralizing information and therapeutic and psychological consultations, so that professionals can serve their patients in a way c, as well as having access to the information history of each patient consulted. to maintain a humanized and personalized service, optimizing psychological care and making mental health more accessible. &lt;/p&gt;
+                    &lt;p&gt; &amp;nbsp; &lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 1. Definitions &lt;/strong&gt;&lt;/p&gt;
+
+                    &lt;p&gt; When reading our Term of Professional Use, understand the meaning of the words/expressions as indicated: &lt;/p&gt;
+                    &lt;table style="border-style: solid; border-color: black; border-width: 1px; width: 100%"&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt; Content &lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Any and all information contained in the website or application, regardless of the format (text, audio, video, image, data, etc.). &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt; Service Provider &lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Individuals, qualified as psychologists interested in providing services on the platform developed by RIAT. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt; Users &lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Individuals, patients, interested in using the services on the platform developed by RIAT. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt; Privacy Policy &lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Rules on the use by RIAT of personal data entered on the platform by the service provider. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt; Data Processing &lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt;
+                                        Operation of collecting, producing, receiving, classifying, using, accessing, reproducing, transmitting, distributing, processing, archiving, storing, deleting, evaluating or controlling information, modifying, communicating, transferring, disseminating or extracting data.
+                                    &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;ANPD/LGPD&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; National Data Protection Agency, authority provided for in the LGPD - General Data Protection Law, nº 13.709/2018. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Forms&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Research forms available on the &lt;em&gt;website&lt;/em&gt;, used by service providers to register their data, collected exclusively for use on the platform developed by RIAT. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;&lt;em&gt;Website&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Institutional web page owned by RIAT &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt; Application (&lt;em&gt;App&lt;/em&gt;) &lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; RIAT-owned application &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 2. From the Temporary Voluntary Service: Campaign “RIAT Against COVID-19” &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 2.1. The Coronavirus pandemic also brings with it a mental health epidemic. As a mental health company that was born in Argentina and also operates in Brazil, RIAT is restless and always asks itself what it can do in addition to the usual services to contribute to the community. &lt;/p&gt;
+                    &lt;p&gt; 2.2. For this reason, a psychological assistance service was developed with a team of mental health professionals, with assistance for 24 (twenty-four) hours a day, to receive calls, messages, audios or other forms of contact with cases of people who need this service and support. &lt;/p&gt;
+                    &lt;p&gt; 2.3. Through the platform, a screening is carried out and the type of assistance required is determined, immediately prioritizing emotional restraint and relevant information for each user. &lt;/p&gt;
+                    &lt;p&gt; 2.4. After the screening described in clause 2.3, RIAT identifies the type of specialized professional that will assist the User. The service is done virtually and with prior appointment. &lt;/p&gt;
+                    &lt;p&gt; 2.5. The service provided by RIAT and its Volunteers, here called Service Providers, will have a duration of 03 (three) months from the launch and availability of the platform. &lt;/p&gt;
+                    &lt;p&gt; 2.6. After this period has expired, RIAT's activities will continue to be remunerated, within the limits established and determined by its articles of association and regulatory bodies. &lt;/p&gt;
+                    &lt;p&gt; 2.7. RIAT clarifies that after the end of the “RIAT Against Covid-19” Campaign, registered Volunteers will have the option of registering as Professional Service Providers, which will be remunerated as explained in a later Term of Use to be adhered to. &lt;/p&gt;
+                    &lt;p&gt; 2.8. RIAT also clarifies that the User is granted the right to remain linked to the platform after the end of the “RIAT Against Covid-19” campaign, a circumstance which must also adhere to the specific Terms of Use for patients. &lt;/ p&gt;
+                    &lt;p&gt; 2.9. RIAT informs that the service performed by it, whether to serve the purposes of its corporate purpose or for the specific voluntary purpose of the “RIAT Contra Covid-19” campaign, does not constitute any type of advertising or publicity by professionals. &lt;/p&gt;
+                    &lt;p&gt; 2.10. Pursuant to clause 2.9, RIAT informs that it does not advertise or advertise the professionals or services they provide and acts within the rules of the bodies regulating its activity. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 3. Acceptance of the Terms of Use &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 3.1. The Service Provider who accesses the &lt;em&gt;website&lt;/em&gt; or RIAT application or its content, as well as filling in the forms for data collection and using the services offered therein, expressly agrees, in a free, informed and unreserved manner , with the conditions stipulated in this Term and with its clauses, expressing your consent even on the data treatments also specified in this Term. &lt;/p&gt;
+                    &lt;p&gt; 3.2. RIAT reserves the right to make changes and updates to the Terms at any time without the need for prior notice. In the event of changes to the Terms restricting the rights of the Service Provider, RIAT may communicate such change, at its discretion, through the Media. However, this liberality does not remove the Service Provider's responsibility to periodically check the Terms. &lt;/p&gt;
+                    &lt;p&gt; 3.3. If the Service Provider continues to access the &lt;em&gt;App&lt;/em&gt; or &lt;em&gt;Website&lt;/em&gt; through a telephone or computer after any changes to the Terms by RIAT, such act will constitute your consent to link to it refer to the amended Terms. &lt;/p&gt;
+                    &lt;p&gt; 3.4. At any time, the Service Provider who does not agree with the Terms, must communicate to RIAT support their request for termination, with the intention of adopting the necessary measures for the referral of patients served by him. After confirmation of the forwarding, the Service Provider will have his registration and access excluded from the platform. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 4. Privacy Policy and Data Treatment &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 4.1. Law 12.965/2014 brings the need to establish a privacy policy regarding the use of the internet, being a right of all involved. &lt;/p&gt;
+                    &lt;p&gt; 4.2. When using RIAT's &lt;em&gt;website&lt;/em&gt; or &lt;em&gt;App&lt;/em&gt;, the Service Provider is aware that the data processing and storage will last for the duration of the registration and service provision on the platform and will have the purpose of facilitating the provision of the service, generating market studies and studies in the field of psychology, as well as promoting RIAT's marketing disclosure. &lt;/p&gt;
+                    &lt;p&gt; 4.3. RIAT complies with the national legislation on data processing, specifically Law No. 13,709/2018 (LGPD) and Law No. 12,965/2014, guaranteeing security in the use of the registered data of all its customers, service providers and other people involved. on the platform. It is also attentive to the security and protection in the use of data made by its partners and uses methods to guarantee the anonymity of the collected data. &lt;/p&gt;
+                    &lt;p&gt; 4.4. By accepting the Terms of Use and accessing the platform, the Service Provider adheres to the rules of the platform, being aware that the data collected and produced from the service provided will be used by RIAT in accordance with the strict purpose of the business. &lt;/p&gt;
+                    &lt;p&gt; 4.5. With adherence to the Terms, RIAT will be able to share data &lt;em&gt;online&lt;/em&gt; or &lt;em&gt;offline&lt;/em&gt; among those involved in the provision of services and management of the platform, through systemic reports or previously archived records, respecting its purpose in the use of these records, as well as undertaking not to share the Service Provider's confidential data with third parties without involvement in the platform, except by court order, force of law or other specific demand as an exception . &lt;/p&gt;
+                    &lt;p&gt; 4.6. Those involved in the provision of services through the RIAT platform, employees or outsourced, sign confidentiality terms with the obligation to maintain absolute secrecy on all information relating to RIAT, the Service Provider or the service itself and to refrain from any misuse, for your own benefit or that of others. &lt;/p&gt;
+                    &lt;p&gt; 4.7. Any violation of the confidentiality terms will be subject to Brazilian law. &lt;/p&gt;
+                    &lt;p&gt; 4.8. The User may request the cancellation of data sharing owned by him, at any time, by contacting RIAT's service channels. In the absence of any request for exclusion, the Service Provider is aware that the data will remain stored as long as they are necessary for the provision of the service, in accordance with the purpose of RIAT, and for statistical analysis. With the exclusion, the Service Provider is aware that it may render the service provided by the platform unfeasible. &lt;/p&gt;
+                    &lt;p&gt; 4.9. RIAT will be able to maintain a server in an environment outside Brazil, properly protected and maintaining the security of the data shared on the platform, the Service Provider being aware and in agreement that the international transfer of its data may occur. &lt;/p&gt;
+                    &lt;p&gt; 4.10. RIAT is responsible for choosing service providers that value security, technical and administrative measures for data protection, but disclaims liability in the event of a hacker attack or other technological failure enable unauthorized access or accidental or unlawful situation of loss, alteration, destruction, communication or other improper treatment of the use of data, committing to report any occurrence of incidents of this nature to the ANPD that may cause risks to the user. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 5. Registration &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 5.1. To use the service, the Service Provider must register and maintain a personal account on the platform, which will inform his personal data in forms available on the &lt;em&gt;App&lt;/em&gt; or &lt;em&gt;Website&lt;/em&gt;. &lt;/p&gt;
+                    &lt;p&gt; 5.2. The Service Provider must have civilian capacity, hold a bachelor's degree in Psychology issued by a higher education institution duly recognized by the country's educational authority and be regularly enrolled in the Regional Psychology Council of its Federative Unit or, if foreign, in an equivalent body. &lt;/p&gt;
+                    &lt;p&gt; 5.3. After receiving the documentation, RIAT will carry out an analysis of this and may accept or reject the Service Provider's registration request. RIAT may also carry out criminal background checks and any other checks that it deems appropriate or that are required by applicable law. &lt;/p&gt;
+                    &lt;p&gt; 5.4. The Service Provider's profile is exclusive and non-transferable, and he is committed, upon acceptance of the Terms, not to share his Account with third parties, being prohibited the transfer of his access data, under penalty of immediate cancellation of the Service Provider Account , in addition to forwarding the case to the public authorities for analysis of any applicable criminal and civil penalties. &lt;/p&gt;
+                    &lt;p&gt; 5.5. RIAT reserves the right to request additional documents to confirm registrations, as well as other methods of identification and authentication of the Service Provider (such as, for example, facial recognition), at the time of registration and while the User uses and provides the services anytime. Even after confirming the registration, it is possible to cancel the account if inconsistencies are found in the verification process, at RIAT's sole discretion. &lt;/p&gt;
+                    &lt;p&gt; 5.6. Account information is the sole responsibility of the person who entered it. In case of causing damages or losses of any kind, the appropriate measures can be taken in order to safeguard your interests and the integrity of patients, other Users and Service Providers, in addition to RIAT itself. &lt;/p&gt;
+                    &lt;p&gt; 5.7. Under the penalties of the law, the Service Provider undertakes and declares to be aware that the use of his account on the &lt;em&gt;App&lt;/em&gt; and &lt;em&gt;Website&lt;/em&gt; will only be for strictly legal, legitimate purposes and permitted in these Terms of Use. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 6. Services &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 6.1. The Services consist of the centralization of information and consultation of Users, so that Service Providers can attend to their patients online &lt;em&gt;and, exceptionally, for the purposes of the “RIAT Against Covid-19” campaign , free of charge, as well as having access to the information history of each patient consulted to maintain a humanized and personalized service, optimizing psychological care and making mental health more accessible. &lt;/p&gt;
+                    &lt;p&gt; 6.2. RIAT will grant the Service Provider a limited, personal, non-exclusive, non-transferable, non-commercial and fully revocable license to use the &lt;em&gt;App&lt;/em&gt; or &lt;em&gt;Website&lt;/em&gt; on his telephone , &lt;em&gt;Tablet&lt;/em&gt; or computer, in accordance with the conditions set out in these Terms of Use. &lt;/p&gt;
+                    &lt;p&gt; 6.3. Through the &lt;em&gt;App&lt;/em&gt; or &lt;em&gt;Website&lt;/em&gt;, the User will be able to schedule and carry out psychological consultations and/or therapies with the Service Provider of his choice and at the times provided by the User. &lt;/p&gt;
+                    &lt;p&gt; 6.4. It will be up to the Service Provider to request the RIAT to assign another professional to the patient who fails to attend the scheduled session. &lt;/p&gt;
+                    &lt;p&gt; 6.5. The services intermediated through the &lt;em&gt;App&lt;/em&gt; and &lt;em&gt;Website&lt;/em&gt; cannot be diverted, and the sessions must be attached to the purpose of the business and the Terms of Use. &lt;/p&gt;
+                    &lt;p&gt; 6.6. If the Service Provider identifies a highly complex clinical case, a request for Supervision may be required from the RIAT technical staff, whose purpose will be to assist the Service Provider in patient care and the reported clinical case. Supervision aims to ensure humanized and efficient treatment to the patient and support the Service Provider in decision making. &lt;/p&gt;
+                    &lt;p&gt; 6.7. In cases where the intervention of other medical specialties is necessary, the Service Provider is free to indicate a professional he/she trusts, as long as he/she reports the information to the RIAT technical staff for evaluation, registration and knowledge purposes. &lt;/p&gt;
+                    &lt;p&gt; 6.8. RIAT reserves all rights to the &lt;em&gt;App&lt;/em&gt; and &lt;em&gt;Website&lt;/em&gt; not expressly granted here. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 7. Obligations of the Service Provider &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 7.1. The Service Provider must respect all the rules contained in these Terms of Use and all legislation, regulations and codes applicable to the exercise of his profession. &lt;/p&gt;
+                    &lt;p&gt; 7.2. Upon acceptance of the Terms of Use, the Service Provider undertakes: &lt;/p&gt;
+                    &lt;p&gt; a) Be fully responsible for the provision of personal data, which are required in your registration, as well as the duty to keep them updated; &lt;/p&gt;
+                    &lt;p&gt; b) Take full responsibility for the provision of services; &lt;/p&gt;
+                    &lt;p&gt; c) Act before patients Users and RIAT with good faith, diligence, professionalism and respect; &lt;/p&gt;
+                    &lt;p&gt; d) Obey and comply with all legal and regulatory requirements regarding the exercise of the profession of Psychologist, including payment of annual fees from the Council, laws, regulations, codes of ethics and conduct, as well as the laws applicable to &lt;em&gt;Internet&lt;/em&gt;; &lt;/p&gt;
+                    &lt;p&gt; e) Do not discriminate or select, for any reason, patients; &lt;/p&gt;
+                    &lt;p&gt; f) Accept and agree that it may eventually be evaluated by patient Users and/or by the technical staff of RIAT, a circumstance that lends itself to the efficiency of the service; &lt;/p&gt;
+                    &lt;p&gt; g) Report to the RIAT Technical Staff clinical pictures of patients who are considered to be at high risk, a circumstance in which interventions and measures that should be adopted may be evaluated together with the Service Provider. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 8. Network Access and Equipment &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 8.1. RIAT undertakes to adopt all possible and available efforts to solve any problems that may occur with its &lt;em&gt;Website&lt;/em&gt; and &lt;em&gt;App&lt;/em&gt;, seeking to resume its normal operation in the shortest time possible. &lt;/p&gt;
+                    &lt;p&gt; 8.2. RIAT cannot guarantee the full and uninterrupted operation of the &lt;em&gt;Website&lt;/em&gt; or &lt;em&gt;App&lt;/em&gt;, or even the absence of errors. Eventually, the &lt;em&gt;Website&lt;/em&gt; and &lt;em&gt;App&lt;/em&gt; may be unavailable due to technical reasons or failures of the &lt;em&gt;Internet&lt;/em&gt;, or due to unforeseeable events or force majeure, outside the control of RIAT, the latter cannot be held responsible for any damages that occur as a result of this. &lt;/p&gt;
+                    &lt;p&gt; 8.3. In compliance with clause 8.1., In addition to maintaining the smooth functioning of the App and Website to the greatest extent possible, RIAT shall provide service channels to help resolve questions and problems with the Service Provider with the &lt;em&gt;online &lt;service platform. /in&gt;. &lt;/p&gt;
+                    &lt;p&gt; 8.4. The Service Provider understands and agrees that the use of the Service requires the purchase of mobile telephony devices, &lt;em&gt;Tablets&lt;/em&gt; or computers and the contracting of telecommunication services compatible with the use of the &lt;em&gt;App&lt;/em&gt; &gt; or &lt;em&gt;Website&lt;/em&gt;, and that the use of the Service may generate charges by telecommunications operators for connection to the &lt;em&gt;Internet&lt;/em&gt;, for example, products and services not made available by RIAT, according to clause 7.5. &lt;/p&gt;
+                    &lt;p&gt; 8.5. The Service Provider is solely responsible for contracting and bearing any and all costs and charges related to the acquisition of its access devices to the &lt;em&gt;App&lt;/em&gt; or &lt;em&gt;Website&lt;/em&gt; and the contracting of your telecommunication service. &lt;/p&gt;
+                    &lt;p&gt; 8.6. RIAT is not responsible for the availability, quality and maintenance of such telecommunication services, and the Service Provider understands that the conditions of the telecommunications service may affect the experience of the Service. &lt;/p&gt;
+                    &lt;p&gt; 8.7. RIAT will not be held responsible for any problem related to the Service arising directly or indirectly from inconsistencies or failures in mobile telephony devices, &lt;em&gt;Tablets&lt;/em&gt; or computers and/or telecommunication services. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 9. Responsibility for Services &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 9.1. RIAT assumes responsibility for all problems that it gives unjustified cause. &lt;/p&gt;
+                    &lt;p&gt; 9.2. Psychology services are contracted directly between the patient and the Service Provider, and RIAT is not responsible for any losses or damages arising from the relationship established between the patient and the Service Provider. &lt;/p&gt;
+                    &lt;p&gt; 9.3. The Service Provider understands and agrees that RIAT will not be responsible for any conduct practiced by the Service Provider and that may eventually cause damage or loss to Users or their families. &lt;/p&gt;
+                    &lt;p&gt; 9.4. The Service Provider will be responsible for the damages and losses that it causes in the face of patients or their families and agrees to indemnify and keep RIAT harmless in relation to any claims, losses or losses directly and indirectly referring to the acts that it performs; &lt;/p&gt;
+                    &lt;p&gt; 9.5. The Service Provider is solely and exclusively responsible for any and all problems relating to the psychological care provided, as well as for any improper or illegal conduct. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 10. NO WORK RELATIONSHIP, JOB LINK AND OTHERS &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 10.1. ANY EMPLOYMENT, SOCIETARY AND/OR ECONOMIC BINDING IS NOT ESTABLISHED OR CONSTITUTED BETWEEN THE SERVICE PROVIDER AND RIAT, BEING SURE THAT THE SERVICE PROVIDER HAS FREEDOM TO PERFORM CONSULTATIONS WHENEVER YOU LIKE TO USE IT, AS WELL AS A USE OF CUSTOMER ANY TIME, OBSERVING THE PROVISIONS IN CLAUSE 3.4. THIS TERM. &lt;/p&gt;
+                    &lt;p&gt; 10.2. Although it has a technical body, it is clarified and reiterated that the purpose of RIAT'S SOCIAL OBJECTIVE IS TO INTERMEDIATE AND FACILITATE THE CONTRACTING OF THERAPEUTIC SERVICES AND PSYCHOLOGY FOR USERS REGISTERED IN THE PLATFORM, ATTENDING TO OUR SERVICE. COVID-19 ”, WELL HOW TO GENERATE STUDIES IN THE AREA OF PSYCHOLOGY. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 11. From Suspected Fraud &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 11.1. RIAT is not responsible for any fraudulent conduct that has been practiced by the Service Provider, and may even prevent, due to them, the maintenance of this access on the &lt;em&gt;App&lt;/em&gt; and &lt;em&gt;Website.&lt;/em&gt;&lt;/p&gt;
+                    &lt;p&gt; 11.2. For the sake of clarity, RIAT considers fraud to be the presentation of false documents, remuneration requirements for patient Users, collusion with professionals from other specialties for the purpose of remunerating itself or third parties, the holding of consultations that were not required by patients, and any conduct that is detrimental to the present Term, the legislation, regulations and codes applicable to the exercise of the profession of Psychologist. &lt;/p&gt;
+                    &lt;p&gt; 11.3. RIAT will analyze suspected fraud on a case-by-case basis and may suspend your access to the platform, in order to avoid the risk of damage to RIAT and the patient User. &lt;/p&gt;
+                    &lt;p&gt; 11.4. If fraudulent conduct is found, RIAT will exclude the Service Provider's access and registration on the platform, report the case to the competent authorities and promote the appropriate judicial or extrajudicial measures. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 12. Intellectual Property &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 12.1. The brands, names, logos, domain names of other distinctive signs, as well as any and all content, design, art, &lt;em&gt;layout&lt;/em&gt; published in the &lt;em&gt;App&lt;/em&gt; or &lt;em&gt;Website&lt;/em&gt; and the service itself are the exclusive property of RIAT. &lt;/p&gt;
+                    &lt;p&gt; 12.2. Any acts or contributions aimed at decompiling, reverse engineering, modification of characteristics, expansion, alteration, merging or incorporation in any other programs or systems of the &lt;em&gt;App&lt;/em&gt;, &lt;em&gt;Website&lt;/em&gt; or service are prohibited . &lt;/p&gt;
+                    &lt;p&gt; 12.3. Any and all forms of reproduction of the App, Website or service, total or partial, permanent, temporary or provisional, free or onerous, under any modalities, forms or titles is expressly passed. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 13. Communication &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 13.1. If the Service Provider subscribes to the RIAT &lt;em&gt;newsletters&lt;/em&gt; form, he/she consents to receive promotional &lt;em&gt;emails&lt;/em&gt; at the registered email address, and may at any time disable this sending. &lt;/p&gt;
+                    &lt;p&gt; 13.2. When registering on the RIAT platform, the Service Provider authorizes contact via &lt;em&gt;e-mail&lt;/em&gt;, telephone or &lt;em&gt;WhatsApp&lt;/em&gt; when necessary to deal with matters relating to the provision of service by platform, as well as commercial communications recommending services or new features of the &lt;em&gt;Website&lt;/em&gt; or &lt;em&gt;App&lt;/em&gt;. &lt;/p&gt;
+                    &lt;p&gt; 13.3. If the Service Provider is not interested in RIAT's commercial communications, he/she can formalize by &lt;em&gt;email&lt;/em&gt; the unsubscription request. &lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt; &amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 14. General Provisions &lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt; 14.1. These terms constitute the entire agreement between the Service Provider and RIAT and will govern the use of the platform, replacing any previously established agreement. &lt;/p&gt;
+                    &lt;p&gt; 14.2. If RIAT fails to exercise or enforce any right or provision of these Terms, it will not be characterized as a waiver of right or provision, nor will it constitute a novation. &lt;/p&gt;
+                    &lt;p&gt; 14.3. If any provision of the Terms is found to be illegal, invalid or unenforceable, by a competent court or by any legislation that may be enacted, the parties agree that the remainder of the Terms will not be affected, the other provisions of the Terms remaining in full force and effect. . &lt;/p&gt;
+                    &lt;p&gt; 14.4. Inciding the circumstance described in Clause 14.3., The parties agree to replace the provisions deemed illegal, invalid or unenforceable for the purposes of the content and purpose of these Terms. &lt;/p&gt;
+                    &lt;p&gt; 14.5. RIAT reserves the right, at any time, to modify or discontinue, temporarily or permanently, the provision of service or part of it, with or without notice. &lt;/p&gt;
+                    &lt;p&gt; 14.6. The Service Provider agrees that RIAT will not be liable, nor will it have any additional obligations, implicit or explicit, to you or third parties due to any modification, suspension or deactivation of the service. &lt;/p&gt;
+                    &lt;p&gt; 14.7. In case of modification, suspension or deactivation of the service, RIAT must notify the Service Provider so that the continuity of treatment of its patients is provided in an environment other than the platform, which is not to be confused with the notification described in Clause 14.5. &lt;/p&gt;
+                    &lt;p&gt; 14.8. All notices, subpoenas, letters and/or any other RIAT scientific officer must take place at its headquarters address, informed in the preamble to this Term. &lt;/p&gt;
+                    &lt;p&gt; 14.9. These terms and the relationship established between the Service Provider and RIAT will be governed by the Laws of the Federative Republic of Brazil, with the Manaus/AM District Court being elected as the only one competent to settle any disputes or demands that will involve the parties in relation to the use of the available platform. &lt;/p&gt;
+                    &lt;p&gt; 14.10. The parties agree and declare that they are subject exclusively to the exclusive jurisdiction of the Courts located in Brazil. &lt;/p&gt;</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Professional use terms</value>
+  </data>
+</root>

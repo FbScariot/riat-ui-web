@@ -1,0 +1,169 @@
+﻿@model RIAT.DAL.Entity.Models.Atendimento
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="media-container-column col-lg-8">
+            <h1>@ViewData["Title"]</h1>
+            <form asp-action="Edit" class="mbr-form form-with-styler">
+                <h4>@Localizer["PageType"]</h4>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <input type="hidden" asp-for="ProfIdProfissional" />
+                    <label asp-for="ProfIdProfissionalNavigation.NomeProfissional" class="control-label"></label>
+                    <input asp-for="ProfIdProfissionalNavigation.NomeProfissional" class="form-control" asp-items="ViewBag.ProfIdProfissional" readonly />
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="PaciIdPaciente" />
+                    <label asp-for="PaciIdPacienteNavigation.NomePaciente" class="control-label"></label>
+                    <input asp-for="PaciIdPacienteNavigation.NomePaciente" class="form-control" asp-items="ViewBag.NomePaciente" readonly />
+                </div>
+                @*<div class="form-group">
+                        <label asp-for="TipaIdTipoAtendimento" class="control-label"></label>
+                        <select asp-for="TipaIdTipoAtendimento" class="form-control" asp-items="ViewBag.TipaIdTipoAtendimento"></select>
+                        <span asp-validation-for="TipaIdTipoAtendimento" class="text-danger"></span>
+                    </div>*@
+
+                <div class="form-group">
+                    <label asp-for="PostalCodePlace" class="control-label"></label>
+                    <input asp-for="PostalCodePlace" class="form-control" />
+                    <span asp-validation-for="PostalCodePlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="StreetPlace" class="control-label"></label>
+                    <input asp-for="StreetPlace" class="form-control" />
+                    <span asp-validation-for="StreetPlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NeighborhoodPlace" class="control-label"></label>
+                    <input asp-for="NeighborhoodPlace" class="form-control" />
+                    <span asp-validation-for="NeighborhoodPlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CityPlace" class="control-label"></label>
+                    <input asp-for="CityPlace" class="form-control" />
+                    <span asp-validation-for="CityPlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="StatePlace" class="control-label"></label>
+                    <input asp-for="StatePlace" class="form-control" />
+                    <span asp-validation-for="StatePlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CountryPlace" class="control-label"></label>
+                    <input asp-for="CountryPlace" class="form-control" />
+                    <span asp-validation-for="CountryPlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NumberPlace" class="control-label"></label>
+                    <input asp-for="NumberPlace" class="form-control" />
+                    <span asp-validation-for="NumberPlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ComplementPlace" class="control-label"></label>
+                    <input asp-for="ComplementPlace" class="form-control" />
+                    <span asp-validation-for="ComplementPlace" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AtenDtAgendamento" class="control-label"></label>
+                    <input asp-for="AtenDtAgendamento" class="form-control" />
+                    <span asp-validation-for="AtenDtAgendamento" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AtenDtAgendamentoFim" class="control-label"></label>
+                    <input asp-for="AtenDtAgendamentoFim" class="form-control" />
+                    <span asp-validation-for="AtenDtAgendamentoFim" class="text-danger"></span>
+                </div>
+                @*<div class="form-group">
+                        <label asp-for="AtenStAgendamento" class="control-label"></label>
+                        <input asp-for="AtenStAgendamento" class="form-control" />
+                        <span asp-validation-for="AtenStAgendamento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AtenDtCancelamento" class="control-label"></label>
+                        <input asp-for="AtenDtCancelamento" class="form-control" />
+                        <span asp-validation-for="AtenDtCancelamento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AtenTxMotivoCancelamento" class="control-label"></label>
+                        <input asp-for="AtenTxMotivoCancelamento" class="form-control" />
+                        <span asp-validation-for="AtenTxMotivoCancelamento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AtenDtRealizadaInicio" class="control-label"></label>
+                        <input asp-for="AtenDtRealizadaInicio" class="form-control" />
+                        <span asp-validation-for="AtenDtRealizadaInicio" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AtenTxObservacoes" class="control-label"></label>
+                        <input asp-for="AtenTxObservacoes" class="form-control" />
+                        <span asp-validation-for="AtenTxObservacoes" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AtenDtRealizadaFim" class="control-label"></label>
+                        <input asp-for="AtenDtRealizadaFim" class="form-control" />
+                        <span asp-validation-for="AtenDtRealizadaFim" class="text-danger"></span>
+                    </div>
+                *@
+                <div class="form-group">
+                    <label asp-for="VideoConferencia" class="control-label"></label>
+                    <input asp-for="VideoConferencia" class="form-control" readonly />
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12 input-group-btn align-center">
+                        <button type="submit" class="btn btn-primary btn-form display-4">@Localizer["btnSave"]</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a asp-action="Index">@Localizer["btnBackList"]</a> |
+                    <a asp-action="EditInline" asp-controller="DoencaPacientes" asp-net asp-route-paciIdPaciente="@Model.PaciIdPaciente">@Localizer["Diseases"]</a> |
+                    <a asp-action="Index" asp-controller="SintomaAtendimentoes" asp-net asp-route-idAtendimento="@Model.Id">@Localizer["Symptoms"]</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="modal" class="modal fade" />
+@section scripts{
+    <script>
+        $(function () {
+            //$(".details").click(function () {
+            //    var id = $(this).attr("data-id");
+            //    //alert(id);
+            //    $("#modal").load("SintomaAtendimentoes/Details?id=" + id, function () {
+            //        $("#modal").modal();
+            //    })
+            //});
+
+            $(".edit").click(function () {
+                var id = $(this).attr("data-id");
+                //alert(id);
+                $("#modal").load("SintomaAtendimentoes/Index?IdAtendimento=" + id, function () {
+                    $("#modal").modal();
+                })
+            });
+
+            //$(".delete").click(function () {
+            //    var id = $(this).attr("data-id");
+            //    //alert(id);
+            //    $("#modal").load("Pacientes/Delete?id=" + id, function () {
+            //        $("#modal").modal();
+            //    })
+            //});
+
+            //$(".create").click(function () {
+            //    $("#modal").load("Pacientes/Create", function () {
+            //        $("#modal").modal();
+            //    })
+            //});
+
+        })
+    </script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

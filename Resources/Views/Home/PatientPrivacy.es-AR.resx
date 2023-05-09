@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Description_Privacy" xml:space="preserve">
+    <value>&lt;p&gt; RIAT SERVIÇOS DE SAÚDE LTDA. - es una corredora y agencia de servicios de psicología y psicoanálisis, registrada en el CNPJ con el número 09.253.654/0001-00, con sede en Manaus/AM, en Av. São Jorge, nº 2.960, sala 202, Bairro São Jorge, CEP 69.030-680. &lt;/p&gt;
+                    &lt;p&gt; El propósito de RIAT es ofrecer una plataforma totalmente digital para la centralización de la información y consulta de los usuarios, para que los profesionales puedan atender a sus pacientes en línea &lt;em&gt;, &lt;/em&gt;, así como tener acceso al historial información de cada paciente consultado para mantener un servicio humanizado y personalizado, optimizando la atención psicológica y haciendo más accesible la salud mental. &lt;/p&gt;
+                    &lt;p&gt; Es importante aclararle que RIAT realiza la intermediación entre profesional y paciente a través de la plataforma digital, no siendo responsable del servicio prestado, lo cual es realizado por socios registrados, que no son empleados ni representantes de RIAT, sino profesionales independientes. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 1. Definiciones &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; Al leer nuestros Términos de uso, comprenda el significado de las palabras/expresiones como se indica: &lt;/p&gt;
+                    &lt;table style="border-style: solid; border-color: black; border-width: 1px; width: 100%"&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Contenido &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Toda la información contenida en el &lt;em&gt; sitio web &lt;/em&gt; o la aplicación, independientemente del formato (texto, audio, video, imagen, datos, etc.). &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Usuarios &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Individuos, psicólogos o pacientes, interesados ​​en utilizar los servicios desarrollados por RIAT. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Política de privacidad &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Normas sobre el uso por parte de RIAT de los datos personales introducidos en la plataforma por el usuario. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Procesamiento de datos &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Operación de recopilar, producir, recibir, clasificar, usar, acceder, reproducir, transmitir, distribuir, procesar, archivar, almacenar, eliminar, evaluar o controlar información, modificar, comunicar, transferir, difundir o extraer datos. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; ANPD/LGPD &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Agencia Nacional de Protección de Datos, autoridad prevista en la LGPD - Ley General de Protección de Datos, nº 13.709/2018. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Fórmulas &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Formularios de investigación disponibles en el &lt;em&gt; sitio web &lt;/em&gt;, utilizados por los usuarios para registrar sus datos, recopilados para la prestación del servicio en la plataforma desarrollada por RIAT. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;&lt;em&gt; Sitio web&lt;/em&gt; &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Página web institucional propiedad de RIAT &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Aplicación (&lt;em&gt;Aplicación&lt;/em&gt;) &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Aplicación propiedad de RIAT &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 2. Aceptación de las condiciones de uso &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; El usuario que accede al &lt;em&gt; sitio web &lt;/em&gt; o la aplicación RIAT o su contenido, así como la cumplimentación de los formularios de recogida de datos y la utilización de los servicios ofrecidos en los mismos, está de acuerdo expresamente, de forma libre, informada y sin reservas, con las condiciones estipuladas en este Plazo y con sus cláusulas, expresando su consentimiento incluso sobre los tratamientos de datos también especificados en este Plazo. &lt;/p&gt;
+                    &lt;p&gt; Si no está de acuerdo con estos Términos de uso, no: (i) complete los formularios, (ii) descargue la aplicación o (iii) acceda a los servicios proporcionados a través de la plataforma RIAT. &lt;/p&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 3. Política de privacidad y tratamiento de datos &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; El Código de Protección al Consumidor y la Ley 12.965/2014 traen la necesidad de establecer una política de privacidad respecto al uso de Internet, siendo un derecho de todos los involucrados. &lt;/p&gt;
+                    &lt;p&gt; Al utilizar el &lt;em&gt; sitio web &lt;/em&gt; o la &lt;em&gt; Aplicación &lt;/em&gt; de RIAT, los usuarios son conscientes de que el procesamiento y almacenamiento de datos durará tanto como el registro y la prestación de servicios y tendrá la finalidad de facilitar la prestación del servicio, generar estudios de mercado y estudios en el campo de la psicología, así como promover la divulgación de marketing de RIAT. &lt;/p&gt;
+                    &lt;p&gt; RIAT cumple con la legislación nacional en materia de tratamiento de datos, en concreto la Ley N ° 13.709/2018 (LGPD) y la Ley N ° 12.965/2014, garantizando la seguridad en el uso de los datos registrados de todos sus clientes, prestadores de servicios y otras personas involucradas en la plataforma. También está atento a la seguridad y protección en el uso de datos que hacen sus socios y utiliza métodos para garantizar el anonimato de los datos recopilados. &lt;/p&gt;
+                    &lt;p&gt; Al aceptar las condiciones de uso y acceder a la plataforma, el usuario se adhiere a las reglas del sistema, siendo consciente de que los datos recopilados y producidos a partir del servicio prestado serán utilizados por RIAT de acuerdo con la finalidad estricta del negocio. &lt;/p&gt;
+                    &lt;p&gt; Al unirse al sistema, RIAT podrá compartir datos &lt;em&gt; online &lt;/em&gt; o &lt;em&gt; offline &lt;/em&gt; entre los implicados en la prestación de servicios y gestión de la plataforma, a través de informes sistémicos o registros previamente archivados, respetando la finalidad de la plataforma en el uso de estos registros, así como el compromiso de no compartir los datos confidenciales de los usuarios con terceros sin involucramiento en la plataforma, excepto por determinación judicial, fuerza de ley u otra exigencia específica de carácter excepción. &lt;/p&gt;
+                    &lt;p&gt; Los implicados en la prestación de servicios a través de la plataforma RIAT, empleados o subcontratados, firman términos de confidencialidad con la obligación de mantener absoluta confidencialidad sobre toda la información relacionada con RIAT, el usuario o el propio servicio y abstenerse cualquier uso indebido, para su propio beneficio o el de otros. &lt;/p&gt;
+                    &lt;p&gt; Cualquier violación de los términos de confidencialidad estará sujeta a la ley brasileña. &lt;/p&gt;
+                    &lt;p&gt; El usuario puede solicitar la cancelación del intercambio de datos de su propiedad, en cualquier momento, contactando con los canales de atención de RIAT. En ausencia de solicitud de exclusión, el usuario es consciente de que los datos permanecerán almacenados el tiempo que sea necesario para la prestación del servicio, de acuerdo con la finalidad de RIAT, y para análisis estadístico. Con la exclusión, el usuario es consciente de que el servicio prestado por la plataforma puede resultar inviable. &lt;/p&gt;
+                    &lt;p&gt; RIAT podrá mantener un servidor en un entorno externo a Brasil, debidamente protegido y manteniendo la seguridad de los datos compartidos en la plataforma, dando a conocer y de acuerdo al usuario que puede ocurrir la transferencia internacional de sus datos. &lt;/p&gt;
+                    &lt;p&gt; RIAT es responsable de elegir proveedores de servicios que valoren las medidas de seguridad, técnicas y administrativas para la protección de datos, pero se exime de responsabilidad en caso de un ataque de &lt;em&gt; hacker &lt;/em&gt; u otra falla tecnológica que pueda posibilitar el acceso no autorizado o una situación accidental o ilícita de pérdida, alteración, destrucción, comunicación u otro tratamiento indebido del uso de los datos, comprometiéndose a informar a la Autoridad Nacional de Protección de Datos (ANPD) de cualquier ocurrencia de tales incidencias que puede suponer riesgos para el usuario. &lt;/p&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 4. Responsabilidad del usuario &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; Es responsabilidad del usuario del &lt;em&gt; sitio web &lt;/em&gt; o &lt;em&gt; App &lt;/em&gt; de RIAT (i) registrar información veraz en la plataforma; (ii) actuar de acuerdo con los términos de uso y la política de privacidad; y (iii) tomar las precauciones necesarias para mantener sus datos confidenciales, restringir el acceso de terceros a su computadora o teléfono celular. El usuario es responsable de su cuenta (y contraseña) y de las actividades que se realizan a través de ella. &lt;/p&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 5. Comunicación &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; Si el usuario se suscribe al formulario &lt;em&gt; newsletters &lt;/em&gt; de RIAT, consiente recibir correos electrónicos promocionales en la dirección de correo registrada, pudiendo deshabilitar este envío en cualquier momento. &lt;/p&gt;
+                    &lt;p&gt; Al registrarse en la plataforma RIAT, el usuario autoriza el contacto vía correo electrónico, teléfono o &lt;em&gt; WhatsApp &lt;/em&gt; cuando sea necesario para tratar asuntos relacionados con la prestación del servicio de la plataforma, así como comunicaciones comerciales recomendación de servicios o nuevas características del &lt;em&gt; sitio web &lt;/em&gt; o &lt;em&gt; aplicación &lt;/em&gt;. Si el usuario no está interesado en este tipo de comunicación, puede formalizar la solicitud de baja por correo electrónico. &lt;/p&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 6. Tiempo de inactividad del sistema &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; RIAT se compromete a adoptar todos los esfuerzos posibles y disponibles para solucionar cualquier problema que pueda surgir con su &lt;em&gt; sitio web &lt;/em&gt; y &lt;em&gt; App &lt;/em&gt;, buscando reanudar su normal funcionamiento en el menor tiempo posible. &lt;/p&gt;
+                    &lt;p&gt; RIAT no puede garantizar el funcionamiento completo e ininterrumpido del &lt;em&gt; sitio web &lt;/em&gt; &lt;em&gt;, &lt;/em&gt; o incluso la ausencia de errores. Finalmente, el &lt;em&gt; sitio web &lt;/em&gt; &amp;nbsp; puede no estar disponible por razones técnicas o fallas de Internet, o debido a un evento fortuito o fuerza mayor, fuera del control de RIAT, y no se hace responsable de los daños que se produzcan como consecuencia de esto. &lt;/p&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 7. Disposiciones generales &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; RIAT, siendo el gestor de la plataforma digital para conectar pacientes y profesionales, no se hace responsable de ninguna obligación, daño o perjuicio derivado de la prestación de los servicios. Dicha limitación no está relacionada con las normas de la ley del consumidor brasileña que no se pueden cambiar. &lt;/p&gt;
+                    &lt;p&gt; Todos los materiales, patentes, marcas comerciales, registros, dominios, nombres, privilegios, creaciones, imágenes y todos los derechos relacionados relacionados con el &lt;em&gt; sitio web &lt;/em&gt;, y desarrollados por RIAT, son y seguirán siendo los únicos y propiedad exclusiva de RIAT, comprometiéndose los usuarios a no practicar un acto o hecho que, de cualquier forma, menoscabe los derechos aquí previstos, ni reclame ningún derecho o privilegio sobre los mismos. &lt;/p&gt;
+                    &lt;p&gt; RIAT puede cambiar este instrumento en cualquier momento, simplemente publicando una versión revisada con la fecha de actualización. Por lo tanto, le recomendamos que lea los términos cada vez que acceda al &lt;em&gt; sitio web &lt;/em&gt; para estar al tanto de las políticas internas. &lt;/p&gt;
+                    &lt;p&gt; Este instrumento constituye el pleno entendimiento entre los usuarios &amp;nbsp; y &amp;nbsp; RIAT &amp;nbsp; y se rige por las leyes brasileñas, siendo elegido el foro de origen del usuario como la única autoridad competente para resolver los problemas que surjan de este instrumento, con renuncia expresa a cualquier otro foro, por privilegiado que sea. &lt;/p&gt;</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Condiciones de uso personal</value>
+  </data>
+</root>

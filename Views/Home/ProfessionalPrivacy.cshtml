@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+
+<section class="mbr-section content4 cid-smndXzK9QG" id="content4-4">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="media-container-column col-lg-8" style="text-align:center">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="media-container-row">
+            <div style="text-align:justify;">
+                <div>
+                    <strong>
+                        <hr />
+                    </strong>
+                </div>
+                <div>
+                    @Localizer["Description_Privacy"]
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

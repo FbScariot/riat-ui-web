@@ -1,0 +1,148 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "RIATContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Data",
+   "OutputPath": "Models",
+   "ProjectRootNamespace": "RIAT.DAL.Entity",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[App].[ALTERNATIVA_ADL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[ALTERNATIVA_ATENDIMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[ATENDIMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[ATENDIMENTO_PLANTAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[DATA_DESEJADA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[DIA_SEMANA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[DOENCA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[DOENCA_PACIENTE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[ENDERECO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[ESPECIALIDADE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[ESTADO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[GRAU_INSTRUCAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[PACIENTE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[PAIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[PESSOA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[PESSOA_TELEFONE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[PROFISSIONAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[PROFISSIONAL_ESPECIALIDADE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[PROFISSIONAL_HORARIO_DISPONIVEL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[SINTOMA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[SINTOMA_ATENDIMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[TIPO_ATENDIMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[TIPO_PROFISSIONAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[App].[TURNO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUserRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AspNetUsers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TIPO_CONTRATACAO]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "EC2AMAZ-ALNI2KV.RIAT_Production",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

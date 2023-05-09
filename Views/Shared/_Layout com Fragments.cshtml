@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="~/assets/images/2021-01-17-14.41.12.jpg" type="image/x-icon">
+    <meta name="description" content="">
+
+    <title>@ViewData["Title"] - RISM</title>
+    <link rel="stylesheet" href="~/assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="~/assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="~/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="~/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="~/assets/theme/css/style.css">
+    <link rel="preload" as="style" href="~/assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="~/assets/mobirise/css/mbr-additional.css" type="text/css">
+    @inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+</head>
+<body>
+    <section class="menu cid-smnbhWOrrR" once="menu" id="menu2-0">
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="~/images/logo_riat_contra_covid.jpg" alt="RIAT" title="" style="height: 3.8rem;">
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="#top">@Localizer["Home"]</a>
+                    </li>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @if (User.IsInRole("Administradores"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">@Localizer["Administration"]</a>
+                                <div class="dropdown-menu">
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Profissionals" asp-action="Index">@Localizer["Professionals"]</a>
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Doencas" asp-action="Index">@Localizer["Diseases"]</a>
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Sintomas" asp-action="Index">@Localizer["Symptoms"]</a>
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="AlternativaAdls" asp-action="Index">@Localizer["ADLAlternatives"]</a>
+                                </div>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Profissionais") || User.IsInRole("Administradores") || User.IsInRole("Pacientes"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">@Localizer["Appointments"]</a>
+                                <div class="dropdown-menu">
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Atendimentoes" asp-action="Index">@Localizer["Appointments"]</a>
+                                </div>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">@Localizer["Patients"]</a>
+                                <div class="dropdown-menu">
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Pacientes" asp-action="Index" asp-route-returnUrl="form1-8">@Localizer["Patients"]</a>
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="DoencaPacientes" asp-action="Index" asp-route-returnUrl="form1-8">@Localizer["PatientsDiseases"]</a>
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="SintomaAtendimentoes" asp-action="Index">@Localizer["SymptomsOfAppointments"]</a>
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="AlternativaAtendimentoes" asp-action="Index">@Localizer["ADLAlternativesOfAppointments"]</a>
+                                    <a class="text-black dropdown-item display-4" asp-area="" asp-controller="Video" asp-action="Index">@Localizer["VideoConference"]</a>
+                                </div>
+                            </li>
+                        }
+                    }
+
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" asp-area="" asp-controller="Home" asp-action="Privacy" asp-route-returnUrl="form1-8">@Localizer["Privacy"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" asp-area="" asp-controller="Home" asp-action="About" asp-route-returnUrl="form1-8">@Localizer["About"]</a>
+                    </li>
+                    <partial name="_LoginPartial" />
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" asp-route-culture="pt-BR" asp-controller="Home" asp-action="SetLanguage">
+                            <img src="~/images/bandeira-do-brasil.png" width="25" height="16" alt=@Localizer["Portuguese"] title=@Localizer["Portuguese"] />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" asp-route-culture="es-AR" asp-controller="Home" asp-action="SetLanguage">
+                            <img src="~/images/bandeira-argentina.png" width="25" height="16" alt=@Localizer["Portuguese"] title=@Localizer["Portuguese"] />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" asp-route-culture="en-US" asp-controller="Home" asp-action="SetLanguage">
+                            <img src="~/images/bandeira-dos-estados-unidos-eua.png" width="25" height="16" alt=@Localizer["English"] title=@Localizer["English"] />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- #region Sections -->
+    @*<section class="cid-smngZG3MCW mbr-fullscreen mbr-parallax-background" id="header2-6">
+            <div class="container align-center">
+                <div class="row justify-content-md-center">
+                    <div class="mbr-white col-md-10">
+                        <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
+                            RIAT contra a Covid-19 (RISM)
+                        </h1>
+                        <p class="mbr-text pb-3 mbr-fonts-style display-5">
+                            A pandemia do coronav&iacute;rus tamb&eacute;m traz consigo uma epidemia em sa&uacute;de mental.&nbsp;
+                            Como uma empresa de sa&uacute;de mental que nasceu na Argentina e tamb&eacute;m atua no Brasil, com seus fundadores de Manaus, a RIAT &eacute; inquieta e sempre se questiona sobre o que pode fazer al&eacute;m dos servi&ccedil;os usuais para contribuir com a comunidade.
+                            Pensando nisso, criamos um plant&atilde;o de assist&ecirc;ncia psicol&oacute;gica com uma equipe de profissionais em sa&uacute;de mental 24hrs/dia, para receber por meio de chamadas, mensagens, &aacute;udios ou outras formas de contato casos de pessoas que precisam deste atendimento e suporte.
+                            Atrav&eacute;s deste app realizamos uma triagem e definimos o tipo de atendimento necess&aacute;rio, priorizando de imediato a conten&ccedil;&atilde;o emocional e as informa&ccedil;&otilde;es relevantes para cada usu&aacute;rio. A partir disso identificamos o tipo de profissional especializado que ir&aacute; atender essa pessoa de forma virtual com agendamento pr&eacute;vio.
+                            A RIAT identificou cada usu&aacute;rio dessa solu&ccedil;&atilde;o para mostrar como pode ajud&aacute;-los:
+                            <br /><strong>Pessoas em grupo de risco</strong>: com informa&ccedil;&otilde;es validadas, auxiliamos a implementarem medidas de prote&ccedil;&atilde;o e conscientiza&ccedil;&atilde;o sobre a import&acirc;ncia de adot&aacute;-las. Seremos apoio emocional nos momentos de isolamento, de ang&uacute;stia pela sua sa&uacute;de e de seus familiares, dando suporte emocional nos processos de luto.
+                            <br /><strong>Profissionais da Sa&uacute;de</strong>: ajudaremos a conscientizar da necessidade de tratarem-se por <em>burnout</em>, auxiliando a identificar e combater os primeiros indicadores de estresse, a tolerar a press&atilde;o &agrave; qual est&atilde;o submetidos no ambiente de trabalho e a administrar a ang&uacute;stia com o estado de sa&uacute;de de seus familiares tamb&eacute;m.
+                            <br /><strong>Assintom&aacute;ticos</strong>: promoveremos conscientiza&ccedil;&atilde;o da necessidade de proteger-se, ainda que n&atilde;o apresentem sintomas, damos apoio emocional aos riscos psicol&oacute;gicos do isolamento e, em casos necess&aacute;rios, ajudaremos na elabora&ccedil;&atilde;o de seus lutos.
+                            Ademais do trabalho de sa&uacute;de, o suporte psicol&oacute;gico tamb&eacute;m tem um vi&eacute;s social e econ&ocirc;mico na gera&ccedil;&atilde;o e manuten&ccedil;&atilde;o de empregos, pagamento de impostos e aux&iacute;lio aos setores que est&atilde;o desamparados no momento de crise atual que vivemos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mbr-section content4 cid-smndXzK9QG" id="content4-4">
+            <div class="container">
+                <div class="media-container-row">
+                    <div class="title col-12 col-md-8">
+                        <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                            @ViewData["Title"]
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="media-container-row">
+                    <div style="text-align:justify;">
+                        <div>
+                            <strong>
+                                <br>
+                            </strong>
+                        </div>
+                        <div>
+                            <strong>
+                                <p><strong>TERMOS DE USO PROFISSIONAL</strong></p>
+                                <p>A RIAT SERVI&Ccedil;OS DE SA&Uacute;DE LTDA. &ndash; &eacute; uma empresa de intermedia&ccedil;&atilde;o e agenciamento de servi&ccedil;os de psicologia e psican&aacute;lise, inscrita no CNPJ sob o n&ordm; 09.253.654/0001-00, com sede em Manaus/AM, na Av. S&atilde;o Jorge, n&ordm; 2.960, sala 202, Bairro S&atilde;o Jorge, CEP 69.030-680.</p>
+                                <p>A RIAT tem o prop&oacute;sito de oferecer uma plataforma totalmente digital para centraliza&ccedil;&atilde;o de informa&ccedil;&otilde;es e consultas, de modo que os profissionais possam atender aos seus pacientes de forma <em>online</em>, bem como ter acesso ao hist&oacute;rico de informa&ccedil;&otilde;es de cada paciente consultado para manter um atendimento humanizado e personalizado, otimizando o atendimento psicol&oacute;gico e tornando a sa&uacute;de mental mais acess&iacute;vel.</p>
+                                <p>&nbsp;</p>
+                                <ol>
+                                    <li><strong> Defini&ccedil;&otilde;es</strong></li>
+                                </ol>
+                                <p>Ao ler o nosso Termo de Uso Profissional, entenda o significado das palavras/express&otilde;es conforme indica&ccedil;&atilde;o:</p>
+                                <table style="border-style: solid;border-color:black; border-width:1px; width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong>Conte&uacute;do</strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>Toda e qualquer informa&ccedil;&atilde;o contida no <em>website</em> ou aplicativo, independente do formato (texto, &aacute;udio, v&iacute;deo, imagem, dados, etc.).</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong>Prestador de Servi&ccedil;o</strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>Pessoas f&iacute;sicas, habilitados como psic&oacute;logos interessados em prestar os servi&ccedil;os na plataforma desenvolvida pela RIAT.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong>Usu&aacute;rios</strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>Pessoas f&iacute;sicas, pacientes, interessadas em usufruir os servi&ccedil;os na plataforma desenvolvida pela RIAT.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong>Pol&iacute;tica de Privacidade</strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>Regras sobre a utiliza&ccedil;&atilde;o pela RIAT dos dados pessoais inseridos na plataforma pelo prestador de servi&ccedil;o.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong>Tratamento de Dados</strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>Opera&ccedil;&atilde;o de coleta, produ&ccedil;&atilde;o, recep&ccedil;&atilde;o, classifica&ccedil;&atilde;o, utiliza&ccedil;&atilde;o, acesso, reprodu&ccedil;&atilde;o, transmiss&atilde;o, distribui&ccedil;&atilde;o, processamento, arquivamento, armazenamento, elimina&ccedil;&atilde;o, avalia&ccedil;&atilde;o ou controle da informa&ccedil;&atilde;o, modifica&ccedil;&atilde;o, comunica&ccedil;&atilde;o, transfer&ecirc;ncia, difus&atilde;o ou extra&ccedil;&atilde;o de dados.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong>ANPD/LGPD</strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>Ag&ecirc;ncia Nacional de Prote&ccedil;&atilde;o de Dados, autoridade prevista na LGPD &ndash; Lei Geral de Prote&ccedil;&atilde;o de Dados, n&ordm; 13.709/2018.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong>Formul&aacute;rios</strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>Formul&aacute;rios de pesquisa disponibilizados no <em>website</em>, utilizados pelos prestadores de servi&ccedil;os para cadastrar seus dados, coletados utiliza&ccedil;&atilde;o exclusiva na plataforma desenvolvida pela RIAT.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong><em>Website</em></strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>P&aacute;gina institucional na internet de titularidade da RIAT</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p><strong>Aplicativo (<em>App</em>)</strong></p>
+                                            </td>
+                                            <td style="border-style: solid;border-color:black; border-width:1px">
+                                                <p>Aplicativo de titularidade da RIAT</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p><strong>&nbsp;</strong></p>
+                                <ol start="2">
+                                    <li><strong> Aceite dos Termos de Uso</strong></li>
+                                </ol>
+                                <p>2.1. O Prestador de Servi&ccedil;o que acessar o <em>website</em> ou aplicativo da RIAT ou seu conte&uacute;do, bem como preencher os formul&aacute;rios para coleta de dados e utilizar os servi&ccedil;os neles oferecidos est&aacute; concordando expressamente, de forma livre, informada e sem reservas, com as condi&ccedil;&otilde;es estipuladas neste Termo e com suas cl&aacute;usulas, manifestando seu consentimento inclusive sobre os tratamentos de dados tamb&eacute;m especificados neste Termo.</p>
+                                <p>2.2. A RIAT reserva o direito de realizar altera&ccedil;&otilde;es e atualiza&ccedil;&otilde;es nos Termos, a qualquer momento, sem a necessidade de aviso pr&eacute;vio. Em caso de altera&ccedil;&otilde;es dos Termos que restrinjam direitos do Prestador de Servi&ccedil;o, a RIAT poder&aacute; comunicar tal altera&ccedil;&atilde;o, ao seu crit&eacute;rio, atrav&eacute;s dos Meios de Comunica&ccedil;&atilde;o. Todavia, esta liberalidade n&atilde;o afasta a responsabilidade do Prestador de Servi&ccedil;o de verificar periodicamente os Termos.</p>
+                                <p>2.3. Caso o Prestador de Servi&ccedil;o continue acessando o <em>App</em> ou <em>Website</em> atrav&eacute;s de aparelho telef&ocirc;nico ou computador ap&oacute;s eventuais altera&ccedil;&otilde;es dos Termos por parte da RIAT, tal ato constituir&aacute; no seu consentimento em vincular-se aos Termos alterados.</p>
+                                <p>2.4. A qualquer tempo, o Prestador de Servi&ccedil;o que n&atilde;o concordar com os Termos, dever&aacute; comunicar ao suporte da RIAT o seu pedido de desligamento, com intuito de que sejam adotadas as medidas necess&aacute;rias para o reencaminhamento dos pacientes atendidos por ele. Ap&oacute;s a confirma&ccedil;&atilde;o do reencaminhamento, o Prestador de Servi&ccedil;o ter&aacute; seu cadastro e acesso exclu&iacute;dos da plataforma.</p>
+                                <ol start="3">
+                                    <li><strong> Pol&iacute;tica de Privacidade e Tratamento de Dados</strong></li>
+                                </ol>
+                                <p>3.1. A Lei n&ordm; 12.965/2014 traz a necessidade de ser estabelecida uma pol&iacute;tica de privacidade quanto ao uso da internet, sendo um direito de todos os envolvidos.</p>
+                                <p>3.2. Ao utilizar o <em>website</em> ou <em>App</em> da RIAT, o Prestador de Servi&ccedil;o fica ciente de que o tratamento de dados e seu armazenamento perdurar&atilde;o enquanto durar o cadastramento e a presta&ccedil;&atilde;o de servi&ccedil;os na plataforma e ter&atilde;o a finalidade de facilitar o fornecimento do servi&ccedil;o, gerar estudos de mercado e estudos na &aacute;rea da psicologia, bem como promover divulga&ccedil;&atilde;o de marketing da RIAT.</p>
+                                <p>3.3. A RIAT atende &agrave; legisla&ccedil;&atilde;o p&aacute;tria sobre tratamento de dados, especificamente a Lei n&ordm; 13.709/2018 (LGPD) e a Lei n&ordm; 12.965/2014, garantindo a seguran&ccedil;a na utiliza&ccedil;&atilde;o dos dados cadastrados de todos os seus clientes, prestadores de servi&ccedil;os e demais pessoas envolvidas na plataforma. Tamb&eacute;m se atenta para a seguran&ccedil;a e prote&ccedil;&atilde;o na utiliza&ccedil;&atilde;o de dados efetuada pelos seus parceiros e utiliza m&eacute;todos para garantir o anonimato dos dados coletados.</p>
+                                <p>3.4. Ao aceitar os Termos de Uso e acessar a plataforma, o Prestador de Servi&ccedil;o adere &agrave;s regras da plataforma, ficando ciente de que os dados coletados e produzidos a partir do atendimento prestado ser&atilde;o utilizados pela RIAT de acordo com a estrita finalidade do neg&oacute;cio.</p>
+                                <p>3.5. Com a ades&atilde;o aos Termos, a RIAT poder&aacute; compartilhar os dados de forma <em>online</em> ou <em>off-line</em> entre os envolvidos na presta&ccedil;&atilde;o de servi&ccedil;os e gest&atilde;o da plataforma, atrav&eacute;s de relat&oacute;rios sist&ecirc;micos ou registros previamente arquivados, respeitando a sua finalidade no uso desses registros, bem como se compromete a n&atilde;o compartilhar com terceiros sem envolvimento na plataforma os dados sigilosos do Prestador de Servi&ccedil;o, salvo por determina&ccedil;&atilde;o judicial, for&ccedil;a de lei ou outra demanda espec&iacute;fica em car&aacute;ter de exce&ccedil;&atilde;o.</p>
+                                <p>3.6. Os envolvidos na presta&ccedil;&atilde;o de servi&ccedil;os pela plataforma da RIAT, colaboradores ou terceirizados, firmam termos de confidencialidade com a obriga&ccedil;&atilde;o de manter absoluto sigilo sobre todas as informa&ccedil;&otilde;es referentes &agrave; RIAT, ao Prestador de Servi&ccedil;o ou ao pr&oacute;prio servi&ccedil;o prestado e de abster-se de qualquer uso indevido, a seu pr&oacute;prio benef&iacute;cio ou de terceiros.</p>
+                                <p>3.7. Qualquer viola&ccedil;&atilde;o aos termos de confidencialidade ter&aacute; encaminhamento conforme legisla&ccedil;&atilde;o brasileira.</p>
+                                <p>3.8. O Usu&aacute;rio poder&aacute; requerer o cancelamento do compartilhamento de dados de sua titularidade, a qualquer tempo, entrando em contato com os canais de atendimento da RIAT. N&atilde;o havendo qualquer pedido de exclus&atilde;o, o Prestador de Servi&ccedil;o fica ciente de que os dados seguir&atilde;o armazenados enquanto forem necess&aacute;rios para a presta&ccedil;&atilde;o do servi&ccedil;o, de acordo com a finalidade da RIAT, e para an&aacute;lise estat&iacute;stica. Com a exclus&atilde;o, o Prestador de Servi&ccedil;o fica ciente de que poder&aacute; inviabilizar o servi&ccedil;o prestado pela plataforma.</p>
+                                <p>3.9. A RIAT poder&aacute; manter servidor em ambiente exterior ao Brasil, devidamente protegido e mantendo-se a seguran&ccedil;a dos dados compartilhados na plataforma, ficando o Prestador de Servi&ccedil;o ciente e de acordo de que pode ocorrer a transfer&ecirc;ncia internacional de seus dados.</p>
+                                <p>3.10. A RIAT &eacute; respons&aacute;vel por escolher empresas prestadoras de servi&ccedil;o que prezem pelas medidas de seguran&ccedil;a, t&eacute;cnicas e administrativas h&aacute;beis para a prote&ccedil;&atilde;o de dados, mas se exime da responsabilidade em caso de atentado <em>hacker</em> ou outra falha tecnol&oacute;gica que possa viabilizar acessos n&atilde;o autorizados ou situa&ccedil;&atilde;o acidental ou il&iacute;cita de perda, altera&ccedil;&atilde;o, destrui&ccedil;&atilde;o, comunica&ccedil;&atilde;o ou outro tratamento indevido do uso de dados, comprometendo-se a comunicar &agrave; ANPD qualquer ocorr&ecirc;ncia de incidentes desta ordem que possa causar riscos ao usu&aacute;rio.</p>
+                                <ol start="4">
+                                    <li><strong> Cadastro</strong></li>
+                                </ol>
+                                <p>4.1. Para utiliza&ccedil;&atilde;o do servi&ccedil;o, o Prestador de Servi&ccedil;o dever&aacute; registrar-se e manter uma conta pessoal na plataforma, a qual informar&aacute; seus dados pessoais e banc&aacute;rios em formul&aacute;rios disponibilizados no <em>App </em>ou <em>Website</em>.</p>
+                                <p>4.2. O Prestador de Servi&ccedil;o dever&aacute; ter capacidade civil, possuir diploma de bacharel em Psicologia expedido por institui&ccedil;&atilde;o de ensino superior devidamente reconhecida pela autoridade educacional do Pa&iacute;s e estar regularmente inscrito no Conselho Regional de Psicologia de sua Unidade Federativa ou, se estrangeiro, em &oacute;rg&atilde;o equivalente com valida&ccedil;&atilde;o no Brasil.</p>
+                                <p>4.3. Ap&oacute;s receber a documenta&ccedil;&atilde;o, a RIAT efetuar&aacute; uma an&aacute;lise desta e poder&aacute; aceitar ou recusar a solicita&ccedil;&atilde;o de cadastro do Prestador de Servi&ccedil;o. A RIAT tamb&eacute;m poder&aacute; realizar a checagem de antecedentes criminais e quaisquer outras verifica&ccedil;&otilde;es que considerar oportunas ou que sejam exigidas pela legisla&ccedil;&atilde;o aplic&aacute;vel.</p>
+                                <p>4.4. O perfil do Prestador de Servi&ccedil;o &eacute; exclusivo e intransfer&iacute;vel, estando o mesmo comprometido, mediante aceita&ccedil;&atilde;o dos Termos, a n&atilde;o compartilhar sua conta com terceiros, sendo vedada a transfer&ecirc;ncia de seus dados de acesso, sob pena de cancelamento imediato da conta de Prestador de Servi&ccedil;o, al&eacute;m de encaminhamento do caso &agrave;s autoridades p&uacute;blicas para an&aacute;lise de eventuais penalidades criminais e civis aplic&aacute;veis.</p>
+                                <p>4.5. A RIAT se reserva o direito de solicitar documentos adicionais para confirma&ccedil;&atilde;o de cadastros, bem como outros m&eacute;todos de identifica&ccedil;&atilde;o e autentica&ccedil;&atilde;o do Prestador de Servi&ccedil;o (como, por exemplo, reconhecimento facial), por ocasi&atilde;o do cadastro e enquanto utilizar e prestar os servi&ccedil;os a qualquer tempo. Mesmo ap&oacute;s a confirma&ccedil;&atilde;o do cadastro, &eacute; poss&iacute;vel o cancelamento da conta caso sejam verificadas incongru&ecirc;ncias no processo de verifica&ccedil;&atilde;o, a exclusivo crit&eacute;rio da RIAT.</p>
+                                <p>4.6. As informa&ccedil;&otilde;es da conta s&atilde;o de exclusiva responsabilidade de quem as inseriu. Em caso de acarretarem danos ou preju&iacute;zos de qualquer esp&eacute;cie, as medidas cab&iacute;veis podem ser tomadas a fim de resguardar seus interesses e integridade de pacientes, outros Usu&aacute;rios e Prestadores de Servi&ccedil;o, al&eacute;m da pr&oacute;pria RIAT.</p>
+                                <p>4.7. Sob as penas da lei, o Prestador de Servi&ccedil;o compromete-se e declara estar ciente de que a utiliza&ccedil;&atilde;o de sua conta no <em>App</em> e <em>Website</em> consistir&aacute; apenas para os fins estritamente legais, leg&iacute;timos e permitidos nestes Termos de Uso.</p>
+                                <ol start="5">
+                                    <li><strong> Servi&ccedil;os</strong></li>
+                                </ol>
+                                <p>5.1. Os Servi&ccedil;os consistem na centraliza&ccedil;&atilde;o de informa&ccedil;&otilde;es e consultas dos Usu&aacute;rios, de modo que os Prestadores de Servi&ccedil;o possam atender aos seus pacientes de forma <em>online </em>e remunerada, bem como ter acesso ao hist&oacute;rico de informa&ccedil;&otilde;es de cada paciente consultado para manter um atendimento humanizado e personalizado, otimizando o atendimento psicol&oacute;gico e tornando a sa&uacute;de mental mais acess&iacute;vel.</p>
+                                <p>5.2. O Prestador de Servi&ccedil;o conceder&aacute; &agrave; RIAT as autoriza&ccedil;&otilde;es necess&aacute;rias para correta execu&ccedil;&atilde;o do servi&ccedil;o, nomeando-a sua representante para que, em seu nome, realize a cobran&ccedil;a de cr&eacute;ditos, providencie o pagamento, compensa&ccedil;&atilde;o e reconhecimento de d&iacute;vidas, d&ecirc; e demande quita&ccedil;&atilde;o, promova a liquida&ccedil;&atilde;o de haveres e, sobretudo, atue no melhor interesse do representado.</p>
+                                <p>5.3. A RIAT conceder&aacute; ao Prestador de Servi&ccedil;o uma licen&ccedil;a limitada, pessoal, n&atilde;o exclusiva, intransfer&iacute;vel, n&atilde;o comercial e plenamente revog&aacute;vel, para que seja utilizado o <em>App</em> ou <em>Website</em> em seu aparelho telef&ocirc;nico, <em>Tablet</em> ou computador, em conformidade com as condi&ccedil;&otilde;es estabelecidas nestes Termos de Uso.</p>
+                                <p>5.4. Atrav&eacute;s o <em>App</em> ou <em>Website</em>, o Usu&aacute;rio poder&aacute; agendar e realizar consultas psicol&oacute;gicas e/ou terapias com o Prestador de Servi&ccedil;o de sua escolha e nos hor&aacute;rios disponibilizados pelo Prestador.</p>
+                                <p>5.5. Ficar&aacute; a crit&eacute;rio do Prestador de Servi&ccedil;o o estabelecimento de multa ao paciente que n&atilde;o comparecer na sess&atilde;o agendada.</p>
+                                <p>5.6. Os servi&ccedil;os intermediados atrav&eacute;s do <em>App </em>e <em>Website</em> n&atilde;o poder&atilde;o ser desvirtuados, devendo as sess&otilde;es estar adstritas &agrave; finalidade do neg&oacute;cio e aos Termos de Uso.</p>
+                                <p>5.7. Caso o Prestador de Servi&ccedil;o identifique algum caso cl&iacute;nico de alta complexidade poder&aacute; requerer ao corpo t&eacute;cnico da RIAT uma Supervis&atilde;o para auxili&aacute;-lo no atendimento do paciente e do caso cl&iacute;nico relatado. A Supervis&atilde;o tem por objetivo garantir um tratamento humanizado e eficiente ao paciente e dar suporte ao Prestador de Servi&ccedil;o em tomadas de decis&atilde;o.</p>
+                                <p>5.8. Para os casos em que se fa&ccedil;a necess&aacute;ria a interven&ccedil;&atilde;o de outras especialidades m&eacute;dicas &eacute; livre ao Prestador de Servi&ccedil;o indicar profissional de sua confian&ccedil;a, desde que reporte a informa&ccedil;&atilde;o ao corpo t&eacute;cnico da RIAT para fins de avalia&ccedil;&atilde;o, registro e conhecimento.</p>
+                                <p>5.9.A RIAT reserva a si todos os direitos do <em>App </em>e <em>Website</em> n&atilde;o expressamente concedidos aqui.</p>
+                                <ol start="6">
+                                    <li><strong> Das Obriga&ccedil;&otilde;es do Prestador de Servi&ccedil;o</strong></li>
+                                </ol>
+                                <p>6.1. O Prestador de Servi&ccedil;o deve respeitar todas as regras contidas nestes Termos de Uso e de toda legisla&ccedil;&atilde;o, regulamentos e c&oacute;digos aplic&aacute;veis ao exerc&iacute;cio de sua profiss&atilde;o.</p>
+                                <p>6.2. Mediante aceita&ccedil;&atilde;o dos Termos de Uso, o Prestador de Servi&ccedil;o compromete-se a:</p>
+                                <ol>
+                                    <li>a) Responsabilizar-se integralmente pelo fornecimento de dados pessoais e dados banc&aacute;rios, os quais s&atilde;o exigidos em seu cadastro, bem como tem o dever de mant&ecirc;-los atualizados;</li>
+                                    <li>b) Responsabilizar-se integralmente pela presta&ccedil;&atilde;o de servi&ccedil;o;</li>
+                                    <li>c) Agir perante os pacientes Usu&aacute;rios e &agrave; RIAT com boa-f&eacute;, dilig&ecirc;ncia, profissionalismo e respeito;</li>
+                                    <li>d) Obedecer e atender a todas as exig&ecirc;ncias legais e regulat&oacute;rias referentes ao exerc&iacute;cio da profiss&atilde;o de Psic&oacute;logo, incluindo pagamento de anuidade de seu Conselho, leis, regulamentos, c&oacute;digos de &eacute;tica e conduta, bem como &agrave;s legisla&ccedil;&otilde;es aplic&aacute;veis &agrave; <em>Internet</em>;</li>
+                                    <li>e) N&atilde;o discriminar ou selecionar, por nenhum motivo, os pacientes;</li>
+                                    <li>f) Pagar a remunera&ccedil;&atilde;o de intermedia&ccedil;&atilde;o &agrave; RIAT;</li>
+                                    <li>g) Aceitar e concordar que poder&aacute; eventualmente ser avaliado pelos pacientes Usu&aacute;rios e/ou pelo corpo t&eacute;cnico da RIAT para fins de efici&ecirc;ncia do servi&ccedil;o;</li>
+                                    <li>h) Reportar ao Corpo T&eacute;cnico da RIAT os quadros cl&iacute;nicos de pacientes que sejam considerados de alto risco para avalia&ccedil;&atilde;o, em conjunto, das interven&ccedil;&otilde;es e medidas que dever&atilde;o ser adotadas.</li>
+                                    <li><strong> Do Acesso &agrave; Rede e Equipamentos</strong></li>
+                                </ol>
+                                <p>7.1 A RIAT se compromete a adotar todos os esfor&ccedil;os poss&iacute;veis e dispon&iacute;veis para solucionar eventuais problemas que vierem a ocorrer junto ao seu <em>Website</em> e <em>App</em>, buscando retomar o seu normal funcionamento no menor tempo poss&iacute;vel.</p>
+                                <p>7.2. A RIAT n&atilde;o pode garantir o funcionamento integral e ininterrupto do <em>Website </em>ou <em>App</em><em>,</em> ou ainda a inexist&ecirc;ncia de erros. Eventualmente, o <em>Website</em>&nbsp; e o <em>App </em>poder&atilde;o estar indispon&iacute;veis por motivos t&eacute;cnicos ou falhas da <em>I</em><em>nternet</em>, ou por motivo de evento fortuito ou de for&ccedil;a maior, alheio ao controle da RIAT, n&atilde;o podendo ser responsabilizada por quaisquer danos que ocorrerem em raz&atilde;o disto.</p>
+                                <p>7.3. Em observ&acirc;ncia a cl&aacute;usula 7.1., al&eacute;m de manter o bom funcionamento do <em>App</em> e <em>Website </em>na maior medida poss&iacute;vel, a RIAT dever&aacute; disponibilizar canais de atendimento para ajudar a solucionar d&uacute;vidas e problemas do Prestador de Servi&ccedil;o com a plataforma de atendimento <em>online</em>.</p>
+                                <p>7.4. O Prestador de Servi&ccedil;o entende e concorda que a utiliza&ccedil;&atilde;o do Servi&ccedil;o demanda a aquisi&ccedil;&atilde;o de dispositivos de telefonia m&oacute;vel, <em>Tablets </em>ou computadores e a contrata&ccedil;&atilde;o de servi&ccedil;os de telecomunica&ccedil;&atilde;o compat&iacute;veis com o uso do <em>App</em> ou <em>Website</em>, e que a utiliza&ccedil;&atilde;o do Servi&ccedil;o poder&aacute; gerar cobran&ccedil;as por parte de tais empresas de telecomunica&ccedil;&atilde;o para conex&atilde;o com a <em>Internet</em>, por exemplo. Esses produtos e servi&ccedil;os n&atilde;o s&atilde;o disponibilizados pela RIAT, conforme cl&aacute;usula 7.5.</p>
+                                <p>7.5. O Prestador de Servi&ccedil;o &eacute; o respons&aacute;vel exclusivo por contratar e arcar com todo e qualquer custo e &ocirc;nus relacionados &agrave; aquisi&ccedil;&atilde;o de seus dispositivos de acesso ao <em>App</em> ou ao <em>Website</em> e a contrata&ccedil;&atilde;o de seu servi&ccedil;o de telecomunica&ccedil;&atilde;o.</p>
+                                <p>7.6. A RIAT n&atilde;o &eacute; respons&aacute;vel pela disponibilidade, qualidade e manuten&ccedil;&atilde;o de tais servi&ccedil;os de telecomunica&ccedil;&atilde;o e o Prestador de Servi&ccedil;o entende que as condi&ccedil;&otilde;es do servi&ccedil;o de telecomunica&ccedil;&otilde;es poder&atilde;o afetar a experi&ecirc;ncia da plataforma.</p>
+                                <p>7.7. A RIAT n&atilde;o ser&aacute; responsabilizada por qualquer problema relacionado direta ou indiretamente &agrave;s inconsist&ecirc;ncias ou falhas nos dispositivos de telefonia m&oacute;vel, <em>Tablets</em> ou computadores e/ou nos servi&ccedil;os de telecomunica&ccedil;&atilde;o.</p>
+                                <ol start="8">
+                                    <li><strong> Dos Pagamentos ao Prestador de Servi&ccedil;o N&atilde;o Vinculado a Planos de Assist&ecirc;ncia em Sa&uacute;de</strong></li>
+                                </ol>
+                                <p>8.1. A remunera&ccedil;&atilde;o do Prestador de Servi&ccedil;o que n&atilde;o estiver vinculado a planos de assist&ecirc;ncia em sa&uacute;de se dar&aacute; por consulta realizada e ter&aacute; como base a Tabela de Honor&aacute;rios estabelecida pelo Conselho Federal de Psicologia do Brasil.</p>
+                                <p>8.2. A RIAT efetuar&aacute; a cobran&ccedil;a dos valores devidos pelos Usu&aacute;rios. Os valores se constituem como Remunera&ccedil;&atilde;o pela Intermedia&ccedil;&atilde;o pelo Prestador de Servi&ccedil;o, na forma descrita 8.1.</p>
+                                <p>8.3. Ap&oacute;s a Administradora de Cart&atilde;o de Cr&eacute;dito efetuar &agrave; RIAT o pagamento da consulta realizada pelo Usu&aacute;rio, estipula-se o prazo de 72 (setenta duas) horas para o pagamento dos honor&aacute;rios devidos ao Prestador de Servi&ccedil;o.</p>
+                                <p>8.4. O pagamento referido na Cl&aacute;usula 8.3 se dar&aacute; conforme os dados banc&aacute;rios cadastrados pelo Prestador de Servi&ccedil;o na plataforma.</p>
+                                <p>8.5. A t&iacute;tulo de remunera&ccedil;&atilde;o em raz&atilde;o da intermedia&ccedil;&atilde;o da presta&ccedil;&atilde;o de servi&ccedil;o, a RIAT cobrar&aacute; o percentual de 30% (trinta por cento) sobre o valor dos honor&aacute;rios recebidos pelo Prestador de Servi&ccedil;o.</p>
+                                <p>8.5.1 O valor de remunera&ccedil;&atilde;o da RIAT, no percentual de 30% (trinta por cento) ser&aacute; descontado quando ocorrer o pagamento pelo Usu&aacute;rio, ou seja, antes do pagamento ao Prestador de Servi&ccedil;o.</p>
+                                <p>8.6. Junto ao comprovante de pagamento descrito na Cl&aacute;usula 8.3, a RIAT encaminhar&aacute; Relat&oacute;rio de Servi&ccedil;o e Fatura para o <em>e-mail </em>do Prestador.</p>
+                                <p>8.7. A RIAT n&atilde;o ser&aacute; responsabilizada pela falta ou atraso do repasse em virtude de:</p>
+                                <ol>
+                                    <li>a) Quaisquer problemas existentes na conta banc&aacute;ria informada pelo Prestador de Servi&ccedil;o;</li>
+                                    <li>b) Inconsist&ecirc;ncia de dados informados pelo Prestador de Servi&ccedil;o;</li>
+                                    <li>c) Falhas no sistema de pagamento eletr&ocirc;nico disponibilizado por terceiros ou pelas Empresas Parceiras;</li>
+                                    <li>d) Caso fortuito ou for&ccedil;a maior;</li>
+                                    <li>e) Quaisquer problemas decorrentes de a&ccedil;&atilde;o ou omiss&atilde;o do Prestador de Servi&ccedil;o, incluindo, mas n&atilde;o somente, as hip&oacute;teses de diverg&ecirc;ncia entre o valor cobrado pelo servi&ccedil;o e a consulta efetivamente realizada e;</li>
+                                    <li>f) Necessidade de an&aacute;lise do pagamento por prazo razo&aacute;vel por qualquer raz&atilde;o, incluindo ind&iacute;cio de conduta fraudulenta.</li>
+                                    <li><strong> Dos Pagamentos ao Prestador de Servi&ccedil;o Vinculado a Planos de Assist&ecirc;ncia em Sa&uacute;de</strong></li>
+                                </ol>
+                                <p>9.1. A remunera&ccedil;&atilde;o do Prestador de Servi&ccedil;o vinculado a planos de assist&ecirc;ncia em sa&uacute;de se dar&aacute; por consulta realizada e ter&aacute; como base de sua remunera&ccedil;&atilde;o os valores dispostos em contrato firmado entre os planos e a RIAT.</p>
+                                <p><strong>9.2 O Prestador de Servi&ccedil;o poder&aacute; acessar a qualquer momento, mediante requerimento, a cl&aacute;usula do contrato que informa os valores praticados por consulta, restando as demais cl&aacute;usulas sob sigilo.</strong></p>
+                                <p>9.3. A RIAT efetuar&aacute; a cobran&ccedil;a dos valores devidos pelos Usu&aacute;rios, os quais se constituem como Remunera&ccedil;&atilde;o pela Intermedia&ccedil;&atilde;o pelo Prestador de Servi&ccedil;o, na forma descrita 9.1.</p>
+                                <p>9.4. Ap&oacute;s a operadora do plano de assist&ecirc;ncia em sa&uacute;de efetuar &agrave; RIAT o pagamento da consulta realizada pelo Usu&aacute;rio, estipula-se o prazo de 72 (setenta duas) horas para o pagamento dos honor&aacute;rios devidos ao Prestador de Servi&ccedil;o.</p>
+                                <p>9.5. O pagamento referido na Cl&aacute;usula 9.4 se dar&aacute; conforme os dados banc&aacute;rios cadastrados pelo Prestador de Servi&ccedil;o na plataforma.</p>
+                                <p>9.6. A t&iacute;tulo de remunera&ccedil;&atilde;o em raz&atilde;o da intermedia&ccedil;&atilde;o da presta&ccedil;&atilde;o de servi&ccedil;o, a RIAT cobrar&aacute; o percentual de 30% (trinta por cento) sobre o valor dos honor&aacute;rios recebidos pelo Prestador de Servi&ccedil;o.</p>
+                                <p>9.6.1 O valor de remunera&ccedil;&atilde;o da RIAT, no percentual de 30% (trinta por cento) ser&aacute; descontado quando ocorrer o pagamento pelo plano de assist&ecirc;ncia em sa&uacute;de, ou seja, antes do pagamento ao Prestador de Servi&ccedil;o.</p>
+                                <p>9.7. Junto ao comprovante de pagamento descrito na Cl&aacute;usula 9.4, a RIAT encaminhar&aacute; Relat&oacute;rio de Servi&ccedil;o e Fatura ao <em>e-mail </em>do Prestador.</p>
+                                <p>9.8. A RIAT n&atilde;o ser&aacute; responsabilizada pela falta ou atraso do repasse em virtude de:</p>
+                                <ol>
+                                    <li>a) Quaisquer problemas existentes na conta banc&aacute;ria informada pelo Prestador de Servi&ccedil;o;</li>
+                                    <li>b) Inconsist&ecirc;ncia de dados informados pelo Prestador de Servi&ccedil;o;</li>
+                                    <li>c) Falhas no sistema de pagamento eletr&ocirc;nico disponibilizado por terceiros ou pelas Empresas Parceiras;</li>
+                                    <li>d) Caso fortuito ou for&ccedil;a maior;</li>
+                                    <li>e) Quaisquer problemas decorrentes de a&ccedil;&atilde;o ou omiss&atilde;o do Prestador de Servi&ccedil;o, incluindo, mas n&atilde;o somente, as hip&oacute;teses de diverg&ecirc;ncia entre o valor cobrado pelo servi&ccedil;o e a consulta efetivamente realizada e;</li>
+                                    <li>f) Necessidade de an&aacute;lise do pagamento por prazo razo&aacute;vel por qualquer raz&atilde;o, incluindo ind&iacute;cio de conduta fraudulenta.</li>
+                                    <li><strong> Da Responsabilidade pelos Servi&ccedil;os</strong></li>
+                                </ol>
+                                <p>10.1. A RIAT assume a responsabilidade por todos os problemas aos quais der causa injustificada.</p>
+                                <p>10.2. A contrata&ccedil;&atilde;o dos servi&ccedil;os de psicologia &eacute; feita diretamente entre paciente e Prestador de Servi&ccedil;o, n&atilde;o sendo responsabilidade da RIAT quaisquer preju&iacute;zos ou danos decorrentes da rela&ccedil;&atilde;o estabelecida entre paciente e Prestador de Servi&ccedil;o.</p>
+                                <p>10.3. O Prestador de Servi&ccedil;o compreende e concorda que a RIAT n&atilde;o ser&aacute; respons&aacute;vel por quaisquer condutas que praticar e que eventualmente causem danos ou preju&iacute;zos aos Usu&aacute;rios ou aos seus familiares.</p>
+                                <p>10.4. O Prestador de Servi&ccedil;o ser&aacute; respons&aacute;vel pelos danos e preju&iacute;zos que causar aos seus pacientes ou aos seus familiares e concorda em indeniz&aacute;-los e manter a RIAT indene em rela&ccedil;&atilde;o a quaisquer demandas, perdas ou preju&iacute;zos direta e indiretamente referentes aos atos que praticar;</p>
+                                <p>10.5. O Prestador de Servi&ccedil;o &eacute; o &uacute;nico e exclusivo respons&aacute;vel por todos e quaisquer problemas relativos ao atendimento psicol&oacute;gico prestado, bem como por quaisquer condutas indevidas ou ilegais que pratique.</p>
+                                <ol start="11">
+                                    <li><strong> Seguro</strong></li>
+                                </ol>
+                                <p>11.1. Em que pese a RIAT n&atilde;o seja respons&aacute;vel pelo atendimento psicol&oacute;gico prestado na plataforma, os Prestadores de Servi&ccedil;o ser&atilde;o beneficiados com uma Ap&oacute;lice de Seguro de Erros e Omiss&otilde;es Profissionais contratada pela RIAT, cuja cobertura &eacute; exclusiva para incidentes ocorridos nas consultas e tratamentos prestados na plataforma, englobando eventos de morte, invalidez permanente ou tempor&aacute;ria e despesas m&eacute;dicas e hospitalares, nos limites previstos na Ap&oacute;lice supracitada.</p>
+                                <ol start="12">
+                                    <li><strong> INEXIST&Ecirc;NCIA DE RELA&Ccedil;&Atilde;O DE TRABALHO, V&Iacute;NCULO DE EMPREGO E OUTROS</strong></li>
+                                </ol>
+                                <p>12.1. N&Atilde;O SE ESTABELECE OU CONSTITUI ENTRE O PRESTADOR DE SERVI&Ccedil;O E A RIAT QUALQUER V&Iacute;NCULO DE NATUREZA EMPREGAT&Iacute;CIA, SOCIET&Aacute;RIA E/OU ECON&Ocirc;MICA, SENDO CERTO QUE O PRESTADOR DE SERVI&Ccedil;O TEM A LIBERDADE PARA REALIZAR CONSULTAS QUANDO QUISER, BEM COMO PARA CESSAR A UTILIZA&Ccedil;&Atilde;O DO APLICATIVO A QUALQUER MOMENTO, OBSERVADO O DISPOSTO NA CL&Aacute;USULA 2.4. DESTE TERMO.</p>
+                                <p>12.2. EMBORA CONTE COM CORPO T&Eacute;CNICO, ESCLARECE-SE E REITERA-SE QUE FINALIDADE DO OBJETO SOCIAL DA RIAT</p>
+                                <p>&nbsp;&Eacute; INTERMEDIAR E FACILITAR A CONTRATA&Ccedil;&Atilde;O DE SERVI&Ccedil;OS DE PSICOLOGIA PARA OS USU&Aacute;RIOS CADASTRADOS NA PLATAFORMA, BEM COMO GERAR ESTUDOS NA &Aacute;REA DE PSICOLOGIA.</p>
+                                <ol start="13">
+                                    <li><strong> Da Suspeita de Fraude</strong></li>
+                                </ol>
+                                <p>13.1. A RIAT n&atilde;o se responsabiliza por qualquer conduta fraudulenta que tenha sido praticada pelo Prestador de Servi&ccedil;o, podendo, inclusive, impedir, em raz&atilde;o delas, a manuten&ccedil;&atilde;o de acesso deste no <em>App</em> e <em>Website.</em></p>
+                                <p>13.2. A t&iacute;tulo de esclarecimento, a RIAT considera como fraude a apresenta&ccedil;&atilde;o de documentos falsos, exig&ecirc;ncias de remunera&ccedil;&atilde;o extra aos Usu&aacute;rios pacientes, conluio com profissionais de outras especialidades para fins de remunera&ccedil;&atilde;o pr&oacute;pria ou de terceiros, a realiza&ccedil;&atilde;o de consultas que n&atilde;o foram requeridas pelos pacientes, bem como toda e qualquer conduta que seja lesiva ao presente Termo, &agrave; legisla&ccedil;&atilde;o, aos regulamentos e c&oacute;digos aplic&aacute;veis ao exerc&iacute;cio da profiss&atilde;o de Psic&oacute;logo.</p>
+                                <p>13.3. A RIAT analisar&aacute; caso a caso as suspeitas de fraude e poder&aacute; reter o pagamento dos honor&aacute;rios destinados ao Prestador de Servi&ccedil;o, bem como suspender o seu acesso &agrave; plataforma, de forma a evitar risco de dano para si e para o Usu&aacute;rio paciente.</p>
+                                <p>13.4. Caso se constate a conduta fraudulenta, a RIAT excluir&aacute; o acesso e o cadastro do Prestador de Servi&ccedil;o na plataforma, reportar&aacute; o caso &agrave;s autoridades competentes e promover&aacute; as medidas judiciais ou extrajudiciais cab&iacute;veis.</p>
+                                <ol start="14">
+                                    <li><strong>Propriedade Intelectual</strong></li>
+                                </ol>
+                                <p>14.1. As marcas, nomes, logotipos, nomes de dom&iacute;nio e demais sinais distintivos, bem como todo e qualquer conte&uacute;do, desenho, arte, <em>layout</em> publicado no <em>App</em> ou <em>Website</em> al&eacute;m do pr&oacute;prio servi&ccedil;o s&atilde;o de propriedade exclusiva da RIAT.</p>
+                                <p>14.2. S&atilde;o vedados quaisquer atos ou contribui&ccedil;&otilde;es tendentes &agrave; descompila&ccedil;&atilde;o, engenharia reversa, modifica&ccedil;&atilde;o de caracter&iacute;sticas, amplia&ccedil;&atilde;o, altera&ccedil;&atilde;o, mesclagem ou incorpora&ccedil;&atilde;o em quaisquer outros programas ou sistemas do <em>App</em>, <em>Website </em>ou servi&ccedil;o.</p>
+                                <p>14.3. Toda e qualquer forma de reprodu&ccedil;&atilde;o do <em>App</em>, <em>Website</em> ou servi&ccedil;o, total ou parcial, permanente, tempor&aacute;ria ou provis&oacute;ria, de forma gratuita ou onerosa, sob quaisquer modalidades, formas ou t&iacute;tulos &eacute; expressamente vedada.</p>
+                                <ol start="15">
+                                    <li><strong>Comunica&ccedil;&atilde;o</strong></li>
+                                </ol>
+                                <p>15.1. Caso o Prestador de Servi&ccedil;o se inscreva no formul&aacute;rio de <em>newsletters</em> da RIAT consente em receber <em>e-mails</em> promocionais no endere&ccedil;o eletr&ocirc;nico cadastrado. Esse envio pode ser desativado a qualquer tempo mediante requerimento.</p>
+                                <p>15.2. Ao se cadastrar na plataforma da RIAT, o Prestador de Servi&ccedil;o autoriza o contato via <em>e-mail</em>, telefone ou <em>WhatsApp,</em> quando for necess&aacute;rio, para tratar de assuntos referentes &agrave; presta&ccedil;&atilde;o de servi&ccedil;o da plataforma, bem como para comunica&ccedil;&otilde;es comerciais de recomenda&ccedil;&atilde;o de servi&ccedil;os ou novas funcionalidades do <em>Website</em> ou <em>App</em>.</p>
+                                <p>15.3. Caso o Prestador de Servi&ccedil;o n&atilde;o tenha interesse nas comunica&ccedil;&otilde;es comerciais da RIAT, poder&aacute; formalizar por <em>e-mail</em> o pedido de descadastramento.</p>
+                                <ol start="16">
+                                    <li><strong> Disposi&ccedil;&otilde;es Gerais</strong></li>
+                                </ol>
+                                <p>16.1. Estes termos constituem o acordo integral entre o Prestador de Servi&ccedil;o e a RIAT e reger&atilde;o a utiliza&ccedil;&atilde;o da plataforma, substituindo qualquer acordo anteriormente estabelecido.</p>
+                                <p>16.2. Caso a RIAT deixe de exercer ou executar qualquer direito ou dispositivo destes Termos, tal medida n&atilde;o ser&aacute; caracterizada como ren&uacute;ncia de direito ou dispositivo, tampouco constituir&aacute; nova&ccedil;&atilde;o.</p>
+                                <p>16.3. Caso qualquer dispositivo do Termo for considerado ilegal, inv&aacute;lido ou inexequ&iacute;vel, por um tribunal competente ou por qualquer legisla&ccedil;&atilde;o que venha a ser promulgada, as partes concordam que o restante do Termo n&atilde;o ser&aacute; afetado, permancendo os outros dispositivos em pleno vigor e efeito.</p>
+                                <p>16.4. Incindindo a circunst&acirc;ncia descrita na Cl&aacute;usula 15.3., as partes concordam em substituir as disposi&ccedil;&otilde;es tidas como ilegais, inv&aacute;lidas ou inexequ&iacute;veis para fins de conte&uacute;do e finalidade do presente Termo.</p>
+                                <p>16.5. A RIAT se reserva o direito de, a qualquer tempo, modificar ou descontinuar, temporariamente ou permanentemente, a presta&ccedil;&atilde;o de servi&ccedil;o ou parte dela, com ou sem notifica&ccedil;&atilde;o.</p>
+                                <p>16.6. O Prestador de Servi&ccedil;o concorda que a RIAT n&atilde;o ser&aacute; responsabilizada, nem ter&aacute; qualquer obriga&ccedil;&atilde;o adicional, impl&iacute;cita ou expl&iacute;cita, para consigo ou terceiros em raz&atilde;o de qualquer modifica&ccedil;&atilde;o, suspens&atilde;o ou desativa&ccedil;&atilde;o do servi&ccedil;o.</p>
+                                <p>16.7. Em caso de modifica&ccedil;&atilde;o, suspens&atilde;o ou desativa&ccedil;&atilde;o do servi&ccedil;o, a RIAT dever&aacute; notificar o Prestador de Servi&ccedil;o para que seja providenciada a continuidade do tratamento de seus pacientes em ambiente distinto da plataforma. A notifica&ccedil;&atilde;o poder&aacute; ser enviada por qualquer meio de comunica&ccedil;&atilde;o cadastrado.</p>
+                                <p>16.8. Todas as notifica&ccedil;&otilde;es, intima&ccedil;&otilde;es, of&iacute;cios e/ou qualquer outro meio oficial de cientifica&ccedil;&atilde;o da RIAT dever&atilde;o ocorrer em seu endere&ccedil;o de sede informado no pre&acirc;mbulo do presente Termo.</p>
+                                <p>16.9. Este termo e o relacionamento estabelecido entre o Prestador de Servi&ccedil;o e a RIAT ser&atilde;o regidos pelas Leis da Rep&uacute;blica Federativa do Brasil, ficando eleito o Foro da Comarca de Manaus/AM como sendo o &uacute;nico competente para dirimir quaisquer lit&iacute;gios ou demandas que venham a envolver as partes em rela&ccedil;&atilde;o ao uso da plataforma disponbilizada.</p>
+                                <p>16.10. As partes concordam e declaram que se submetem exclusivamente &agrave; compet&ecirc;ncia &uacute;nica e exclusiva dos Tribunais localizados no Brasil.</p>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials1 cid-smnesz215L" id="testimonials1-5">
+            <div class="container">
+                <div class="media-container-row">
+                    <div class="title col-12 align-center">
+                        <h2 class="mbr-fonts-style display-2">
+                            @ViewData["Title"]
+                        </h2>
+                        <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-7">@Localizer["DescriptionRISM"]</h3>
+                    </div>
+                </div>
+                <div class="media-container-row">
+                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                        <div class="panel-item p-3">
+                            <div class="card-block">
+                                <div class="testimonial-photo">
+                                    <img src="~/assets/images/2021-01-17-14.34.50.jpg" alt="" title="">
+                                </div>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Psicóloga, Doutoranda em Psicologia Clínica da UCES, Diplomada em Rorschach (Escola Argentina), Acompanhante Terapêutica, especializada em Patologias Graves e Empreendedora
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">Ana Joulie&nbsp;</div>
+                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                                    Diretora Clínica
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                        <div class="panel-item p-3">
+                            <div class="card-block">
+                                <div class="testimonial-photo">
+                                    <img src="~/assets/images/2021-01-17-14.36.42.jpg" alt="" title="">
+                                </div>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Especialista em simplicidade. Sou responsável por criar uma equipe de engenharia sólida, construir ótimos produtos, bem como fornecer soluções inovadoras. Liderando a inovação tecnológica e o desenvolvimento de produtos na empresa.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">Fabricio Bertoncello Scariot</div>
+                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                                    Diretor de Tecnologia
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                        <div class="panel-item p-3">
+                            <div class="card-block">
+                                <div class="testimonial-photo">
+                                    <img src="~/assets/images/2021-01-17-14.38.06.jpg" alt="" title="">
+                                </div>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Empreteco, Acompanhante Terapêutico especializado em Patologias Graves e Empreendedor. Estudante de Psicologia na Universidad de Buenos Aires (UBA), agora dedicado em tempo integral a RIAT.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">Marcel Araújo Rocha</div>
+                                <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                                    Diretor Administrativo
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+
+    <!---Formbuilder Form--->
+    <!--<form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form">
+        <input type="hidden" name="email" data-form-email="true" value="K61d6IRFK0HsTKwJy+/ViDD48ZWTItXruOQNBnVXOxjtNFQ+ZoawNgC/kWMWbHJmZAsGB0mOXBKeTrSop3OP5Mp0P0G3M7Fdf0MryRgZ+lVF0PuSCCIEEEpQt/GgFJNQ">
+        <div class="row">
+            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+            </div>
+        </div>
+        <div class="dragArea row">
+            <div class="col-md-4  form-group" data-for="name">
+                <label for="name-form1-7" class="form-control-label mbr-fonts-style display-7">Name</label>
+                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-7">
+            </div>
+            <div class="col-md-4  form-group" data-for="email">
+                <label for="email-form1-7" class="form-control-label mbr-fonts-style display-7">Email</label>
+                <input type="email" name="email" data-form-field="Email" required="required" class="form-control display-7" id="email-form1-7">
+            </div>
+            <div data-for="phone" class="col-md-4  form-group">
+                <label for="phone-form1-7" class="form-control-label mbr-fonts-style display-7">Phone</label>
+                <input type="tel" name="phone" data-form-field="Phone" class="form-control display-7" id="phone-form1-7">
+            </div>
+            <div data-for="message" class="col-md-12 form-group">
+                <label for="message-form1-7" class="form-control-label mbr-fonts-style display-7">Message</label>
+                <textarea name="message" data-form-field="Message" class="form-control display-7" id="message-form1-7"></textarea>
+            </div>
+            <div class="col-md-12 input-group-btn align-center">
+                <button type="submit" class="btn btn-primary btn-form display-4">SEND FORM</button>
+            </div>
+        </div>
+    </form>-->
+    <!---Formbuilder Form--->
+    <!--</div>
+            </div>
+        </div>
+    </section>-->
+    <!-- #endregion -->
+    <section class="mbr-section form1 cid-smnhYhFqkG" id="form1-8">
+        <div class="">
+            <main role="main" class="pb-3" style="overflow:auto;">
+                @RenderBody()
+            </main>
+        </div>
+    </section>
+
+    <section class="cid-smni0yNmCL" id="footer1-8">
+        <div class="container">
+            @*<div class="media-container-row content text-white">
+                        <div class="col-12 col-md-3">
+                            <div class="media-wrap">
+                                <a href="https://mobirise.co/">
+                                    <img src="~/images/logo_riat_contra_covid.jpg" alt="RIAT">
+                                </a>
+                            </div>
+                        </div>
+                       <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                        <h5 class="pb-3">
+                            Address
+                        </h5>
+                        <p class="mbr-text">
+                            1234 Street Name
+                            <br>City, AA 99999
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                        <h5 class="pb-3">
+                            Contacts
+                        </h5>
+                        <p class="mbr-text">
+                            Email: support@mobirise.com
+                            <br>Phone: +1 (0) 000 0000 001
+                            <br>Fax: +1 (0) 000 0000 002
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                        <h5 class="pb-3">
+                            Links
+                        </h5>
+                        <p class="mbr-text">
+                            <a class="text-primary" href="https://mobirise.co/">Website builder</a>
+                            <br><a class="text-primary" href="https://mobirise.co/">Download for Windows</a>
+                            <br><a class="text-primary" href="https://mobirise.co/">Download for Mac</a>
+                        </p>
+                    </div>
+                </div>*@
+            <div class="footer-lower">
+                <div class="media-container-row mbr-white">
+                    <div class="col-sm-6 copyright">
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            © Copyright 2020 - RISM - All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-list align-right">
+                            <div class="soc-item">
+                                <a href="https://www.instagram.com/riatbrasil/" target="_blank">
+                                    <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com/riatbrasil" target="_blank">
+                                    <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.youtube.com/channel/UCPxrkEzDSLesSkFi0wIB3yA" target="_blank">
+                                    <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.linkedin.com/company/riatlimited/" target="_blank">
+                                    <span class="socicon-linkedin socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            @*<div class="soc-item">
+                                    <a href="https://twitter.com/mobirise" target="_blank">
+                                        <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                                    </a>
+                                </div>
+                                                    <div class="soc-item">
+                                    <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                                        <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://www.behance.net/Mobirise" target="_blank">
+                                        <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+                                    </a>
+                                </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*<script src="~/assets/web/assets/jquery/jquery.min.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery-3.6.0.min.js"></script>
+    <script src="~/assets/popper/popper.min.js"></script>
+    <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="~/assets/dropdown/js/nav-dropdown.js"></script>
+    <script src="~/assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="~/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="~/assets/parallax/jarallax.min.js"></script>
+    <script src="~/assets/tether/tether.min.js"></script>
+    <script src="~/assets/theme/js/script.js"></script>
+    <script src="~/assets/formoid/formoid.min.js"></script>
+
+
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

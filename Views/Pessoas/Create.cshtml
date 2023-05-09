@@ -1,0 +1,53 @@
+﻿@model RIAT.DAL.Entity.Models.Pessoa
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>@Localizer["PageType"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EndeIdEndereco" class="control-label"></label>
+                <select asp-for="EndeIdEndereco" class="form-control" asp-items="ViewBag.EndeIdEndereco"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AspuIdAspnetuser" class="control-label"></label>
+                <input asp-for="AspuIdAspnetuser" class="form-control" />
+                <span asp-validation-for="AspuIdAspnetuser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CdCpf" class="control-label"></label>
+                <input asp-for="CdCpf" class="form-control" />
+                <span asp-validation-for="CdCpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DtNascimento" class="control-label"></label>
+                <input asp-for="DtNascimento" class="form-control" />
+                <span asp-validation-for="DtNascimento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CdSexo" class="control-label"></label>
+                <input asp-for="CdSexo" class="form-control" />
+                <span asp-validation-for="CdSexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value=@Localizer["btnCreate"] class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">@Localizer["btnBackList"]</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

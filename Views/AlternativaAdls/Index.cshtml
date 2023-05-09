@@ -1,0 +1,55 @@
+﻿@model IEnumerable<RIAT.DAL.Entity.Models.AlternativaAdl>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create">@Localizer["CreateNew"]</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Localizer["AlternativeCode"]
+            </th>
+            <th>
+                @Localizer["AlternativeName"]
+            </th>
+            <th>
+                @Localizer["AlternativeDescription"]
+            </th>
+            <th>
+                @Localizer["AlternativeType"]
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Codigo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoConceito)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">@Localizer["Edit"]</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">@Localizer["Details"]</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">@Localizer["Delete"]</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

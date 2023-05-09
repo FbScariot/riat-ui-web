@@ -1,0 +1,71 @@
+﻿@model IEnumerable<RIAT.DAL.Entity.Models.SintomaDoencaHistoriaclinica>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DohcIdDoencaHistoriaClinicaNavigation.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAtendimentoNavigation.PaciIdPacienteNavigation.NomePaciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAtendimentoNavigation.ProfIdProfissionalNavigation.NomeProfissional)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAtendimentoNavigation.AtenDtAgendamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DohcIdDoencaHistoriaClinicaNavigation.DoenIdDoencaNavigation.DoenCodDoenca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SintIdSintomaNavigation.SintCodSintoma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SidhCdPeso)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DohcIdDoencaHistoriaClinicaNavigation.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAtendimentoNavigation.PaciIdPacienteNavigation.NomePaciente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAtendimentoNavigation.ProfIdProfissionalNavigation.NomeProfissional)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAtendimentoNavigation.AtenDtAgendamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DohcIdDoencaHistoriaClinicaNavigation.DoenIdDoencaNavigation.DoenCodDoenca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SintIdSintomaNavigation.SintCodSintoma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SidhCdPeso)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

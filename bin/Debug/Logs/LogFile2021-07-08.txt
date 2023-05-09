@@ -1,0 +1,982 @@
+08/07/2021 17:28:14: Entrou no método OnDisconnectedAsync.
+08/07/2021 17:28:14: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T20:22:10.844Z"}
+08/07/2021 17:28:14: Context.User.Identity.IsAuthenticated : True
+08/07/2021 17:28:14: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:26:11: Entrou no método OnConnectedAsync.
+08/07/2021 18:26:11: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:26:03.389Z"}
+08/07/2021 18:26:11: Context.ConnectionId : GcPNKqrQrvnhxbIuUWCcRg
+08/07/2021 18:26:11: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:26:11: Saiu no método OnConnectedAsync.
+7/8/2021 6:26:47 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:26:47 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:26:47.037Z"}
+7/8/2021 6:26:47 PM: Context.ConnectionId : dTkrEmp0leAWagmMMeOv-g
+7/8/2021 6:26:47 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:26:47 PM: Saiu no método OnConnectedAsync.
+08/07/2021 18:26:48: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:26:48: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:26:03.389Z"}
+08/07/2021 18:26:48: Context.ConnectionId : GcPNKqrQrvnhxbIuUWCcRg
+08/07/2021 18:26:48: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:26:49: Entrou no método OnConnectedAsync.
+08/07/2021 18:26:49: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:26:49.140Z"}
+08/07/2021 18:26:49: Context.ConnectionId : oxQ2XsyKkC9CzrebbuHWGg
+08/07/2021 18:26:49: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:26:49: Saiu no método OnConnectedAsync.
+7/8/2021 6:26:52 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:26:52 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:26:47.037Z"}
+7/8/2021 6:26:52 PM: Context.ConnectionId : dTkrEmp0leAWagmMMeOv-g
+7/8/2021 6:26:52 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:26:52 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:26:52 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:26:52.470Z"}
+7/8/2021 6:26:52 PM: Context.ConnectionId : Om_WdH6FwSDkJWrKZsOXXQ
+7/8/2021 6:26:52 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:26:52 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:27:42 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:27:42 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:26:52.470Z"}
+7/8/2021 6:27:42 PM: Context.ConnectionId : Om_WdH6FwSDkJWrKZsOXXQ
+7/8/2021 6:27:42 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:27:42 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:27:42 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:27:42.221Z"}
+7/8/2021 6:27:42 PM: Context.ConnectionId : a9887-jDzQHEhxToObAIUw
+7/8/2021 6:27:42 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:27:42 PM: Saiu no método OnConnectedAsync.
+08/07/2021 18:27:48: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:27:48: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:26:49.140Z"}
+08/07/2021 18:27:48: Context.ConnectionId : oxQ2XsyKkC9CzrebbuHWGg
+08/07/2021 18:27:48: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:27:48: Entrou no método OnConnectedAsync.
+08/07/2021 18:27:48: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:27:48.354Z"}
+08/07/2021 18:27:48: Context.ConnectionId : G_JlIWWdlaclnv3g9DKnkw
+08/07/2021 18:27:48: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:27:48: Saiu no método OnConnectedAsync.
+08/07/2021 18:33:49: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:33:49: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:27:48.354Z"}
+08/07/2021 18:33:49: Context.ConnectionId : G_JlIWWdlaclnv3g9DKnkw
+08/07/2021 18:33:49: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:33:50: Entrou no método OnConnectedAsync.
+08/07/2021 18:33:50: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:33:49.790Z"}
+08/07/2021 18:33:50: Context.ConnectionId : 8fyf_KBaEh3UKfFbaLmN4w
+08/07/2021 18:33:50: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:33:50: Saiu no método OnConnectedAsync.
+08/07/2021 18:34:46: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:34:46: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:33:49.790Z"}
+08/07/2021 18:34:46: Context.ConnectionId : 8fyf_KBaEh3UKfFbaLmN4w
+08/07/2021 18:34:46: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:34:47: Entrou no método OnConnectedAsync.
+08/07/2021 18:34:47: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:34:47.298Z"}
+08/07/2021 18:34:47: Context.ConnectionId : LW5HF9DSyZint4lUukBT5A
+08/07/2021 18:34:47: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:34:47: Saiu no método OnConnectedAsync.
+08/07/2021 18:35:10: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:35:10: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:34:47.298Z"}
+08/07/2021 18:35:10: Context.ConnectionId : LW5HF9DSyZint4lUukBT5A
+08/07/2021 18:35:10: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:35:10: Entrou no método OnConnectedAsync.
+08/07/2021 18:35:10: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:35:10.689Z"}
+08/07/2021 18:35:10: Context.ConnectionId : F6ljEKQsrfhquuN_yY_t3A
+08/07/2021 18:35:10: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:35:10: Saiu no método OnConnectedAsync.
+08/07/2021 18:36:05: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:36:05: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:35:10.689Z"}
+08/07/2021 18:36:05: Context.ConnectionId : F6ljEKQsrfhquuN_yY_t3A
+08/07/2021 18:36:05: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:36:11 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:36:11 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:27:42.221Z"}
+7/8/2021 6:36:11 PM: Context.ConnectionId : a9887-jDzQHEhxToObAIUw
+7/8/2021 6:36:11 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:37:06 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:37:06 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:37:03.861Z"}
+7/8/2021 6:37:06 PM: Context.ConnectionId : UXIqYD1psZEMxM4VqifzvQ
+7/8/2021 6:37:06 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:37:06 PM: Saiu no método OnConnectedAsync.
+08/07/2021 18:37:07: Entrou no método OnConnectedAsync.
+08/07/2021 18:37:07: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:37:07.139Z"}
+08/07/2021 18:37:07: Context.ConnectionId : 7xoK0Ig036mXjXeJwoskYQ
+08/07/2021 18:37:07: Context NÃO encontrado em Context.User.Identity.Name : 
+08/07/2021 18:37:07: Saiu no método OnConnectedAsync.
+7/8/2021 6:37:32 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:37:32 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:37:03.861Z"}
+7/8/2021 6:37:32 PM: Context.ConnectionId : UXIqYD1psZEMxM4VqifzvQ
+7/8/2021 6:37:32 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:37:33 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:37:33 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:37:32.986Z"}
+7/8/2021 6:37:33 PM: Context.ConnectionId : Er4IrnAJ507SFn9hXyis9Q
+7/8/2021 6:37:33 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:37:33 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:39:47 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:39:47 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:37:32.986Z"}
+7/8/2021 6:39:47 PM: Context.ConnectionId : Er4IrnAJ507SFn9hXyis9Q
+7/8/2021 6:39:47 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:39:54 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:39:54 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:39:48.535Z"}
+7/8/2021 6:39:54 PM: Context.ConnectionId : Y526zDK2rbkczk0bb_Td6g
+7/8/2021 6:39:54 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:39:54 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:40:12 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:40:12 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:39:48.535Z"}
+7/8/2021 6:40:12 PM: Context.ConnectionId : Y526zDK2rbkczk0bb_Td6g
+7/8/2021 6:40:12 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:40:13 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:40:13 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:40:12.984Z"}
+7/8/2021 6:40:13 PM: Context.ConnectionId : f2Cp-1fhWgSBceYqoYbEgw
+7/8/2021 6:40:13 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:40:13 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:40:23 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:40:23 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:40:12.984Z"}
+7/8/2021 6:40:23 PM: Context.ConnectionId : f2Cp-1fhWgSBceYqoYbEgw
+7/8/2021 6:40:23 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:40:24 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:40:24 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:40:24.097Z"}
+7/8/2021 6:40:24 PM: Context.ConnectionId : 6u_fToUQo2GRgBE_I40ATQ
+7/8/2021 6:40:24 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:40:24 PM: Saiu no método OnConnectedAsync.
+08/07/2021 18:40:30: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:40:30: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:37:07.139Z"}
+08/07/2021 18:40:30: Context.ConnectionId : 7xoK0Ig036mXjXeJwoskYQ
+08/07/2021 18:40:30: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:40:31: Entrou no método OnConnectedAsync.
+08/07/2021 18:40:31: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:40:30.997Z"}
+08/07/2021 18:40:31: Context.ConnectionId : BOC21zO3hxEvjBkBDFF3bA
+08/07/2021 18:40:31: Context NÃO encontrado em Context.User.Identity.Name : 
+08/07/2021 18:40:31: Saiu no método OnConnectedAsync.
+08/07/2021 18:40:33: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:40:33: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:40:30.997Z"}
+08/07/2021 18:40:33: Context.ConnectionId : BOC21zO3hxEvjBkBDFF3bA
+08/07/2021 18:40:33: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:40:47 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:40:47 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:40:24.097Z"}
+7/8/2021 6:40:47 PM: Context.ConnectionId : 6u_fToUQo2GRgBE_I40ATQ
+7/8/2021 6:40:47 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:40:47 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:40:47 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:40:47.532Z"}
+7/8/2021 6:40:47 PM: Context.ConnectionId : MVORWPSRgCqPRHus67JWcw
+7/8/2021 6:40:47 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:40:47 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:41:18 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:41:18 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:40:47.532Z"}
+7/8/2021 6:41:18 PM: Context.ConnectionId : MVORWPSRgCqPRHus67JWcw
+7/8/2021 6:41:18 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:42:53 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:42:53 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:41:18.895Z"}
+7/8/2021 6:42:53 PM: Context.ConnectionId : NH_Jm4O1TsXhJSHQbejikg
+7/8/2021 6:42:53 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:42:53 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:43:18 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:43:18 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:41:18.895Z"}
+7/8/2021 6:43:18 PM: Context.ConnectionId : NH_Jm4O1TsXhJSHQbejikg
+7/8/2021 6:43:18 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:45:47 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:45:47 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:43:19.113Z"}
+7/8/2021 6:45:47 PM: Context.ConnectionId : KftR20CwIepqFCH84najkA
+7/8/2021 6:45:47 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:45:47 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:46:20 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:46:20 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:46:20.885Z"}
+7/8/2021 6:46:20 PM: Context.ConnectionId : pOw23rokvhqtygMPr7bVLQ
+7/8/2021 6:46:20 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:46:20 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:46:22 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:46:22 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:43:19.113Z"}
+7/8/2021 6:46:22 PM: Context.ConnectionId : KftR20CwIepqFCH84najkA
+7/8/2021 6:46:22 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:46:29 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:46:29 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:46:22.886Z"}
+7/8/2021 6:46:29 PM: Context.ConnectionId : cqNvzP4jKv397cevMCzTwg
+7/8/2021 6:46:29 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+7/8/2021 6:46:29 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:47:31 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:47:31 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:46:22.886Z"}
+7/8/2021 6:47:31 PM: Context.ConnectionId : cqNvzP4jKv397cevMCzTwg
+7/8/2021 6:47:31 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:47:36 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:47:36 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:46:20.885Z"}
+7/8/2021 6:47:36 PM: Context.ConnectionId : pOw23rokvhqtygMPr7bVLQ
+7/8/2021 6:47:36 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:47:54: Entrou no método OnConnectedAsync.
+08/07/2021 18:47:54: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:47:54.816Z"}
+08/07/2021 18:47:54: Context.ConnectionId : LOA_m56PH5Iha3wB-uvbLA
+08/07/2021 18:47:54: Context NÃO encontrado em Context.User.Identity.Name : 
+08/07/2021 18:47:54: Saiu no método OnConnectedAsync.
+08/07/2021 18:48:17: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:48:17: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:47:54.816Z"}
+08/07/2021 18:48:17: Context.ConnectionId : LOA_m56PH5Iha3wB-uvbLA
+08/07/2021 18:48:17: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:48:50: Entrou no método OnConnectedAsync.
+08/07/2021 18:48:50: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:48:18.114Z"}
+08/07/2021 18:48:50: Context.ConnectionId : fBtL9iHB-RATIZzw31XfCw
+08/07/2021 18:48:50: Context NÃO encontrado em Context.User.Identity.Name : 
+08/07/2021 18:48:50: Saiu no método OnConnectedAsync.
+08/07/2021 18:49:10: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:49:10: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:48:18.114Z"}
+08/07/2021 18:49:10: Context.ConnectionId : fBtL9iHB-RATIZzw31XfCw
+08/07/2021 18:49:10: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:49:28: Entrou no método OnConnectedAsync.
+08/07/2021 18:49:28: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:49:28.315Z"}
+08/07/2021 18:49:28: Context.ConnectionId : kYZ7E2Y4colzeX8VwSDqrA
+08/07/2021 18:49:28: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:49:28: Saiu no método OnConnectedAsync.
+7/8/2021 6:50:04 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:50:04 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:50:04.312Z"}
+7/8/2021 6:50:04 PM: Context.ConnectionId : bEclKP_bH7xNUVeqJdyURQ
+7/8/2021 6:50:04 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:50:04 PM: Saiu no método OnConnectedAsync.
+08/07/2021 18:50:07: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:50:07: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:49:28.315Z"}
+08/07/2021 18:50:07: Context.ConnectionId : kYZ7E2Y4colzeX8VwSDqrA
+08/07/2021 18:50:07: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:50:07: Entrou no método OnConnectedAsync.
+08/07/2021 18:50:07: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:50:07.790Z"}
+08/07/2021 18:50:07: Context.ConnectionId : WyJirR0b9J1ak8MI1fP-Eg
+08/07/2021 18:50:07: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:50:07: Saiu no método OnConnectedAsync.
+7/8/2021 6:50:09 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:50:09 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:50:04.312Z"}
+7/8/2021 6:50:09 PM: Context.ConnectionId : bEclKP_bH7xNUVeqJdyURQ
+7/8/2021 6:50:09 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:50:09 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:50:09 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:50:09.650Z"}
+7/8/2021 6:50:09 PM: Context.ConnectionId : 7WhJkvc0AnLotiH0il9PRw
+7/8/2021 6:50:09 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:50:09 PM: Saiu no método OnConnectedAsync.
+08/07/2021 18:51:05: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:51:05: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:50:07.790Z"}
+08/07/2021 18:51:05: Context.ConnectionId : WyJirR0b9J1ak8MI1fP-Eg
+08/07/2021 18:51:05: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:51:06: Entrou no método OnConnectedAsync.
+08/07/2021 18:51:06: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:51:06.064Z"}
+08/07/2021 18:51:06: Context.ConnectionId : bQ0Xx14-lGT0Hg8TD2d9xw
+08/07/2021 18:51:06: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:51:06: Saiu no método OnConnectedAsync.
+7/8/2021 6:51:10 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:51:10 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:50:09.650Z"}
+7/8/2021 6:51:10 PM: Context.ConnectionId : 7WhJkvc0AnLotiH0il9PRw
+7/8/2021 6:51:10 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:51:11 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:51:11 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:51:10.922Z"}
+7/8/2021 6:51:11 PM: Context.ConnectionId : StQQaW-ho1V0YhZIhjyU5g
+7/8/2021 6:51:11 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:51:11 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:51:32 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:51:32 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:51:10.922Z"}
+7/8/2021 6:51:32 PM: Context.ConnectionId : StQQaW-ho1V0YhZIhjyU5g
+7/8/2021 6:51:33 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:54:32: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:54:32: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:51:06.064Z"}
+08/07/2021 18:54:32: Context.ConnectionId : bQ0Xx14-lGT0Hg8TD2d9xw
+08/07/2021 18:54:32: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:54:32: Entrou no método OnConnectedAsync.
+08/07/2021 18:54:32: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:51:06.064Z"}
+08/07/2021 18:54:32: Context.ConnectionId : DnNAwg2vK9vuDMUuFQ-O1w
+08/07/2021 18:54:32: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:54:32: Saiu no método OnConnectedAsync.
+7/8/2021 6:54:32 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:54:32 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:51:33.625Z"}
+7/8/2021 6:54:32 PM: Context.ConnectionId : FEYxFbDhCMuoBL6IVgUmLw
+7/8/2021 6:54:32 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:54:32 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:54:51 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:54:51 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:51:33.625Z"}
+7/8/2021 6:54:51 PM: Context.ConnectionId : FEYxFbDhCMuoBL6IVgUmLw
+7/8/2021 6:54:51 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:54:55 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:54:55 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:54:51.926Z"}
+7/8/2021 6:54:55 PM: Context.ConnectionId : kOO3ijrOikzbPDBL8WfO-A
+7/8/2021 6:54:55 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:54:55 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:55:16 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:55:16 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:54:51.926Z"}
+7/8/2021 6:55:16 PM: Context.ConnectionId : kOO3ijrOikzbPDBL8WfO-A
+7/8/2021 6:55:16 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:55:19 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:55:19 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:55:16.860Z"}
+7/8/2021 6:55:28 PM: Context.ConnectionId : zPeHjOB7l0Nuq2_cr8ik6A
+7/8/2021 6:55:28 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:55:28 PM: Saiu no método OnConnectedAsync.
+7/8/2021 6:55:48 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:55:48 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:55:16.860Z"}
+7/8/2021 6:55:48 PM: Context.ConnectionId : zPeHjOB7l0Nuq2_cr8ik6A
+7/8/2021 6:55:48 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:55:52 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:55:52 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:55:48.688Z"}
+7/8/2021 6:55:52 PM: Context.ConnectionId : xVX2XzS1PIiEU28wQOnbYA
+7/8/2021 6:55:52 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:55:52 PM: Saiu no método OnConnectedAsync.
+08/07/2021 18:57:18: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:57:18: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:51:06.064Z"}
+08/07/2021 18:57:18: Context.ConnectionId : DnNAwg2vK9vuDMUuFQ-O1w
+08/07/2021 18:57:18: Saiu no método OnDisconnectedAsync.
+7/8/2021 6:57:20 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 6:57:20 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:55:48.688Z"}
+7/8/2021 6:57:20 PM: Context.ConnectionId : xVX2XzS1PIiEU28wQOnbYA
+7/8/2021 6:57:20 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:59:30: Entrou no método OnConnectedAsync.
+08/07/2021 18:59:30: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:30.470Z"}
+08/07/2021 18:59:30: Context.ConnectionId : 58F6sSm3KHRPrPcIEySOAQ
+08/07/2021 18:59:30: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:59:30: Saiu no método OnConnectedAsync.
+7/8/2021 6:59:49 PM: Entrou no método OnConnectedAsync.
+7/8/2021 6:59:49 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:49.740Z"}
+7/8/2021 6:59:49 PM: Context.ConnectionId : 1sKmzqlulnpSslvT-mCB_g
+7/8/2021 6:59:49 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 6:59:49 PM: Saiu no método OnConnectedAsync.
+08/07/2021 18:59:52: Entrou no método OnDisconnectedAsync.
+08/07/2021 18:59:52: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:30.470Z"}
+08/07/2021 18:59:52: Context.ConnectionId : 58F6sSm3KHRPrPcIEySOAQ
+08/07/2021 18:59:52: Saiu no método OnDisconnectedAsync.
+08/07/2021 18:59:53: Entrou no método OnConnectedAsync.
+08/07/2021 18:59:53: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:53.132Z"}
+08/07/2021 18:59:53: Context.ConnectionId : 9xiGEASUoZqjYkgLwpWV6A
+08/07/2021 18:59:53: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 18:59:53: Saiu no método OnConnectedAsync.
+08/07/2021 19:00:13: Entrou no método SendMessage.
+08/07/2021 19:00:14: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","sender":{"name":"Ana Moura","signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:53.132Z"},"message":"Olá Marcel"}
+08/07/2021 19:00:17: Encontrou o receiverConnectionId : 1sKmzqlulnpSslvT-mCB_g
+08/07/2021 19:00:43: Entrou no método OnConnectedAsync.
+08/07/2021 19:00:43: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:53.132Z"}
+08/07/2021 19:00:44: Context.ConnectionId : ROBgDbLHtnXTIrsISL944Q
+08/07/2021 19:00:44: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 19:00:44: Saiu no método OnConnectedAsync.
+08/07/2021 19:01:02: Entrou no método OnDisconnectedAsync.
+08/07/2021 19:01:02: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:53.132Z"}
+08/07/2021 19:01:02: Context.ConnectionId : ROBgDbLHtnXTIrsISL944Q
+08/07/2021 19:01:02: Saiu no método OnDisconnectedAsync.
+08/07/2021 19:01:02:    at OneSignal.RestAPIv4.Client.Serializers.NewtonsoftJsonSerializer..ctor()
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.CreateRestRequest(String url, Method method) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 131
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.Create(NotificationCreateOptions options) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 30
+   at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 319
+   at Chat.Hubs.ChatHubNovo.SendMessage(Message chat) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 229
+08/07/2021 19:01:02: Saiu no método SendMessage.
+08/07/2021 19:01:02: Entrou no método OnDisconnectedAsync.
+08/07/2021 19:01:02: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:53.132Z"}
+08/07/2021 19:01:02: Context.ConnectionId : 9xiGEASUoZqjYkgLwpWV6A
+08/07/2021 19:01:02: Saiu no método OnDisconnectedAsync.
+7/8/2021 7:10:12 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 7:10:12 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T21:59:49.740Z"}
+7/8/2021 7:10:12 PM: Context.ConnectionId : 1sKmzqlulnpSslvT-mCB_g
+7/8/2021 7:10:12 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 19:11:44: Entrou no método OnConnectedAsync.
+08/07/2021 19:11:44: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T22:11:43.926Z"}
+08/07/2021 19:11:44: Context.ConnectionId : PvKvgqqqjwF-abU5Igs7MA
+08/07/2021 19:11:44: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+08/07/2021 19:11:44: Saiu no método OnConnectedAsync.
+7/8/2021 7:11:47 PM: Entrou no método OnConnectedAsync.
+7/8/2021 7:11:47 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T22:11:47.103Z"}
+7/8/2021 7:11:47 PM: Context.ConnectionId : v1dmAx-wIii33uaZhd4JvA
+7/8/2021 7:11:47 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 7:11:47 PM: Saiu no método OnConnectedAsync.
+08/07/2021 19:11:49: Entrou no método OnDisconnectedAsync.
+08/07/2021 19:11:49: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T22:11:43.926Z"}
+08/07/2021 19:11:49: Context.ConnectionId : PvKvgqqqjwF-abU5Igs7MA
+08/07/2021 19:11:49: Saiu no método OnDisconnectedAsync.
+08/07/2021 19:11:49: Entrou no método OnConnectedAsync.
+08/07/2021 19:11:49: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T22:11:49.427Z"}
+08/07/2021 19:11:49: Context.ConnectionId : GUzo3ISLOhECiDqUuCOaVg
+08/07/2021 19:11:49: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+08/07/2021 19:11:49: Saiu no método OnConnectedAsync.
+08/07/2021 19:12:03: Entrou no método SendMessage.
+08/07/2021 19:12:03: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T22:11:49.427Z"},"message":"Olá Marcel,"}
+08/07/2021 19:12:03: Encontrou o receiverConnectionId : v1dmAx-wIii33uaZhd4JvA
+08/07/2021 19:13:05: Saiu no método SendMessage.
+08/07/2021 19:13:05: Entrou no método OnConnectedAsync.
+08/07/2021 19:13:05: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T22:11:49.427Z"}
+08/07/2021 19:13:05: Context.ConnectionId : y2cmahySvS1OvRFo6eCLGQ
+08/07/2021 19:13:05: Entrou no método OnDisconnectedAsync.
+08/07/2021 19:13:05: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T22:11:49.427Z"}
+08/07/2021 19:13:05: Context.ConnectionId : GUzo3ISLOhECiDqUuCOaVg
+7/8/2021 7:13:05 PM:    at Chat.Hubs.ChatHubNovo.WriteErrorLog(String dados) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 142
+   at Chat.Hubs.ChatHubNovo.OnDisconnectedAsync(Exception exception) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 152
+08/07/2021 19:13:05: Saiu no método OnDisconnectedAsync.
+7/8/2021 7:13:05 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 19:13:05: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+08/07/2021 19:13:05: Saiu no método OnConnectedAsync.
+08/07/2021 19:13:17: Entrou no método OnDisconnectedAsync.
+08/07/2021 19:13:17: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T22:11:49.427Z"}
+08/07/2021 19:13:17: Context.ConnectionId : y2cmahySvS1OvRFo6eCLGQ
+08/07/2021 19:13:17: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:03:20: Entrou no método OnConnectedAsync.
+08/07/2021 20:03:20: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:20.424Z"}
+08/07/2021 20:03:20: Context.ConnectionId : 6gBqezgr9i0wdj-vh109Ag
+08/07/2021 20:03:20: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+08/07/2021 20:03:20: Saiu no método OnConnectedAsync.
+7/8/2021 8:03:41 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:03:41 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:41.614Z"}
+7/8/2021 8:03:41 PM: Context.ConnectionId : xZo9YhUbxNKmpvip4ROd5w
+7/8/2021 8:03:41 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 8:03:41 PM: Saiu no método OnConnectedAsync.
+08/07/2021 20:03:44: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:03:44: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:20.424Z"}
+08/07/2021 20:03:44: Context.ConnectionId : 6gBqezgr9i0wdj-vh109Ag
+08/07/2021 20:03:44: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:03:44: Entrou no método OnConnectedAsync.
+08/07/2021 20:03:44: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:44.581Z"}
+08/07/2021 20:03:44: Context.ConnectionId : wO5Toi28qiYjEtm9ULj4EA
+08/07/2021 20:03:44: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+08/07/2021 20:03:44: Saiu no método OnConnectedAsync.
+08/07/2021 20:03:54: Entrou no método SendMessage.
+08/07/2021 20:03:54: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:44.581Z"},"message":"OLá"}
+08/07/2021 20:03:54: Encontrou o receiverConnectionId : xZo9YhUbxNKmpvip4ROd5w
+08/07/2021 20:04:01: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+08/07/2021 20:09:52: Context NÃO encontrado em Context.User.Identity.Name : 
+08/07/2021 20:09:52: Saiu no método SendMessage.
+7/8/2021 8:09:52 PM: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:09:52: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:09:52 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:41.614Z"}
+08/07/2021 20:09:52: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:44.581Z"}
+7/8/2021 8:09:52 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:09:52 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:41.614Z"}
+7/8/2021 8:09:52 PM: Context.ConnectionId : e1WeEOxdRNOxMzBmGr9hTw
+08/07/2021 20:09:52: Context.ConnectionId : wO5Toi28qiYjEtm9ULj4EA
+7/8/2021 8:09:52 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:09:52: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:09:52 PM: Saiu no método OnConnectedAsync.
+7/8/2021 8:09:52 PM:    at Chat.Hubs.ChatHubNovo.WriteErrorLog(String dados) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 142
+   at Chat.Hubs.ChatHubNovo.OnDisconnectedAsync(Exception exception) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 155
+7/8/2021 8:09:52 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:10:31 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:10:31 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:03:41.614Z"}
+7/8/2021 8:10:31 PM: Context.ConnectionId : e1WeEOxdRNOxMzBmGr9hTw
+7/8/2021 8:10:31 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:18:04: Entrou no método OnConnectedAsync.
+08/07/2021 20:18:04: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:18:04.199Z"}
+08/07/2021 20:18:04: Context.ConnectionId : pgWnBB6_qdVISzfbHQbRWA
+08/07/2021 20:18:04: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:18:04: Saiu no método OnConnectedAsync.
+7/8/2021 8:18:06 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:18:06 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:18:06.702Z"}
+7/8/2021 8:18:06 PM: Context.ConnectionId : j5rq9RceKpABd2B2Ep_PIg
+7/8/2021 8:18:06 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 8:18:06 PM: Saiu no método OnConnectedAsync.
+08/07/2021 20:19:50: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:19:50: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:18:04.199Z"}
+08/07/2021 20:19:50: Context.ConnectionId : pgWnBB6_qdVISzfbHQbRWA
+08/07/2021 20:19:50: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:19:51: Entrou no método OnConnectedAsync.
+08/07/2021 20:19:51: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:19:51.053Z"}
+08/07/2021 20:19:51: Context.ConnectionId : ORymhOEj_QVS24UepKGHlA
+08/07/2021 20:19:51: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:19:51: Saiu no método OnConnectedAsync.
+08/07/2021 20:20:48: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:20:48: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:19:51.053Z"}
+08/07/2021 20:20:48: Context.ConnectionId : ORymhOEj_QVS24UepKGHlA
+08/07/2021 20:20:48: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:20:49: Entrou no método OnConnectedAsync.
+08/07/2021 20:20:49: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:20:49.136Z"}
+08/07/2021 20:20:49: Context.ConnectionId : LaywFEoyvMqTeO498y8sPA
+08/07/2021 20:20:49: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:20:49: Saiu no método OnConnectedAsync.
+7/8/2021 8:20:56 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:20:56 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:18:06.702Z"}
+7/8/2021 8:20:56 PM: Context.ConnectionId : j5rq9RceKpABd2B2Ep_PIg
+7/8/2021 8:20:56 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:20:56 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:20:56 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:20:56.627Z"}
+7/8/2021 8:20:56 PM: Context.ConnectionId : Uf0ti5UVQ7s5K5T2lS4VIw
+7/8/2021 8:20:56 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 8:20:56 PM: Saiu no método OnConnectedAsync.
+7/8/2021 8:21:00 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:21:00 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:20:56.627Z"}
+7/8/2021 8:21:00 PM: Context.ConnectionId : Uf0ti5UVQ7s5K5T2lS4VIw
+7/8/2021 8:21:00 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:21:09 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:21:09 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:09.628Z"}
+7/8/2021 8:21:09 PM: Context.ConnectionId : AGQ-BMzDQjiAqVpYGuhIvg
+7/8/2021 8:21:09 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 8:21:09 PM: Saiu no método OnConnectedAsync.
+08/07/2021 20:21:11: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:21:11: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:20:49.136Z"}
+08/07/2021 20:21:11: Context.ConnectionId : LaywFEoyvMqTeO498y8sPA
+08/07/2021 20:21:11: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:21:11: Entrou no método OnConnectedAsync.
+08/07/2021 20:21:11: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:11.289Z"}
+08/07/2021 20:21:11: Context.ConnectionId : x4mHMWlOeWc7O7KhAcOEXQ
+08/07/2021 20:21:11: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:21:11: Saiu no método OnConnectedAsync.
+7/8/2021 8:21:12 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:21:12 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:09.628Z"}
+7/8/2021 8:21:12 PM: Context.ConnectionId : AGQ-BMzDQjiAqVpYGuhIvg
+7/8/2021 8:21:12 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:21:13 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:21:13 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:12.988Z"}
+7/8/2021 8:21:13 PM: Context.ConnectionId : URn6_Ts0_-d4pc6OcOqxYw
+7/8/2021 8:21:13 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 8:21:13 PM: Saiu no método OnConnectedAsync.
+7/8/2021 8:21:19 PM: Entrou no método SendMessage.
+7/8/2021 8:21:19 PM: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:12.988Z"},"message":"Olá Marcel"}
+7/8/2021 8:21:19 PM: Encontrou o receiverConnectionId : x4mHMWlOeWc7O7KhAcOEXQ
+7/8/2021 8:21:28 PM: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+7/8/2021 8:21:58 PM: Context NÃO encontrado em Context.User.Identity.Name : 
+08/07/2021 20:21:58: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:21:58: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:11.289Z"}
+08/07/2021 20:21:58: Context.ConnectionId : x4mHMWlOeWc7O7KhAcOEXQ
+08/07/2021 20:21:58: Entrou no método OnConnectedAsync.
+08/07/2021 20:21:58: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:21:58: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:11.289Z"}
+08/07/2021 20:21:58: Context.ConnectionId : DZn_OTzBcz3F5zKfAzO3cg
+08/07/2021 20:21:58: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 8:21:58 PM: Saiu no método CreateNotification.
+7/8/2021 8:21:58 PM: Saiu no método SendMessage.
+7/8/2021 8:21:58 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:21:58 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:12.988Z"}
+7/8/2021 8:21:58 PM: Context.ConnectionId : URn6_Ts0_-d4pc6OcOqxYw
+7/8/2021 8:21:58 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:21:58: Entrou no método OnConnectedAsync.
+08/07/2021 20:21:58: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:11.289Z"}
+08/07/2021 20:21:58: Context.ConnectionId : 1U5YyZlGn-iNEJmYrHGtEg
+08/07/2021 20:21:58: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:21:58: Saiu no método OnConnectedAsync.
+08/07/2021 20:22:06: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:22:06: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:21:11.289Z"}
+08/07/2021 20:22:06: Context.ConnectionId : 1U5YyZlGn-iNEJmYrHGtEg
+08/07/2021 20:22:06: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:45:05: Entrou no método OnConnectedAsync.
+08/07/2021 20:45:05: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:05.874Z"}
+08/07/2021 20:45:05: Context.ConnectionId : XgouPwZnDYGlTHojwCCYCg
+08/07/2021 20:45:06: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:45:06: Saiu no método OnConnectedAsync.
+7/8/2021 8:45:08 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:45:08 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:08.899Z"}
+7/8/2021 8:45:08 PM: Context.ConnectionId : GH8qingNWDfDBRVzsSM_Yw
+7/8/2021 8:45:08 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 8:45:08 PM: Saiu no método OnConnectedAsync.
+08/07/2021 20:45:10: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:45:10: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:05.874Z"}
+08/07/2021 20:45:10: Context.ConnectionId : XgouPwZnDYGlTHojwCCYCg
+08/07/2021 20:45:10: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:45:10: Entrou no método OnConnectedAsync.
+08/07/2021 20:45:10: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:10.849Z"}
+08/07/2021 20:45:10: Context.ConnectionId : Si4iVw_JEe6zLY84hnlw5Q
+08/07/2021 20:45:10: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:45:10: Saiu no método OnConnectedAsync.
+7/8/2021 8:45:19 PM: Entrou no método SendMessage.
+7/8/2021 8:45:19 PM: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:08.899Z"},"message":"Olá"}
+7/8/2021 8:45:19 PM: Encontrou o receiverConnectionId : Si4iVw_JEe6zLY84hnlw5Q
+08/07/2021 20:49:50: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:49:50: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:10.849Z"}
+08/07/2021 20:49:50: Context.ConnectionId : Si4iVw_JEe6zLY84hnlw5Q
+7/8/2021 8:49:50 PM: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+08/07/2021 20:49:50: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:49:50 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:49:50 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:08.899Z"}
+7/8/2021 8:49:50 PM: Context.ConnectionId : jng-O9pHQptbxnvyTJFF3w
+7/8/2021 8:49:50 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 8:49:50 PM: Saiu no método OnConnectedAsync.
+7/8/2021 8:49:51 PM: Context NÃO encontrado em Context.User.Identity.Name : 0
+7/8/2021 8:49:51 PM: Saiu no método CreateNotification.
+7/8/2021 8:49:51 PM: Saiu no método SendMessage.
+7/8/2021 8:49:51 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:49:51 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:08.899Z"}
+7/8/2021 8:49:51 PM: Context.ConnectionId : GH8qingNWDfDBRVzsSM_Yw
+7/8/2021 8:49:51 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:49:53 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:49:53 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:45:08.899Z"}
+7/8/2021 8:49:53 PM: Context.ConnectionId : jng-O9pHQptbxnvyTJFF3w
+7/8/2021 8:49:53 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:50:26 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:50:26 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:26.327Z"}
+7/8/2021 8:50:26 PM: Context.ConnectionId : 5qzL4_Wjh51H-C5yMQJ6AA
+7/8/2021 8:50:26 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 8:50:26 PM: Saiu no método OnConnectedAsync.
+08/07/2021 20:50:27: Entrou no método OnConnectedAsync.
+08/07/2021 20:50:27: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:27.262Z"}
+08/07/2021 20:50:27: Context.ConnectionId : Hv5BK5YJjxM7n2ayIy9xpQ
+08/07/2021 20:50:27: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:50:27: Saiu no método OnConnectedAsync.
+7/8/2021 8:50:29 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:50:29 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:26.327Z"}
+7/8/2021 8:50:29 PM: Context.ConnectionId : 5qzL4_Wjh51H-C5yMQJ6AA
+7/8/2021 8:50:29 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:50:29 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:50:29 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:29.241Z"}
+7/8/2021 8:50:29 PM: Context.ConnectionId : sN0JH1gsBpyh6XMqQQljVA
+7/8/2021 8:50:29 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 8:50:29 PM: Saiu no método OnConnectedAsync.
+7/8/2021 8:50:33 PM: Entrou no método SendMessage.
+7/8/2021 8:50:33 PM: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:29.241Z"},"message":"Olá"}
+7/8/2021 8:50:33 PM: Encontrou o receiverConnectionId : Hv5BK5YJjxM7n2ayIy9xpQ
+08/07/2021 20:51:35: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:51:35: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:27.262Z"}
+08/07/2021 20:51:35: Context.ConnectionId : Hv5BK5YJjxM7n2ayIy9xpQ
+08/07/2021 20:51:35: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:51:35 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:51:35 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:29.241Z"}
+7/8/2021 8:51:35 PM: Context.ConnectionId : sN0JH1gsBpyh6XMqQQljVA
+7/8/2021 8:51:35 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:51:35: Entrou no método OnConnectedAsync.
+08/07/2021 20:51:35: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:27.262Z"}
+08/07/2021 20:51:35: Context.ConnectionId : C2BsCgEOmKRwoKSYbIQzEA
+08/07/2021 20:51:35: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:51:35: Saiu no método OnConnectedAsync.
+08/07/2021 20:51:51: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:51:51: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:50:27.262Z"}
+08/07/2021 20:51:51: Context.ConnectionId : C2BsCgEOmKRwoKSYbIQzEA
+08/07/2021 20:51:51: Saiu no método OnDisconnectedAsync.
+08/07/2021 20:51:51: Entrou no método OnConnectedAsync.
+08/07/2021 20:51:51: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:51:51.868Z"}
+08/07/2021 20:51:51: Context.ConnectionId : SB0fgV814Bcr6-9jzuxgIA
+08/07/2021 20:51:51: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:51:51: Saiu no método OnConnectedAsync.
+08/07/2021 20:52:09: Entrou no método OnDisconnectedAsync.
+08/07/2021 20:52:09: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:51:51.868Z"}
+08/07/2021 20:52:09: Context.ConnectionId : SB0fgV814Bcr6-9jzuxgIA
+08/07/2021 20:52:09: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:52:44 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:52:44 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:44.069Z"}
+7/8/2021 8:52:44 PM: Context.ConnectionId : 7adBN3OilvsQq8QCdcjrYg
+7/8/2021 8:52:44 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 8:52:44 PM: Saiu no método OnConnectedAsync.
+08/07/2021 20:52:47: Entrou no método OnConnectedAsync.
+08/07/2021 20:52:47: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:47.906Z"}
+08/07/2021 20:52:47: Context.ConnectionId : pTZku16u2PCXcKiu3iFO7w
+08/07/2021 20:52:47: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 20:52:47: Saiu no método OnConnectedAsync.
+7/8/2021 8:52:49 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 8:52:49 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:44.069Z"}
+7/8/2021 8:52:49 PM: Context.ConnectionId : 7adBN3OilvsQq8QCdcjrYg
+7/8/2021 8:52:49 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 8:52:49 PM: Entrou no método OnConnectedAsync.
+7/8/2021 8:52:49 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:49.469Z"}
+7/8/2021 8:52:49 PM: Context.ConnectionId : Qy9Y9sk6Gn1OHiYX_exokw
+7/8/2021 8:52:49 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 8:52:49 PM: Saiu no método OnConnectedAsync.
+7/8/2021 8:52:58 PM: Entrou no método SendMessage.
+7/8/2021 8:52:58 PM: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:49.469Z"},"message":"Olá"}
+7/8/2021 8:52:58 PM: Encontrou o receiverConnectionId : pTZku16u2PCXcKiu3iFO7w
+7/8/2021 8:53:13 PM: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+08/07/2021 21:04:18: Entrou no método OnDisconnectedAsync.
+08/07/2021 21:04:18: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:47.906Z"}
+08/07/2021 21:04:18: Context.ConnectionId : pTZku16u2PCXcKiu3iFO7w
+7/8/2021 9:04:18 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:04:18 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:49.469Z"}
+08/07/2021 21:04:18: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:04:18 PM: Context.ConnectionId : xK95SyEyJGC2JfhjA8ypTg
+7/8/2021 9:04:18 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:04:18 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:04:18 PM:    at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.ThrowIfError[T](IRestResponse`1 restResponse) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 124
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.GetResponseData[T](IRestResponse`1 restResponse) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 110
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.Create(NotificationCreateOptions options) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 33
+   at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 326
+7/8/2021 9:04:18 PM: Saiu no método CreateNotification.
+7/8/2021 9:04:18 PM:    at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 333
+   at Chat.Hubs.ChatHubNovo.SendMessage(Message chat) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 232
+7/8/2021 9:04:18 PM: Saiu no método SendMessage.
+7/8/2021 9:04:18 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:04:18 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:49.469Z"}
+7/8/2021 9:04:18 PM: Context.ConnectionId : Qy9Y9sk6Gn1OHiYX_exokw
+7/8/2021 9:04:18 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:08:54 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:08:54 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-08T23:52:49.469Z"}
+7/8/2021 9:08:54 PM: Context.ConnectionId : xK95SyEyJGC2JfhjA8ypTg
+7/8/2021 9:08:54 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 21:10:38: Entrou no método OnConnectedAsync.
+08/07/2021 21:10:38: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:38.587Z"}
+08/07/2021 21:10:38: Context.ConnectionId : T-zDqvSeoxQYAoNLhIhBDg
+08/07/2021 21:10:38: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 21:10:38: Saiu no método OnConnectedAsync.
+7/8/2021 9:10:41 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:10:41 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:41.125Z"}
+7/8/2021 9:10:41 PM: Context.ConnectionId : Orbwdwt5tmsxYM-oW2RXvg
+7/8/2021 9:10:41 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:10:41 PM: Saiu no método OnConnectedAsync.
+08/07/2021 21:10:42: Entrou no método OnDisconnectedAsync.
+08/07/2021 21:10:42: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:38.587Z"}
+08/07/2021 21:10:42: Context.ConnectionId : T-zDqvSeoxQYAoNLhIhBDg
+08/07/2021 21:10:42: Saiu no método OnDisconnectedAsync.
+08/07/2021 21:10:42: Entrou no método OnConnectedAsync.
+08/07/2021 21:10:42: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:42.795Z"}
+08/07/2021 21:10:42: Context.ConnectionId : DZpcruEZOD7fcUTjMciIJg
+08/07/2021 21:10:42: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 21:10:42: Saiu no método OnConnectedAsync.
+08/07/2021 21:10:48: Entrou no método SendMessage.
+08/07/2021 21:10:48: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","sender":{"name":"Ana Moura","signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:42.795Z"},"message":"Olá"}
+08/07/2021 21:10:48: Encontrou o receiverConnectionId : Orbwdwt5tmsxYM-oW2RXvg
+08/07/2021 21:12:26: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+7/8/2021 9:12:26 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:12:26 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:41.125Z"}
+7/8/2021 9:12:26 PM: Context.ConnectionId : Orbwdwt5tmsxYM-oW2RXvg
+7/8/2021 9:12:26 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:12:26 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:12:26 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:41.125Z"}
+7/8/2021 9:12:26 PM: Context.ConnectionId : XGGB2SgY3QWHhRgaLVJ5Ig
+7/8/2021 9:12:26 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:12:27 PM: Saiu no método OnConnectedAsync.
+08/07/2021 21:12:27: Context NÃO encontrado em Context.User.Identity.Name : 0
+08/07/2021 21:12:27: Saiu no método CreateNotification.
+08/07/2021 21:12:27: Saiu no método SendMessage.
+08/07/2021 21:12:27: Entrou no método OnDisconnectedAsync.
+08/07/2021 21:12:27: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:42.795Z"}
+08/07/2021 21:12:27: Context.ConnectionId : DZpcruEZOD7fcUTjMciIJg
+08/07/2021 21:12:27: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:13:16 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:13:16 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:10:41.125Z"}
+7/8/2021 9:13:16 PM: Context.ConnectionId : XGGB2SgY3QWHhRgaLVJ5Ig
+7/8/2021 9:13:16 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:16:45 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:16:45 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:45.066Z"}
+7/8/2021 9:16:45 PM: Context.ConnectionId : 0AhLPsYlfU8LdVBAfSTJ_A
+7/8/2021 9:16:45 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 9:16:45 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:16:53 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:16:53 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:52.978Z"}
+7/8/2021 9:16:53 PM: Context.ConnectionId : IaxIU8MAkuRpUIu64_DrCQ
+7/8/2021 9:16:53 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:16:53 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:16:54 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:16:54 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:45.066Z"}
+7/8/2021 9:16:54 PM: Context.ConnectionId : 0AhLPsYlfU8LdVBAfSTJ_A
+7/8/2021 9:16:54 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:16:54 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:16:54 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:54.518Z"}
+7/8/2021 9:16:54 PM: Context.ConnectionId : L7Pji2kgm-IQtfnFtFrOCw
+7/8/2021 9:16:54 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:16:54 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:16:56 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:16:56 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:54.518Z"}
+7/8/2021 9:16:56 PM: Context.ConnectionId : L7Pji2kgm-IQtfnFtFrOCw
+7/8/2021 9:16:56 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:16:56 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:16:56 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:56.308Z"}
+7/8/2021 9:16:56 PM: Context.ConnectionId : HABs6hHY3R4gy2DnIRS7Dw
+7/8/2021 9:16:56 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:16:56 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:16:56 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:16:56 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:56.308Z"}
+7/8/2021 9:16:56 PM: Context.ConnectionId : HABs6hHY3R4gy2DnIRS7Dw
+7/8/2021 9:16:56 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:16:56 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:16:56 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:56.621Z"}
+7/8/2021 9:16:56 PM: Context.ConnectionId : gRASBf3H-qpI8GVCthG_Ww
+7/8/2021 9:16:56 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:16:56 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:16:58 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:16:58 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:56.621Z"}
+7/8/2021 9:16:58 PM: Context.ConnectionId : gRASBf3H-qpI8GVCthG_Ww
+7/8/2021 9:16:58 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:14 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:14 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:14.000Z"}
+7/8/2021 9:17:14 PM: Context.ConnectionId : _VBLR9s9MqcsG4EIfWInNA
+7/8/2021 9:17:14 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 9:17:14 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:15 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:15 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:16:52.978Z"}
+7/8/2021 9:17:15 PM: Context.ConnectionId : IaxIU8MAkuRpUIu64_DrCQ
+7/8/2021 9:17:15 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:15 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:15 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:15.867Z"}
+7/8/2021 9:17:15 PM: Context.ConnectionId : lHXjbcx7tjvgQkpaCRW9YA
+7/8/2021 9:17:15 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 9:17:15 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:16 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:16 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:15.867Z"}
+7/8/2021 9:17:16 PM: Context.ConnectionId : lHXjbcx7tjvgQkpaCRW9YA
+7/8/2021 9:17:16 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:17 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:17 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:17.064Z"}
+7/8/2021 9:17:17 PM: Context.ConnectionId : 1wXazeYJSL-D5flLkr-DlA
+7/8/2021 9:17:17 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 9:17:17 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:17 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:17 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:17.064Z"}
+7/8/2021 9:17:17 PM: Context.ConnectionId : 1wXazeYJSL-D5flLkr-DlA
+7/8/2021 9:17:17 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:17 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:17 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:17.629Z"}
+7/8/2021 9:17:17 PM: Context.ConnectionId : 7fCb9UC6ivBjudCBdD6Vdg
+7/8/2021 9:17:17 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 9:17:17 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:18 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:18 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:14.000Z"}
+7/8/2021 9:17:18 PM: Context.ConnectionId : _VBLR9s9MqcsG4EIfWInNA
+7/8/2021 9:17:18 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:19 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:19 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:19.107Z"}
+7/8/2021 9:17:19 PM: Context.ConnectionId : 1tD2MY4dzYZqAmPNcpCdNQ
+7/8/2021 9:17:19 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 9:17:19 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:19 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:19 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:19.107Z"}
+7/8/2021 9:17:19 PM: Context.ConnectionId : 1tD2MY4dzYZqAmPNcpCdNQ
+7/8/2021 9:17:19 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:19 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:19 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:19.680Z"}
+7/8/2021 9:17:19 PM: Context.ConnectionId : MNqrCzo35Uerbhv2C8-aLQ
+7/8/2021 9:17:19 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 9:17:19 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:20 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:20 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:19.680Z"}
+7/8/2021 9:17:20 PM: Context.ConnectionId : MNqrCzo35Uerbhv2C8-aLQ
+7/8/2021 9:17:20 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:20 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:20 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:20.221Z"}
+7/8/2021 9:17:20 PM: Context.ConnectionId : PI8AI2iTg6tfPleLWNSKYA
+7/8/2021 9:17:20 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+7/8/2021 9:17:20 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:20 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:20 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:20.221Z"}
+7/8/2021 9:17:21 PM: Context.ConnectionId : PI8AI2iTg6tfPleLWNSKYA
+7/8/2021 9:17:21 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:21 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:21 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:17.629Z"}
+7/8/2021 9:17:21 PM: Context.ConnectionId : 7fCb9UC6ivBjudCBdD6Vdg
+7/8/2021 9:17:21 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:49 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:49 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:49.772Z"}
+7/8/2021 9:17:49 PM: Context.ConnectionId : jYL69-4y-ibQBmez5HsK3A
+7/8/2021 9:17:49 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:17:49 PM: Saiu no método OnConnectedAsync.
+08/07/2021 21:17:50: Entrou no método OnConnectedAsync.
+08/07/2021 21:17:50: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:50.662Z"}
+08/07/2021 21:17:50: Context.ConnectionId : tZ2xHN-YqtlwaStVJQ6Lcg
+08/07/2021 21:17:50: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 21:17:50: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:52 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:17:52 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:49.772Z"}
+7/8/2021 9:17:52 PM: Context.ConnectionId : jYL69-4y-ibQBmez5HsK3A
+7/8/2021 9:17:52 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:17:52 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:17:52 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:52.220Z"}
+7/8/2021 9:17:52 PM: Context.ConnectionId : P3ck2uAmP68sWI3kkkkGMg
+7/8/2021 9:17:52 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:17:52 PM: Saiu no método OnConnectedAsync.
+7/8/2021 9:17:56 PM: Entrou no método SendMessage.
+7/8/2021 9:17:56 PM: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:52.22Z"},"message":"OI"}
+7/8/2021 9:17:56 PM: Encontrou o receiverConnectionId : tZ2xHN-YqtlwaStVJQ6Lcg
+08/07/2021 21:19:05: Entrou no método OnDisconnectedAsync.
+08/07/2021 21:19:05: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:50.662Z"}
+08/07/2021 21:19:05: Context.ConnectionId : tZ2xHN-YqtlwaStVJQ6Lcg
+08/07/2021 21:19:05: Entrou no método OnConnectedAsync.
+7/8/2021 9:19:05 PM: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+08/07/2021 21:19:05: Saiu no método OnDisconnectedAsync.
+08/07/2021 21:19:05: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:50.662Z"}
+7/8/2021 9:19:05 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:19:05 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:52.220Z"}
+08/07/2021 21:19:05: Context.ConnectionId : PF_1rmfvmezavJH5icCzQg
+7/8/2021 9:19:05 PM: Context.ConnectionId : ftWxhZ3W9VM_jjQ7DBCleA
+7/8/2021 9:19:05 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:19:05 PM: Saiu no método OnConnectedAsync.
+08/07/2021 21:19:05: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 21:19:05: Saiu no método OnConnectedAsync.
+7/8/2021 9:19:25 PM:    at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.ThrowIfError[T](IRestResponse`1 restResponse) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 124
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.GetResponseData[T](IRestResponse`1 restResponse) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 110
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.Create(NotificationCreateOptions options) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 33
+   at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 330
+7/8/2021 9:19:28 PM: Saiu no método CreateNotification.
+7/8/2021 9:19:51 PM:    at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 337
+   at Chat.Hubs.ChatHubNovo.SendMessage(Message chat) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 236
+08/07/2021 21:19:51:    at Chat.Hubs.ChatHubNovo.WriteErrorLog(String dados) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 142
+   at Chat.Hubs.ChatHubNovo.OnDisconnectedAsync(Exception exception) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 152
+7/8/2021 9:19:51 PM: Saiu no método SendMessage.
+08/07/2021 21:19:51: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:19:51 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:19:51 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:52.220Z"}
+7/8/2021 9:19:51 PM: Context.ConnectionId : P3ck2uAmP68sWI3kkkkGMg
+7/8/2021 9:19:51 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:19:53 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:19:53 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:17:52.220Z"}
+7/8/2021 9:19:53 PM: Context.ConnectionId : ftWxhZ3W9VM_jjQ7DBCleA
+7/8/2021 9:19:53 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 21:25:46: Entrou no método OnConnectedAsync.
+08/07/2021 21:25:46: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:25:45.966Z"}
+08/07/2021 21:25:46: Context.ConnectionId : FROuTd5qeL_mru7Wcsl_Bw
+08/07/2021 21:25:46: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 21:25:46: Saiu no método OnConnectedAsync.
+7/8/2021 9:25:58 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:25:58 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:25:57.963Z"}
+7/8/2021 9:25:58 PM: Context.ConnectionId : 7vW5mX9kfwYFRGtUSGhKvw
+7/8/2021 9:25:58 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:25:58 PM: Saiu no método OnConnectedAsync.
+08/07/2021 21:26:01: Entrou no método OnDisconnectedAsync.
+08/07/2021 21:26:01: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:25:45.966Z"}
+08/07/2021 21:26:01: Context.ConnectionId : FROuTd5qeL_mru7Wcsl_Bw
+08/07/2021 21:26:01: Saiu no método OnDisconnectedAsync.
+08/07/2021 21:26:01: Entrou no método OnConnectedAsync.
+08/07/2021 21:26:01: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:26:01.788Z"}
+08/07/2021 21:26:01: Context.ConnectionId : 0DukgM91c0VcmxXmNkWK6g
+08/07/2021 21:26:01: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 21:26:01: Saiu no método OnConnectedAsync.
+08/07/2021 21:26:05: Entrou no método SendMessage.
+08/07/2021 21:26:05: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","sender":{"name":"Ana Moura","signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:26:01.788Z"},"message":"OLá"}
+08/07/2021 21:26:05: Encontrou o receiverConnectionId : 7vW5mX9kfwYFRGtUSGhKvw
+08/07/2021 21:26:05: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+08/07/2021 21:26:13: Context NÃO encontrado em Context.User.Identity.Name : 0
+08/07/2021 21:26:15: Saiu no método CreateNotification.
+08/07/2021 21:26:25: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+7/8/2021 9:27:25 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:27:25 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:25:57.963Z"}
+7/8/2021 9:27:25 PM: Context.ConnectionId : 7vW5mX9kfwYFRGtUSGhKvw
+7/8/2021 9:27:25 PM: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:27:25 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:27:25 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:25:57.963Z"}
+7/8/2021 9:27:25 PM: Context.ConnectionId : gyXh5xFm7AjuZDKB_LjB2g
+7/8/2021 9:27:25 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:27:25 PM: Saiu no método OnConnectedAsync.
+08/07/2021 21:27:26: Context NÃO encontrado em Context.User.Identity.Name : 0
+08/07/2021 21:27:26: Saiu no método CreateNotification.
+08/07/2021 21:27:26: Saiu no método SendMessage.
+08/07/2021 21:27:26: Entrou no método OnDisconnectedAsync.
+08/07/2021 21:27:26: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:26:01.788Z"}
+08/07/2021 21:27:26: Context.ConnectionId : 0DukgM91c0VcmxXmNkWK6g
+08/07/2021 21:27:26: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:27:28 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:27:28 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:25:57.963Z"}
+7/8/2021 9:27:28 PM: Context.ConnectionId : gyXh5xFm7AjuZDKB_LjB2g
+7/8/2021 9:27:28 PM: Saiu no método OnDisconnectedAsync.
+08/07/2021 21:30:10: Entrou no método OnConnectedAsync.
+08/07/2021 21:30:10: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:10.373Z"}
+08/07/2021 21:30:10: Context.ConnectionId : Kd57C8gQAcvlqBtQIZszAQ
+08/07/2021 21:30:10: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 21:30:10: Saiu no método OnConnectedAsync.
+7/8/2021 9:30:23 PM: Entrou no método OnConnectedAsync.
+7/8/2021 9:30:23 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:23.089Z"}
+7/8/2021 9:30:23 PM: Context.ConnectionId : btKencg3kVXyaokEypT46g
+7/8/2021 9:30:23 PM: Context encontrado em Context.User.Identity.Name : marcel@rism.com.br
+7/8/2021 9:30:23 PM: Saiu no método OnConnectedAsync.
+08/07/2021 21:30:24: Entrou no método OnDisconnectedAsync.
+08/07/2021 21:30:24: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:10.373Z"}
+08/07/2021 21:30:24: Context.ConnectionId : Kd57C8gQAcvlqBtQIZszAQ
+08/07/2021 21:30:24: Saiu no método OnDisconnectedAsync.
+08/07/2021 21:30:24: Entrou no método OnConnectedAsync.
+08/07/2021 21:30:24: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:24.900Z"}
+08/07/2021 21:30:24: Context.ConnectionId : GId6Gy9RrEuC3JU7BEEgEg
+08/07/2021 21:30:24: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+08/07/2021 21:30:24: Saiu no método OnConnectedAsync.
+7/8/2021 9:30:31 PM: Entrou no método SendMessage.
+7/8/2021 9:30:31 PM: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:23.089Z"},"message":"Olá"}
+7/8/2021 9:30:31 PM: Encontrou o receiverConnectionId : GId6Gy9RrEuC3JU7BEEgEg
+7/8/2021 9:30:31 PM: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+7/8/2021 9:30:42 PM: Mensagem Enviada0
+7/8/2021 9:30:45 PM: Saiu no método CreateNotification.
+7/8/2021 9:31:07 PM: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+7/8/2021 9:31:14 PM:    at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.ThrowIfError[T](IRestResponse`1 restResponse) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 124
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.GetResponseData[T](IRestResponse`1 restResponse) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 110
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.Create(NotificationCreateOptions options) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 33
+   at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 334
+7/8/2021 9:31:15 PM: Saiu no método CreateNotification.
+7/8/2021 9:31:15 PM:    at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 341
+   at Chat.Hubs.ChatHubNovo.SendMessage(Message chat) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 239
+7/8/2021 9:31:15 PM: Saiu no método SendMessage.
+08/07/2021 21:31:25: Entrou no método SendMessage.
+08/07/2021 21:31:25: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","sender":{"name":"Ana Moura","signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:24.9Z"},"message":"Oi"}
+08/07/2021 21:31:25: Encontrou o receiverConnectionId : btKencg3kVXyaokEypT46g
+08/07/2021 21:31:56: Entro no método  CreateNotification : b2cd6694-4b04-4327-99d4-c17495936e91
+08/07/2021 21:32:02:    at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.ThrowIfError[T](IRestResponse`1 restResponse) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 124
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.GetResponseData[T](IRestResponse`1 restResponse) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 110
+   at OneSignal.RestAPIv4.Client.Resources.Notifications.NotificationsResource.Create(NotificationCreateOptions options) in D:\Projetos\RISM\Aplicações\OneSignal.RestAPIv4.Client\Resources\Notifications\NotificationsResource.cs:line 33
+   at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 334
+08/07/2021 21:32:05: Saiu no método CreateNotification.
+08/07/2021 21:32:20:    at Chat.Hubs.ChatHubNovo.CreateNotification(Message chat, List`1 includePlayerIds) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 341
+   at Chat.Hubs.ChatHubNovo.SendMessage(Message chat) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 239
+08/07/2021 21:32:25: Saiu no método SendMessage.
+7/8/2021 9:32:35 PM: Entrou no método SendMessage.
+7/8/2021 9:32:35 PM: Dados recebidos no método SendMessage: {"receiverSignalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","sender":{"name":"Marcel Teste Paciente","signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:23.089Z"},"message":"DFad"}
+7/8/2021 9:32:35 PM: Encontrou o receiverConnectionId : GId6Gy9RrEuC3JU7BEEgEg
+7/8/2021 9:32:41 PM: Entro no método  CreateNotification : f5f08a16-d4d5-497f-a123-0cecdc0a5816
+7/8/2021 9:32:43 PM: Mensagem Enviada0
+7/8/2021 9:32:48 PM: Saiu no método CreateNotification.
+7/8/2021 9:32:48 PM: Saiu no método SendMessage.
+08/07/2021 21:32:56: Entrou no método OnDisconnectedAsync.
+08/07/2021 21:32:56: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:24.900Z"}
+08/07/2021 21:32:56: Context.ConnectionId : GId6Gy9RrEuC3JU7BEEgEg
+08/07/2021 21:32:56: Saiu no método OnDisconnectedAsync.
+7/8/2021 9:32:58 PM: Entrou no método OnDisconnectedAsync.
+7/8/2021 9:32:58 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-07-09T00:30:23.089Z"}
+7/8/2021 9:32:58 PM: Context.ConnectionId : btKencg3kVXyaokEypT46g
+7/8/2021 9:32:58 PM: Saiu no método OnDisconnectedAsync.

@@ -1,0 +1,93 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+@*<h1>@ViewData["Title"]</h1>
+
+    @Localizer["DescriptionRISM"]
+    <br />
+    <img src="~/images/foto-Ana.jpg" />
+    <br />
+    @Localizer["DescriptionAna"]
+    <br />
+    <img src="~/images/foto-Fabricio.jpg" />
+    <br />
+    @Localizer["DescriptionFabricio"]
+    <br />
+    <img src="~/images/foto-Marcel.jpg" />
+    <br />
+    @Localizer["DescriptionMarcel"]
+    <br />*@
+
+<section class="testimonials1 cid-smnesz215L" id="testimonials1-5">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 align-center">
+                <h2 class="mbr-fonts-style mbr-white display-2">
+                    @ViewData["Title"]
+                </h2>
+                <hr />
+                <h3 class="mbr-white pb-3 mbr-fonts-style display-7">@Localizer["DescriptionRISM"]</h3>
+            </div>
+        </div>
+        <div class="media-container-row">
+            <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                <div class="panel-item p-3">
+                    <div class="card-block">
+                        <div class="testimonial-photo">
+                            <img src="~/assets/images/2021-01-17-14.34.50.jpg" alt="" title="">
+                        </div>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Psicóloga, Doutoranda em Psicologia Clínica da UCES, Diplomada em Rorschach (Escola Argentina), Acompanhante Terapêutica, especializada em Patologias Graves e Empreendedora
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">Ana Joulie&nbsp;</div>
+                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                            Diretora Clínica
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                <div class="panel-item p-3">
+                    <div class="card-block">
+                        <div class="testimonial-photo">
+                            <img src="~/assets/images/2021-01-17-14.36.42.jpg" alt="" title="">
+                        </div>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Especialista em simplicidade. Responsável por criar a equipe de engenharia, construir ótimos produtos, bem como fornecer soluções inovadoras. Liderando a inovação tecnológica na empresa.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">Fabricio Bertoncello Scariot</div>
+                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                            Diretor de Tecnologia
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                <div class="panel-item p-3">
+                    <div class="card-block">
+                        <div class="testimonial-photo">
+                            <img src="~/assets/images/2021-01-17-14.38.06.jpg" alt="" title="">
+                        </div>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Empreteco, Acompanhante Terapêutico especializado em Patologias Graves e Empreendedor. Estudante de Psicologia na Universidad de Buenos Aires (UBA), dedicado em tempo integral a RIAT.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">Marcel Araújo Rocha</div>
+                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style display-7">
+                            Diretor Administrativo
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

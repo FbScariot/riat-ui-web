@@ -1,0 +1,80 @@
+﻿@model IEnumerable<RIAT.DAL.Entity.Models.Profissional>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    @if (User.IsInRole("Administradores"))
+    {
+        <a asp-action="Create">@Localizer["CreateNew"]</a>
+    }
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Localizer["PersonCode"]
+            </th>
+            <th>
+                @Localizer["ProfessionalName"]
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProfNrCrp)
+            </th>
+            <th>
+                @Localizer["ProfessionalNumber"]
+            </th>
+            <th>
+                @Localizer["ProfessionalEmail"]
+            </th>
+            @*<th>
+                    @Localizer["ProfessionalStatus"]
+                </th>*@
+            <th>
+                @Localizer["ProfessionalType"]
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdPessoa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeProfissional)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfNrCrp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfCdEPsi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.ProfStAtivo)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.TiprIdTipoProfissionalNavigation.TiprNmTipoProfissional)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdPessoa">@Localizer["Edit"]</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdPessoa">@Localizer["Details"]</a> |
+
+                    @if (User.IsInRole("Administradores"))
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.IdPessoa">@Localizer["Delete"]</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

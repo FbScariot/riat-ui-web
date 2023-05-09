@@ -1,0 +1,990 @@
+2021-07-20 00:00:12.652 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Chat/IndexNovo  
+2021-07-20 00:00:12.669 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:00:12.671 -03:00 [INF] Route matched with {action = "IndexNovo", controller = "Chat", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IndexNovo() on controller RIAT.UI.Web.Controllers.ChatController (RIAT.UI.Web).
+2021-07-20 00:00:12.699 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:00:12.701 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.08ms.
+2021-07-20 00:00:12.703 -03:00 [INF] Executing ViewResult, running view IndexNovo.
+2021-07-20 00:00:12.706 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:00:12.784 -03:00 [INF] Executed DbCommand (70ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:00:12.790 -03:00 [INF] Executed ViewResult - view IndexNovo executed in 87.2237ms.
+2021-07-20 00:00:12.792 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) in 119.7411ms
+2021-07-20 00:00:12.795 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:00:12.798 -03:00 [INF] Request finished in 146.3041ms 200 text/html; charset=utf-8
+2021-07-20 00:00:12.868 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:00:12.874 -03:00 [INF] Request finished in 29905.7694ms 101 
+2021-07-20 00:00:12.924 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:00:12.936 -03:00 [INF] Request finished in 12.2753ms 404 
+2021-07-20 00:00:12.946 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:00:12.950 -03:00 [INF] Request finished in 3.4245ms 404 
+2021-07-20 00:00:13.220 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:13.224 -03:00 [INF] Request finished in 3.9445ms 404 
+2021-07-20 00:00:13.231 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:13.235 -03:00 [INF] Request finished in 4.2052ms 404 
+2021-07-20 00:00:13.258 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:13.262 -03:00 [INF] Request finished in 4.6225ms 404 
+2021-07-20 00:00:13.269 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:13.273 -03:00 [INF] Request finished in 4.5311ms 404 
+2021-07-20 00:00:13.298 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:00:13.293Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:00:13.300 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:13.303 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:00:13.307 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:00:13.324 -03:00 [INF] Request finished in 25.859ms 200 application/json
+2021-07-20 00:00:13.333 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:00:13.293Z%22}&id=qX5nfiBiwaqp11sY-AYiRA&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:00:13.337 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:13.340 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:00:14.947 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/Identity/Account/Logout?returnUrl=%2FRIAT.UI.Web application/x-www-form-urlencoded 225
+2021-07-20 00:00:14.951 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:14.958 -03:00 [INF] Executing endpoint '/Account/Logout'
+2021-07-20 00:00:14.967 -03:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2021-07-20 00:00:14.971 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2021-07-20 00:00:14.976 -03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2021-07-20 00:00:14.979 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-07-20 00:00:14.981 -03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2021-07-20 00:00:14.983 -03:00 [INF] User logged out.
+2021-07-20 00:00:14.985 -03:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2021-07-20 00:00:14.987 -03:00 [INF] Executing LocalRedirectResult, redirecting to /RIAT.UI.Web.
+2021-07-20 00:00:14.990 -03:00 [INF] Executed page /Account/Logout in 21.3255ms
+2021-07-20 00:00:14.992 -03:00 [INF] Executed endpoint '/Account/Logout'
+2021-07-20 00:00:14.995 -03:00 [INF] Request finished in 47.9466ms 302 
+2021-07-20 00:00:14.998 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web  
+2021-07-20 00:00:15.001 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:00:15.003 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:00:15.030 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:00:15.033 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1394ms.
+2021-07-20 00:00:15.036 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:00:15.042 -03:00 [INF] Executed ViewResult - view Index executed in 6.0543ms.
+2021-07-20 00:00:15.045 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 39.7643ms
+2021-07-20 00:00:15.049 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:00:15.056 -03:00 [INF] Request finished in 57.7653ms 200 text/html; charset=utf-8
+2021-07-20 00:00:15.079 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:00:15.086 -03:00 [INF] Request finished in 1753.2085ms 101 
+2021-07-20 00:00:15.170 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:15.195 -03:00 [INF] Request finished in 25.5064ms 404 
+2021-07-20 00:00:15.210 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:15.214 -03:00 [INF] Request finished in 4.307ms 404 
+2021-07-20 00:00:15.246 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:15.250 -03:00 [INF] Request finished in 3.8714ms 404 
+2021-07-20 00:00:15.266 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:15.270 -03:00 [INF] Request finished in 4.4502ms 404 
+2021-07-20 00:00:16.352 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Identity/Account/Login  
+2021-07-20 00:00:16.356 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:00:16.360 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:00:16.363 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2021-07-20 00:00:16.366 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-07-20 00:00:16.368 -03:00 [INF] Executed handler method OnGetAsync, returned result .
+2021-07-20 00:00:16.369 -03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-07-20 00:00:16.371 -03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-07-20 00:00:16.379 -03:00 [INF] Executed page /Account/Login in 17.1601ms
+2021-07-20 00:00:16.381 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:00:16.383 -03:00 [INF] Request finished in 30.8719ms 200 text/html; charset=utf-8
+2021-07-20 00:00:16.428 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:16.432 -03:00 [INF] Request finished in 3.6658ms 404 
+2021-07-20 00:00:16.442 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:16.448 -03:00 [INF] Request finished in 6.0035ms 404 
+2021-07-20 00:00:16.513 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:16.521 -03:00 [INF] Request finished in 7.4725ms 404 
+2021-07-20 00:00:16.528 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:16.532 -03:00 [INF] Request finished in 4.0088ms 404 
+2021-07-20 00:00:19.504 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/Identity/Account/Login application/x-www-form-urlencoded 265
+2021-07-20 00:00:19.508 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:19.510 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:00:19.512 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:00:19.517 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2021-07-20 00:00:19.519 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:00:19.546 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-07-20 00:00:19.581 -03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2021-07-20 00:00:19.609 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-07-20 00:00:19.633 -03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2021-07-20 00:00:19.659 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2021-07-20 00:00:19.662 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-07-20 00:00:19.663 -03:00 [INF] User logged in.
+2021-07-20 00:00:19.665 -03:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2021-07-20 00:00:19.667 -03:00 [INF] Executing LocalRedirectResult, redirecting to /RIAT.UI.Web/.
+2021-07-20 00:00:19.668 -03:00 [INF] Executed page /Account/Login in 154.2362ms
+2021-07-20 00:00:19.670 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:00:19.673 -03:00 [INF] Request finished in 169.3907ms 302 
+2021-07-20 00:00:19.677 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/  
+2021-07-20 00:00:19.681 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:00:19.683 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:00:19.709 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:00:19.712 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1214ms.
+2021-07-20 00:00:19.714 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:00:19.721 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:00:19.749 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:00:19.753 -03:00 [INF] Executed ViewResult - view Index executed in 38.9684ms.
+2021-07-20 00:00:19.755 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 69.7082ms
+2021-07-20 00:00:19.758 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:00:19.760 -03:00 [INF] Request finished in 82.9362ms 200 text/html; charset=utf-8
+2021-07-20 00:00:19.818 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:19.823 -03:00 [INF] Request finished in 4.7099ms 404 
+2021-07-20 00:00:19.831 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:19.840 -03:00 [INF] Request finished in 8.9976ms 404 
+2021-07-20 00:00:19.882 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:19.895 -03:00 [INF] Request finished in 13.2969ms 404 
+2021-07-20 00:00:19.904 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:19.913 -03:00 [INF] Request finished in 9.7182ms 404 
+2021-07-20 00:00:21.038 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Chat/IndexNovo  
+2021-07-20 00:00:21.044 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:00:21.047 -03:00 [INF] Route matched with {action = "IndexNovo", controller = "Chat", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IndexNovo() on controller RIAT.UI.Web.Controllers.ChatController (RIAT.UI.Web).
+2021-07-20 00:00:21.066 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:00:21.068 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0929ms.
+2021-07-20 00:00:21.071 -03:00 [INF] Executing ViewResult, running view IndexNovo.
+2021-07-20 00:00:21.075 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:00:21.101 -03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:00:21.110 -03:00 [INF] Executed ViewResult - view IndexNovo executed in 39.1785ms.
+2021-07-20 00:00:21.112 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) in 63.0835ms
+2021-07-20 00:00:21.114 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:00:21.116 -03:00 [INF] Request finished in 78.4209ms 200 text/html; charset=utf-8
+2021-07-20 00:00:21.252 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:00:21.259 -03:00 [INF] Request finished in 6.8132ms 404 
+2021-07-20 00:00:21.267 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:00:21.271 -03:00 [INF] Request finished in 3.908ms 404 
+2021-07-20 00:00:21.310 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:21.314 -03:00 [INF] Request finished in 4.019ms 404 
+2021-07-20 00:00:21.321 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:21.326 -03:00 [INF] Request finished in 4.8829ms 404 
+2021-07-20 00:00:21.539 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:21.546 -03:00 [INF] Request finished in 7.0528ms 404 
+2021-07-20 00:00:21.553 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:21.560 -03:00 [INF] Request finished in 5.8814ms 404 
+2021-07-20 00:00:21.589 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:00:21.582Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:00:21.593 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:21.596 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:00:21.598 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:00:21.601 -03:00 [INF] Request finished in 12.3718ms 200 application/json
+2021-07-20 00:00:21.603 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:00:21.582Z%22}&id=DOnp1mZvZEDALoLecESdIQ&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:00:21.610 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:21.612 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:00:22.971 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Chat/IndexNovo  
+2021-07-20 00:00:22.975 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:00:22.977 -03:00 [INF] Route matched with {action = "IndexNovo", controller = "Chat", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IndexNovo() on controller RIAT.UI.Web.Controllers.ChatController (RIAT.UI.Web).
+2021-07-20 00:00:22.999 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:00:23.001 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0949ms.
+2021-07-20 00:00:23.003 -03:00 [INF] Executing ViewResult, running view IndexNovo.
+2021-07-20 00:00:23.009 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:00:23.037 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:00:23.045 -03:00 [INF] Executed ViewResult - view IndexNovo executed in 42.0772ms.
+2021-07-20 00:00:23.047 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) in 68.4448ms
+2021-07-20 00:00:23.050 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:00:23.052 -03:00 [INF] Request finished in 81.3659ms 200 text/html; charset=utf-8
+2021-07-20 00:00:23.082 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:00:23.089 -03:00 [INF] Request finished in 1485.9722ms 101 
+2021-07-20 00:00:23.147 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:00:23.173 -03:00 [INF] Request finished in 26.2006ms 404 
+2021-07-20 00:00:23.192 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:00:23.195 -03:00 [INF] Request finished in 3.4869ms 404 
+2021-07-20 00:00:23.225 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:23.229 -03:00 [INF] Request finished in 3.9269ms 404 
+2021-07-20 00:00:23.237 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:23.241 -03:00 [INF] Request finished in 3.7193ms 404 
+2021-07-20 00:00:23.429 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:23.433 -03:00 [INF] Request finished in 3.5672ms 404 
+2021-07-20 00:00:23.440 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:23.443 -03:00 [INF] Request finished in 2.8607ms 404 
+2021-07-20 00:00:23.478 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:00:23.474Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:00:23.483 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:23.486 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/images/2021-01-17-14.41.12.jpg  
+2021-07-20 00:00:23.488 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:00:23.491 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:00:23.493 -03:00 [INF] Request finished in 15.0314ms 200 application/json
+2021-07-20 00:00:23.497 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:00:23.474Z%22}&id=h42chp4yE-dnvIvs5gjD_A&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:00:23.500 -03:00 [INF] Sending file. Request path: '/assets/images/2021-01-17-14.41.12.jpg'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\images\2021-01-17-14.41.12.jpg'
+2021-07-20 00:00:23.501 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:23.504 -03:00 [INF] Request finished in 17.4024ms 200 image/jpeg
+2021-07-20 00:00:23.505 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:00:33.425 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Chat/IndexNovo  
+2021-07-20 00:00:33.428 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:00:33.429 -03:00 [INF] Route matched with {action = "IndexNovo", controller = "Chat", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IndexNovo() on controller RIAT.UI.Web.Controllers.ChatController (RIAT.UI.Web).
+2021-07-20 00:00:33.456 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:00:33.458 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0655ms.
+2021-07-20 00:00:33.460 -03:00 [INF] Executing ViewResult, running view IndexNovo.
+2021-07-20 00:00:33.463 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:00:33.494 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:00:33.500 -03:00 [INF] Executed ViewResult - view IndexNovo executed in 39.7761ms.
+2021-07-20 00:00:33.503 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) in 71.8408ms
+2021-07-20 00:00:33.505 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:00:33.508 -03:00 [INF] Request finished in 82.0816ms 200 text/html; charset=utf-8
+2021-07-20 00:00:33.524 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:00:33.541 -03:00 [INF] Request finished in 10044.7915ms 101 
+2021-07-20 00:00:33.595 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:00:33.619 -03:00 [INF] Request finished in 24.3524ms 404 
+2021-07-20 00:00:33.628 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:00:33.636 -03:00 [INF] Request finished in 8.3402ms 404 
+2021-07-20 00:00:33.681 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:33.687 -03:00 [INF] Request finished in 6.8172ms 404 
+2021-07-20 00:00:33.695 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:00:33.699 -03:00 [INF] Request finished in 3.2459ms 404 
+2021-07-20 00:00:33.907 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:33.910 -03:00 [INF] Request finished in 3.4305ms 404 
+2021-07-20 00:00:33.919 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:00:33.923 -03:00 [INF] Request finished in 4.2072ms 404 
+2021-07-20 00:00:33.948 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:00:33.942Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:00:33.950 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:33.952 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:00:33.956 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:00:33.959 -03:00 [INF] Request finished in 10.7496ms 200 application/json
+2021-07-20 00:00:33.966 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:00:33.942Z%22}&id=o5GUh_d4xPwfSdBCUhRJGQ&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:00:33.969 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:00:33.971 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:00:33.987 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/images/2021-01-17-14.41.12.jpg  
+2021-07-20 00:00:33.995 -03:00 [INF] Sending file. Request path: '/assets/images/2021-01-17-14.41.12.jpg'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\images\2021-01-17-14.41.12.jpg'
+2021-07-20 00:00:33.997 -03:00 [INF] Request finished in 9.9266ms 200 image/jpeg
+2021-07-20 00:00:52.951 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:00:53.001 -03:00 [INF] Request finished in 19034.603ms 101 
+2021-07-20 00:00:56.017 -03:00 [INF] Application is shutting down...
+2021-07-20 00:01:10.202 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-07-20 00:01:10.290 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-07-20 00:01:10.313 -03:00 [INF] Creating key {6798751d-85b7-4319-847c-0e8db06ffa17} with creation date 2021-07-20 03:01:10Z, activation date 2021-07-20 03:01:10Z, and expiration date 2021-10-18 03:01:10Z.
+2021-07-20 00:01:10.332 -03:00 [WRN] No XML encryptor configured. Key {6798751d-85b7-4319-847c-0e8db06ffa17} may be persisted to storage in unencrypted form.
+2021-07-20 00:01:10.948 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-20 00:01:10.950 -03:00 [INF] Hosting environment: Development
+2021-07-20 00:01:10.952 -03:00 [INF] Content root path: D:\Projetos\RISM\Aplicações\RISM-ui-web
+2021-07-20 00:01:10.986 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web  
+2021-07-20 00:01:11.018 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-07-20 00:01:11.118 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:01:11.168 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:01:11.279 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:01:11.293 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.3213ms.
+2021-07-20 00:01:11.317 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:01:11.868 -03:00 [INF] Executed ViewResult - view Index executed in 560.4996ms.
+2021-07-20 00:01:11.873 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 702.3173ms
+2021-07-20 00:01:11.882 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:01:11.896 -03:00 [INF] Request finished in 913.6997ms 200 text/html; charset=utf-8
+2021-07-20 00:01:12.370 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:12.447 -03:00 [INF] Request finished in 78.4642ms 404 
+2021-07-20 00:01:12.760 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:12.776 -03:00 [INF] Request finished in 16.4645ms 404 
+2021-07-20 00:01:12.827 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:12.834 -03:00 [INF] Request finished in 6.4599ms 404 
+2021-07-20 00:01:12.845 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:12.850 -03:00 [INF] Request finished in 5.762ms 404 
+2021-07-20 00:01:14.009 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Identity/Account/Login  
+2021-07-20 00:01:14.033 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:01:14.078 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:01:14.116 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2021-07-20 00:01:14.126 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-07-20 00:01:14.131 -03:00 [INF] Executed handler method OnGetAsync, returned result .
+2021-07-20 00:01:14.138 -03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-07-20 00:01:14.140 -03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-07-20 00:01:14.227 -03:00 [INF] Executed page /Account/Login in 147.2127ms
+2021-07-20 00:01:14.229 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:01:14.232 -03:00 [INF] Request finished in 224.1464ms 200 text/html; charset=utf-8
+2021-07-20 00:01:14.314 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:14.319 -03:00 [INF] Request finished in 4.5771ms 404 
+2021-07-20 00:01:14.336 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:14.386 -03:00 [INF] Request finished in 50.5743ms 404 
+2021-07-20 00:01:14.422 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:14.426 -03:00 [INF] Request finished in 4.1418ms 404 
+2021-07-20 00:01:14.445 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:14.450 -03:00 [INF] Request finished in 4.8609ms 404 
+2021-07-20 00:01:16.172 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/Identity/Account/Login application/x-www-form-urlencoded 265
+2021-07-20 00:01:16.180 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:01:16.192 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:01:16.195 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:01:16.252 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2021-07-20 00:01:17.134 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:01:18.125 -03:00 [INF] Executed DbCommand (113ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-07-20 00:01:18.386 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2021-07-20 00:01:18.559 -03:00 [INF] Executed DbCommand (60ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-07-20 00:01:18.644 -03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2021-07-20 00:01:18.792 -03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2021-07-20 00:01:18.839 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-07-20 00:01:18.848 -03:00 [INF] User logged in.
+2021-07-20 00:01:18.890 -03:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2021-07-20 00:01:18.910 -03:00 [INF] Executing LocalRedirectResult, redirecting to /RIAT.UI.Web/.
+2021-07-20 00:01:18.932 -03:00 [INF] Executed page /Account/Login in 2734.9375ms
+2021-07-20 00:01:18.947 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:01:18.960 -03:00 [INF] Request finished in 2788.7321ms 302 
+2021-07-20 00:01:18.990 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/  
+2021-07-20 00:01:19.033 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:01:19.083 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:01:19.149 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:01:19.154 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1141ms.
+2021-07-20 00:01:19.165 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:01:19.255 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:01:19.343 -03:00 [INF] Executed DbCommand (70ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:01:19.370 -03:00 [INF] Executed ViewResult - view Index executed in 205.7334ms.
+2021-07-20 00:01:19.392 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 293.6794ms
+2021-07-20 00:01:19.416 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:01:19.455 -03:00 [INF] Request finished in 465.64ms 200 text/html; charset=utf-8
+2021-07-20 00:01:19.565 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:19.642 -03:00 [INF] Request finished in 76.8257ms 404 
+2021-07-20 00:01:19.697 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:19.715 -03:00 [INF] Request finished in 19.4458ms 404 
+2021-07-20 00:01:19.746 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:19.754 -03:00 [INF] Request finished in 7.9433ms 404 
+2021-07-20 00:01:19.781 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:19.787 -03:00 [INF] Request finished in 6.5325ms 404 
+2021-07-20 00:01:21.042 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web  
+2021-07-20 00:01:21.054 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:01:21.058 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:01:21.091 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:01:21.093 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1265ms.
+2021-07-20 00:01:21.097 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:01:21.147 -03:00 [INF] Executed ViewResult - view Index executed in 51.6249ms.
+2021-07-20 00:01:21.150 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 89.1115ms
+2021-07-20 00:01:21.157 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:01:21.162 -03:00 [INF] Request finished in 120.4256ms 200 text/html; charset=utf-8
+2021-07-20 00:01:21.223 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/mobirise/css/mbr-additional.css  
+2021-07-20 00:01:21.229 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/css/bootstrap.min.css  
+2021-07-20 00:01:21.230 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/css/bootstrap-grid.min.css  
+2021-07-20 00:01:21.234 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/web/assets/mobirise-icons/mobirise-icons.css  
+2021-07-20 00:01:21.233 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/css/bootstrap-reboot.min.css  
+2021-07-20 00:01:21.233 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/socicon/css/styles.css  
+2021-07-20 00:01:21.268 -03:00 [INF] Sending file. Request path: '/assets/bootstrap/css/bootstrap-reboot.min.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\bootstrap\css\bootstrap-reboot.min.css'
+2021-07-20 00:01:21.271 -03:00 [INF] Sending file. Request path: '/assets/web/assets/mobirise-icons/mobirise-icons.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\web\assets\mobirise-icons\mobirise-icons.css'
+2021-07-20 00:01:21.274 -03:00 [INF] Request finished in 41.4054ms 200 text/css
+2021-07-20 00:01:21.276 -03:00 [INF] Request finished in 42.0812ms 200 text/css
+2021-07-20 00:01:21.291 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/tether/tether.min.css  
+2021-07-20 00:01:21.297 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/dropdown/css/style.css  
+2021-07-20 00:01:21.312 -03:00 [INF] Sending file. Request path: '/assets/tether/tether.min.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\tether\tether.min.css'
+2021-07-20 00:01:21.314 -03:00 [INF] Sending file. Request path: '/assets/dropdown/css/style.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\dropdown\css\style.css'
+2021-07-20 00:01:21.315 -03:00 [INF] Request finished in 24.2569ms 200 text/css
+2021-07-20 00:01:21.317 -03:00 [INF] Request finished in 26.3048ms 200 text/css
+2021-07-20 00:01:21.324 -03:00 [INF] Sending file. Request path: '/assets/socicon/css/styles.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\socicon\css\styles.css'
+2021-07-20 00:01:21.324 -03:00 [INF] Sending file. Request path: '/assets/mobirise/css/mbr-additional.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\mobirise\css\mbr-additional.css'
+2021-07-20 00:01:21.324 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/css/siteNovo.css  
+2021-07-20 00:01:21.324 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/theme/css/style.css  
+2021-07-20 00:01:21.330 -03:00 [INF] Request finished in 107.2659ms 200 text/css
+2021-07-20 00:01:21.330 -03:00 [INF] Request finished in 96.4402ms 200 text/css
+2021-07-20 00:01:21.334 -03:00 [INF] Sending file. Request path: '/assets/bootstrap/css/bootstrap.min.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\bootstrap\css\bootstrap.min.css'
+2021-07-20 00:01:21.324 -03:00 [INF] Sending file. Request path: '/assets/bootstrap/css/bootstrap-grid.min.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\bootstrap\css\bootstrap-grid.min.css'
+2021-07-20 00:01:21.338 -03:00 [INF] Request finished in 108.3668ms 200 text/css
+2021-07-20 00:01:21.344 -03:00 [INF] Sending file. Request path: '/css/siteNovo.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\css\siteNovo.css'
+2021-07-20 00:01:21.344 -03:00 [INF] Request finished in 114.3516ms 200 text/css
+2021-07-20 00:01:21.354 -03:00 [INF] Request finished in 29.2519ms 200 text/css
+2021-07-20 00:01:21.354 -03:00 [INF] Sending file. Request path: '/assets/theme/css/style.css'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\theme\css\style.css'
+2021-07-20 00:01:21.360 -03:00 [INF] Request finished in 36.2417ms 200 text/css
+2021-07-20 00:01:21.368 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/web/assets/jquery/jquery.min.js  
+2021-07-20 00:01:21.377 -03:00 [INF] Sending file. Request path: '/assets/web/assets/jquery/jquery.min.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\web\assets\jquery\jquery.min.js'
+2021-07-20 00:01:21.379 -03:00 [INF] Request finished in 11.1702ms 200 application/javascript
+2021-07-20 00:01:21.390 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/popper/popper.min.js  
+2021-07-20 00:01:21.394 -03:00 [INF] Sending file. Request path: '/assets/popper/popper.min.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\popper\popper.min.js'
+2021-07-20 00:01:21.396 -03:00 [INF] Request finished in 6.2336ms 200 application/javascript
+2021-07-20 00:01:21.400 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js  
+2021-07-20 00:01:21.405 -03:00 [INF] Sending file. Request path: '/assets/bootstrap/js/bootstrap.min.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\bootstrap\js\bootstrap.min.js'
+2021-07-20 00:01:21.407 -03:00 [INF] Request finished in 7.361ms 200 application/javascript
+2021-07-20 00:01:21.414 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/smoothscroll/smooth-scroll.js  
+2021-07-20 00:01:21.417 -03:00 [INF] Sending file. Request path: '/assets/smoothscroll/smooth-scroll.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\smoothscroll\smooth-scroll.js'
+2021-07-20 00:01:21.420 -03:00 [INF] Request finished in 5.947ms 200 application/javascript
+2021-07-20 00:01:21.423 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/dropdown/js/nav-dropdown.js  
+2021-07-20 00:01:21.426 -03:00 [INF] Sending file. Request path: '/assets/dropdown/js/nav-dropdown.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\dropdown\js\nav-dropdown.js'
+2021-07-20 00:01:21.428 -03:00 [INF] Request finished in 5.13ms 200 application/javascript
+2021-07-20 00:01:21.433 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/dropdown/js/navbar-dropdown.js  
+2021-07-20 00:01:21.436 -03:00 [INF] Sending file. Request path: '/assets/dropdown/js/navbar-dropdown.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\dropdown\js\navbar-dropdown.js'
+2021-07-20 00:01:21.438 -03:00 [INF] Request finished in 5.1446ms 200 application/javascript
+2021-07-20 00:01:21.442 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/touchswipe/jquery.touch-swipe.min.js  
+2021-07-20 00:01:21.446 -03:00 [INF] Sending file. Request path: '/assets/touchswipe/jquery.touch-swipe.min.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\touchswipe\jquery.touch-swipe.min.js'
+2021-07-20 00:01:21.449 -03:00 [INF] Request finished in 6.9029ms 200 application/javascript
+2021-07-20 00:01:21.453 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js  
+2021-07-20 00:01:21.456 -03:00 [INF] Sending file. Request path: '/assets/parallax/jarallax.min.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\parallax\jarallax.min.js'
+2021-07-20 00:01:21.458 -03:00 [INF] Request finished in 5.1179ms 200 application/javascript
+2021-07-20 00:01:21.462 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/tether/tether.min.js  
+2021-07-20 00:01:21.466 -03:00 [INF] Sending file. Request path: '/assets/tether/tether.min.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\tether\tether.min.js'
+2021-07-20 00:01:21.468 -03:00 [INF] Request finished in 6.1522ms 200 application/javascript
+2021-07-20 00:01:21.472 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/theme/js/script.js  
+2021-07-20 00:01:21.476 -03:00 [INF] Sending file. Request path: '/assets/theme/js/script.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\theme\js\script.js'
+2021-07-20 00:01:21.479 -03:00 [INF] Request finished in 7.0384ms 200 application/javascript
+2021-07-20 00:01:21.482 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/formoid/formoid.min.js  
+2021-07-20 00:01:21.485 -03:00 [INF] Sending file. Request path: '/assets/formoid/formoid.min.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\formoid\formoid.min.js'
+2021-07-20 00:01:21.487 -03:00 [INF] Request finished in 5.2333ms 200 application/javascript
+2021-07-20 00:01:21.491 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/mbr-switch-arrow/mbr-switch-arrow.js  
+2021-07-20 00:01:21.495 -03:00 [INF] Sending file. Request path: '/assets/mbr-switch-arrow/mbr-switch-arrow.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\mbr-switch-arrow\mbr-switch-arrow.js'
+2021-07-20 00:01:21.497 -03:00 [INF] Request finished in 5.8572ms 200 application/javascript
+2021-07-20 00:01:21.502 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2021-07-20 00:01:21.505 -03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\js\site.js'
+2021-07-20 00:01:21.507 -03:00 [INF] Request finished in 5.1576ms 200 application/javascript
+2021-07-20 00:01:21.526 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/images/logo_riat_contra_covid.jpg  
+2021-07-20 00:01:21.529 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/images/bandeira-do-brasil.png  
+2021-07-20 00:01:21.532 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/images/bandeira-argentina.png  
+2021-07-20 00:01:21.532 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/images/bandeira-dos-estados-unidos-eua.png  
+2021-07-20 00:01:21.543 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/images/imagem-juntos-somos-mais.jpg  
+2021-07-20 00:01:21.552 -03:00 [INF] Sending file. Request path: '/images/bandeira-dos-estados-unidos-eua.png'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\images\bandeira-dos-estados-unidos-eua.png'
+2021-07-20 00:01:21.555 -03:00 [INF] Request finished in 23.1214ms 200 image/png
+2021-07-20 00:01:21.563 -03:00 [INF] Sending file. Request path: '/images/logo_riat_contra_covid.jpg'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\images\logo_riat_contra_covid.jpg'
+2021-07-20 00:01:21.563 -03:00 [INF] Sending file. Request path: '/images/bandeira-argentina.png'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\images\bandeira-argentina.png'
+2021-07-20 00:01:21.567 -03:00 [INF] Sending file. Request path: '/images/bandeira-do-brasil.png'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\images\bandeira-do-brasil.png'
+2021-07-20 00:01:21.568 -03:00 [INF] Request finished in 40.6777ms 200 image/jpeg
+2021-07-20 00:01:21.571 -03:00 [INF] Request finished in 39.1649ms 200 image/png
+2021-07-20 00:01:21.574 -03:00 [INF] Request finished in 44.6736ms 200 image/png
+2021-07-20 00:01:21.579 -03:00 [INF] Sending file. Request path: '/assets/images/imagem-juntos-somos-mais.jpg'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\images\imagem-juntos-somos-mais.jpg'
+2021-07-20 00:01:21.581 -03:00 [INF] Request finished in 38.38ms 200 image/jpeg
+2021-07-20 00:01:21.647 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:21.651 -03:00 [INF] Request finished in 3.9991ms 404 
+2021-07-20 00:01:21.656 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:21.660 -03:00 [INF] Request finished in 3.3749ms 404 
+2021-07-20 00:01:21.682 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:21.685 -03:00 [INF] Request finished in 2.9652ms 404 
+2021-07-20 00:01:21.691 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:21.694 -03:00 [INF] Request finished in 2.6204ms 404 
+2021-07-20 00:01:21.713 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/socicon/fonts/socicon.woff2  
+2021-07-20 00:01:21.742 -03:00 [INF] Sending file. Request path: '/assets/socicon/fonts/socicon.woff2'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\socicon\fonts\socicon.woff2'
+2021-07-20 00:01:21.749 -03:00 [INF] Request finished in 35.7232ms 200 font/woff2
+2021-07-20 00:01:22.498 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/images/2021-01-17-14.41.12.jpg  
+2021-07-20 00:01:22.508 -03:00 [INF] Sending file. Request path: '/assets/images/2021-01-17-14.41.12.jpg'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\assets\images\2021-01-17-14.41.12.jpg'
+2021-07-20 00:01:22.511 -03:00 [INF] Request finished in 13.6506ms 200 image/jpeg
+2021-07-20 00:01:23.096 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Identity/Account/Login  
+2021-07-20 00:01:23.099 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:01:23.104 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:01:23.108 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2021-07-20 00:01:23.111 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-07-20 00:01:23.114 -03:00 [INF] Executed handler method OnGetAsync, returned result .
+2021-07-20 00:01:23.116 -03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-07-20 00:01:23.120 -03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-07-20 00:01:23.132 -03:00 [INF] Executed page /Account/Login in 25.4881ms
+2021-07-20 00:01:23.135 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:01:23.140 -03:00 [INF] Request finished in 43.7035ms 200 text/html; charset=utf-8
+2021-07-20 00:01:23.155 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2021-07-20 00:01:23.155 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Identity/lib/jquery-validation/dist/jquery.validate.js  
+2021-07-20 00:01:23.168 -03:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\fbsca\.nuget\packages\microsoft.aspnetcore.identity.ui\3.1.8\staticwebassets\V4\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2021-07-20 00:01:23.171 -03:00 [INF] Request finished in 15.7307ms 200 application/javascript
+2021-07-20 00:01:23.171 -03:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\fbsca\.nuget\packages\microsoft.aspnetcore.identity.ui\3.1.8\staticwebassets\V4\lib\jquery-validation\dist\jquery.validate.js'
+2021-07-20 00:01:23.174 -03:00 [INF] Request finished in 19.3284ms 200 application/javascript
+2021-07-20 00:01:23.226 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:23.244 -03:00 [INF] Request finished in 18.2854ms 404 
+2021-07-20 00:01:23.266 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:23.273 -03:00 [INF] Request finished in 6.7666ms 404 
+2021-07-20 00:01:23.310 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:23.314 -03:00 [INF] Request finished in 3.7436ms 404 
+2021-07-20 00:01:23.325 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:23.328 -03:00 [INF] Request finished in 3.0088ms 404 
+2021-07-20 00:01:25.609 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/Identity/Account/Login application/x-www-form-urlencoded 265
+2021-07-20 00:01:25.612 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:01:25.614 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:01:25.617 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:01:25.621 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2021-07-20 00:01:25.630 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:01:25.667 -03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-07-20 00:01:25.706 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2021-07-20 00:01:25.737 -03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-07-20 00:01:25.769 -03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2021-07-20 00:01:25.801 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2021-07-20 00:01:25.804 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-07-20 00:01:25.805 -03:00 [INF] User logged in.
+2021-07-20 00:01:25.807 -03:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2021-07-20 00:01:25.809 -03:00 [INF] Executing LocalRedirectResult, redirecting to /RIAT.UI.Web/.
+2021-07-20 00:01:25.811 -03:00 [INF] Executed page /Account/Login in 192.5561ms
+2021-07-20 00:01:25.813 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:01:25.815 -03:00 [INF] Request finished in 206.8367ms 302 
+2021-07-20 00:01:25.818 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/  
+2021-07-20 00:01:25.820 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:01:25.822 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:01:25.844 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:01:25.845 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0711ms.
+2021-07-20 00:01:25.848 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:01:25.852 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:01:25.886 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:01:25.889 -03:00 [INF] Executed ViewResult - view Index executed in 41.4835ms.
+2021-07-20 00:01:25.891 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 66.8684ms
+2021-07-20 00:01:25.893 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:01:25.895 -03:00 [INF] Request finished in 76.9494ms 200 text/html; charset=utf-8
+2021-07-20 00:01:25.948 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:25.960 -03:00 [INF] Request finished in 12.0707ms 404 
+2021-07-20 00:01:25.979 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:25.992 -03:00 [INF] Request finished in 12.7557ms 404 
+2021-07-20 00:01:26.024 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:26.026 -03:00 [INF] Request finished in 2.9172ms 404 
+2021-07-20 00:01:26.032 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:26.035 -03:00 [INF] Request finished in 2.8839ms 404 
+2021-07-20 00:01:27.942 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Chat/IndexNovo  
+2021-07-20 00:01:27.947 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:01:27.953 -03:00 [INF] Route matched with {action = "IndexNovo", controller = "Chat", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IndexNovo() on controller RIAT.UI.Web.Controllers.ChatController (RIAT.UI.Web).
+2021-07-20 00:01:27.989 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:01:27.991 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2548ms.
+2021-07-20 00:01:27.995 -03:00 [INF] Executing ViewResult, running view IndexNovo.
+2021-07-20 00:01:28.004 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:01:28.038 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:01:28.047 -03:00 [INF] Executed ViewResult - view IndexNovo executed in 53.5282ms.
+2021-07-20 00:01:28.049 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) in 93.4044ms
+2021-07-20 00:01:28.051 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:01:28.054 -03:00 [INF] Request finished in 111.9688ms 200 text/html; charset=utf-8
+2021-07-20 00:01:28.064 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js  
+2021-07-20 00:01:28.064 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/lib/jquery/dist/jquery-3.6.0.js  
+2021-07-20 00:01:28.075 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/siteNovo.js?v=ppcHBUVE9hZOoEYcMHejRnw3AiGeIwxQBH8_VdsISrg  
+2021-07-20 00:01:28.079 -03:00 [INF] Sending file. Request path: '/js/siteNovo.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\js\siteNovo.js'
+2021-07-20 00:01:28.084 -03:00 [INF] Request finished in 8.7939ms 200 application/javascript
+2021-07-20 00:01:28.148 -03:00 [INF] Sending file. Request path: '/js/signalr/dist/browser/signalr.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\js\signalr\dist\browser\signalr.js'
+2021-07-20 00:01:28.161 -03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery-3.6.0.js'. Physical path: 'D:\Projetos\RISM\Aplicações\RISM-ui-web\wwwroot\lib\jquery\dist\jquery-3.6.0.js'
+2021-07-20 00:01:28.161 -03:00 [INF] Request finished in 97.1562ms 200 application/javascript
+2021-07-20 00:01:28.165 -03:00 [INF] Request finished in 100.7871ms 200 application/javascript
+2021-07-20 00:01:28.217 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:01:28.221 -03:00 [INF] Request finished in 3.712ms 404 
+2021-07-20 00:01:28.228 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:01:28.239 -03:00 [INF] Request finished in 11.5023ms 404 
+2021-07-20 00:01:28.267 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:28.270 -03:00 [INF] Request finished in 3.4471ms 404 
+2021-07-20 00:01:28.276 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:28.279 -03:00 [INF] Request finished in 2.7063ms 404 
+2021-07-20 00:01:28.423 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:28.427 -03:00 [INF] Request finished in 3.9289ms 404 
+2021-07-20 00:01:28.434 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:28.440 -03:00 [INF] Request finished in 6.114ms 404 
+2021-07-20 00:01:28.464 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:01:28.458Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:01:28.470 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:01:28.475 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:01:28.489 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:01:28.491 -03:00 [INF] Request finished in 27.3408ms 200 application/json
+2021-07-20 00:01:28.494 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:01:28.458Z%22}&id=coBdpur-nIUz-sRs_nwDhQ&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:01:28.498 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:01:28.502 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:01:33.145 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Chat/IndexNovo  
+2021-07-20 00:01:33.152 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:01:33.154 -03:00 [INF] Route matched with {action = "IndexNovo", controller = "Chat", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IndexNovo() on controller RIAT.UI.Web.Controllers.ChatController (RIAT.UI.Web).
+2021-07-20 00:01:33.179 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:01:33.181 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1488ms.
+2021-07-20 00:01:33.185 -03:00 [INF] Executing ViewResult, running view IndexNovo.
+2021-07-20 00:01:33.189 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:01:33.241 -03:00 [INF] Executed DbCommand (48ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:01:33.249 -03:00 [INF] Executed ViewResult - view IndexNovo executed in 65.0119ms.
+2021-07-20 00:01:33.252 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) in 94.8972ms
+2021-07-20 00:01:33.255 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:01:33.258 -03:00 [INF] Request finished in 112.7097ms 200 text/html; charset=utf-8
+2021-07-20 00:01:33.364 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:01:33.370 -03:00 [INF] Request finished in 5.7007ms 404 
+2021-07-20 00:01:33.377 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:01:33.381 -03:00 [INF] Request finished in 4.0736ms 404 
+2021-07-20 00:01:33.407 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:33.411 -03:00 [INF] Request finished in 3.7937ms 404 
+2021-07-20 00:01:33.417 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:01:33.420 -03:00 [INF] Request finished in 3.4062ms 404 
+2021-07-20 00:01:33.628 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:33.640 -03:00 [INF] Request finished in 10.9263ms 404 
+2021-07-20 00:01:33.661 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:01:33.666 -03:00 [INF] Request finished in 5.3468ms 404 
+2021-07-20 00:01:33.718 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:01:33.712Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:01:33.724 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:01:33.729 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:01:33.738 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:01:33.743 -03:00 [INF] Request finished in 24.965ms 200 application/json
+2021-07-20 00:01:33.753 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:01:33.712Z%22}&id=057pWMpjWrrHLoI4QJbSxA&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:01:33.758 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:01:33.766 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:02:19.686 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:01:28.458Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:02:19.688 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:02:19.689 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:02:19.694 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:02:19.696 -03:00 [INF] Request finished in 9.2104ms 200 application/json
+2021-07-20 00:02:19.716 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:01:28.458Z%22}&id=bLzq5hgjAD4XZbm-3elVyg&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:02:19.717 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:02:19.718 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:02:19.766 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:02:19.766 -03:00 [INF] Request finished in 51272.2577ms 101 
+2021-07-20 00:02:19.869 -03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.IO.IOException: The process cannot access the file 'D:\Projetos\RISM\Aplicações\RISM-ui-web\bin\Debug\Logs\LogFile2021-07-20.txt' because it is being used by another process.
+   at Chat.Hubs.ChatHubNovo.WriteErrorLog(String dados) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 145
+   at Chat.Hubs.ChatHubNovo.OnConnectedAsync() in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 53
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2021-07-20 00:02:19.744 -03:00 [ERR] Error when dispatching 'OnDisconnectedAsync' on hub.
+System.IO.IOException: The process cannot access the file 'D:\Projetos\RISM\Aplicações\RISM-ui-web\bin\Debug\Logs\LogFile2021-07-20.txt' because it is being used by another process.
+   at Chat.Hubs.ChatHubNovo.WriteErrorLog(String dados) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 145
+   at Chat.Hubs.ChatHubNovo.OnDisconnectedAsync(Exception exception) in D:\Projetos\RISM\Aplicações\RISM-ui-web\Hubs\ChatHubNovo.cs:line 177
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.HubOnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+2021-07-20 00:02:19.874 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:02:19.874 -03:00 [INF] Request finished in 46121.1709ms 101 
+2021-07-20 00:02:19.878 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:02:19.879 -03:00 [INF] Request finished in 162.8043ms 101 
+2021-07-20 00:02:19.881 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:01:28.458Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:02:19.882 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:02:19.883 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:02:19.883 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:02:19.883 -03:00 [INF] Request finished in 2.4469ms 200 application/json
+2021-07-20 00:02:19.887 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:01:28.458Z%22}&id=V2oVX03DNzaWcC7xZsTfnQ&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:02:19.888 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:02:19.888 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:02:25.832 -03:00 [INF] Application is shutting down...
+2021-07-20 00:02:25.833 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:02:25.833 -03:00 [INF] Request finished in 5946.0084ms 101 
+2021-07-20 00:02:41.823 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-07-20 00:02:41.914 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-07-20 00:02:41.938 -03:00 [INF] Creating key {63a8d55e-e4e7-4f97-9bd8-7e6e6bd3e82b} with creation date 2021-07-20 03:02:41Z, activation date 2021-07-20 03:02:41Z, and expiration date 2021-10-18 03:02:41Z.
+2021-07-20 00:02:41.954 -03:00 [WRN] No XML encryptor configured. Key {63a8d55e-e4e7-4f97-9bd8-7e6e6bd3e82b} may be persisted to storage in unencrypted form.
+2021-07-20 00:02:42.509 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-20 00:02:42.521 -03:00 [INF] Hosting environment: Development
+2021-07-20 00:02:42.523 -03:00 [INF] Content root path: D:\Projetos\RISM\Aplicações\RISM-ui-web
+2021-07-20 00:02:42.549 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web  
+2021-07-20 00:02:42.582 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-07-20 00:02:42.612 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:42.661 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:02:42.698 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:02:42.822 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:02:42.833 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1448ms.
+2021-07-20 00:02:42.854 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:02:43.228 -03:00 [INF] Executed ViewResult - view Index executed in 383.0879ms.
+2021-07-20 00:02:43.231 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 530.4548ms
+2021-07-20 00:02:43.235 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:02:43.251 -03:00 [INF] Request finished in 703.0328ms 200 text/html; charset=utf-8
+2021-07-20 00:02:43.428 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:43.474 -03:00 [INF] Request finished in 45.9089ms 404 
+2021-07-20 00:02:43.495 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:43.514 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:43.524 -03:00 [INF] Request finished in 28.7184ms 404 
+2021-07-20 00:02:43.566 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:43.571 -03:00 [INF] Request finished in 4.9378ms 404 
+2021-07-20 00:02:43.581 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:43.584 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:43.588 -03:00 [INF] Request finished in 6.5006ms 404 
+2021-07-20 00:02:44.597 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web  
+2021-07-20 00:02:44.602 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:02:44.605 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:02:44.637 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:02:44.640 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2549ms.
+2021-07-20 00:02:44.645 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:02:44.694 -03:00 [INF] Executed ViewResult - view Index executed in 49.6954ms.
+2021-07-20 00:02:44.696 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 86.7577ms
+2021-07-20 00:02:44.700 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:02:44.703 -03:00 [INF] Request finished in 106.4808ms 200 text/html; charset=utf-8
+2021-07-20 00:02:44.938 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:44.944 -03:00 [INF] Request finished in 5.9656ms 404 
+2021-07-20 00:02:44.950 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:44.954 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:44.960 -03:00 [INF] Request finished in 9.9403ms 404 
+2021-07-20 00:02:44.998 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:45.003 -03:00 [INF] Request finished in 3.9742ms 404 
+2021-07-20 00:02:45.012 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:45.020 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:45.023 -03:00 [INF] Request finished in 11.7589ms 404 
+2021-07-20 00:02:47.079 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Identity/Account/Login  
+2021-07-20 00:02:47.097 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:02:47.116 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:02:47.142 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2021-07-20 00:02:47.149 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-07-20 00:02:47.151 -03:00 [INF] Executed handler method OnGetAsync, returned result .
+2021-07-20 00:02:47.156 -03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-07-20 00:02:47.159 -03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-07-20 00:02:47.212 -03:00 [INF] Executed page /Account/Login in 94.0604ms
+2021-07-20 00:02:47.214 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:02:47.217 -03:00 [INF] Request finished in 138.2256ms 200 text/html; charset=utf-8
+2021-07-20 00:02:47.281 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:47.284 -03:00 [INF] Request finished in 3.5635ms 404 
+2021-07-20 00:02:47.294 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:47.301 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:47.304 -03:00 [INF] Request finished in 10.3366ms 404 
+2021-07-20 00:02:47.333 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:47.337 -03:00 [INF] Request finished in 4.1885ms 404 
+2021-07-20 00:02:47.349 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:47.352 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:47.355 -03:00 [INF] Request finished in 6.1023ms 404 
+2021-07-20 00:02:52.505 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Identity/Account/Login  
+2021-07-20 00:02:52.513 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:52.520 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:02:52.524 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:02:52.528 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2021-07-20 00:02:52.530 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-07-20 00:02:52.533 -03:00 [INF] Executed handler method OnGetAsync, returned result .
+2021-07-20 00:02:52.535 -03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-07-20 00:02:52.537 -03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-07-20 00:02:52.544 -03:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {6798751d-85b7-4319-847c-0e8db06ffa17} was not found in the key ring.
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2021-07-20 00:02:52.616 -03:00 [INF] Executed page /Account/Login in 89.427ms
+2021-07-20 00:02:52.621 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:02:52.624 -03:00 [INF] Request finished in 118.9418ms 200 text/html; charset=utf-8
+2021-07-20 00:02:52.698 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:52.701 -03:00 [INF] Request finished in 3.3996ms 404 
+2021-07-20 00:02:52.710 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:52.713 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:52.716 -03:00 [INF] Request finished in 6.1818ms 404 
+2021-07-20 00:02:52.747 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:52.751 -03:00 [INF] Request finished in 4.6171ms 404 
+2021-07-20 00:02:52.758 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:52.761 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:52.764 -03:00 [INF] Request finished in 5.8375ms 404 
+2021-07-20 00:02:54.638 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/Identity/Account/Login application/x-www-form-urlencoded 265
+2021-07-20 00:02:54.644 -03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2021-07-20 00:02:54.647 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:02:54.649 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:02:54.651 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:02:54.677 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2021-07-20 00:02:55.261 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:02:56.170 -03:00 [INF] Executed DbCommand (111ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-07-20 00:02:56.362 -03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2021-07-20 00:02:56.425 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-07-20 00:02:56.461 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2021-07-20 00:02:56.501 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2021-07-20 00:02:56.508 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-07-20 00:02:56.511 -03:00 [INF] User logged in.
+2021-07-20 00:02:56.514 -03:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2021-07-20 00:02:56.518 -03:00 [INF] Executing LocalRedirectResult, redirecting to /RIAT.UI.Web/.
+2021-07-20 00:02:56.522 -03:00 [INF] Executed page /Account/Login in 1869.5096ms
+2021-07-20 00:02:56.524 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:02:56.533 -03:00 [INF] Request finished in 1896.1241ms 302 
+2021-07-20 00:02:56.536 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/  
+2021-07-20 00:02:56.542 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:02:56.544 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:02:56.570 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:02:56.571 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0833ms.
+2021-07-20 00:02:56.573 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:02:56.601 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:02:56.641 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:02:56.648 -03:00 [INF] Executed ViewResult - view Index executed in 74.6129ms.
+2021-07-20 00:02:56.650 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 104.8552ms
+2021-07-20 00:02:56.653 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:02:56.659 -03:00 [INF] Request finished in 122.6039ms 200 text/html; charset=utf-8
+2021-07-20 00:02:56.721 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:56.728 -03:00 [INF] Request finished in 7.5456ms 404 
+2021-07-20 00:02:56.741 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:56.746 -03:00 [INF] Request finished in 4.7649ms 404 
+2021-07-20 00:02:56.770 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:56.774 -03:00 [INF] Request finished in 4.4091ms 404 
+2021-07-20 00:02:56.780 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:56.783 -03:00 [INF] Request finished in 3.422ms 404 
+2021-07-20 00:02:57.048 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/Identity/Account/Login application/x-www-form-urlencoded 265
+2021-07-20 00:02:57.056 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:02:57.059 -03:00 [INF] Executing endpoint '/Account/Login'
+2021-07-20 00:02:57.062 -03:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2021-07-20 00:02:57.071 -03:00 [INF] Executing handler method RIAT.UI.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2021-07-20 00:02:57.087 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:02:57.134 -03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2021-07-20 00:02:57.183 -03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2021-07-20 00:02:57.234 -03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2021-07-20 00:02:57.265 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2021-07-20 00:02:57.297 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2021-07-20 00:02:57.300 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-07-20 00:02:57.301 -03:00 [INF] User logged in.
+2021-07-20 00:02:57.304 -03:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2021-07-20 00:02:57.307 -03:00 [INF] Executing LocalRedirectResult, redirecting to /RIAT.UI.Web/.
+2021-07-20 00:02:57.308 -03:00 [INF] Executed page /Account/Login in 243.5241ms
+2021-07-20 00:02:57.310 -03:00 [INF] Executed endpoint '/Account/Login'
+2021-07-20 00:02:57.312 -03:00 [INF] Request finished in 264.3193ms 302 
+2021-07-20 00:02:57.316 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/  
+2021-07-20 00:02:57.320 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:02:57.324 -03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RIAT.UI.Web.Controllers.HomeController (RIAT.UI.Web).
+2021-07-20 00:02:57.352 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:02:57.355 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1111ms.
+2021-07-20 00:02:57.358 -03:00 [INF] Executing ViewResult, running view Index.
+2021-07-20 00:02:57.364 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:02:57.397 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:02:57.400 -03:00 [INF] Executed ViewResult - view Index executed in 41.7484ms.
+2021-07-20 00:02:57.402 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web) in 75.4348ms
+2021-07-20 00:02:57.404 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.HomeController.Index (RIAT.UI.Web)'
+2021-07-20 00:02:57.408 -03:00 [INF] Request finished in 91.8149ms 200 text/html; charset=utf-8
+2021-07-20 00:02:57.455 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:57.459 -03:00 [INF] Request finished in 4.2503ms 404 
+2021-07-20 00:02:57.468 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:57.472 -03:00 [INF] Request finished in 4.3924ms 404 
+2021-07-20 00:02:57.496 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:57.501 -03:00 [INF] Request finished in 4.4438ms 404 
+2021-07-20 00:02:57.510 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:57.516 -03:00 [INF] Request finished in 6.3658ms 404 
+2021-07-20 00:02:59.454 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Chat/IndexNovo  
+2021-07-20 00:02:59.461 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:02:59.466 -03:00 [INF] Route matched with {action = "IndexNovo", controller = "Chat", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IndexNovo() on controller RIAT.UI.Web.Controllers.ChatController (RIAT.UI.Web).
+2021-07-20 00:02:59.507 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:02:59.509 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2271ms.
+2021-07-20 00:02:59.512 -03:00 [INF] Executing ViewResult, running view IndexNovo.
+2021-07-20 00:02:59.522 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:02:59.554 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:02:59.572 -03:00 [INF] Executed ViewResult - view IndexNovo executed in 60.7492ms.
+2021-07-20 00:02:59.574 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) in 105.9797ms
+2021-07-20 00:02:59.576 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:02:59.579 -03:00 [INF] Request finished in 126.0989ms 200 text/html; charset=utf-8
+2021-07-20 00:02:59.640 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:02:59.644 -03:00 [INF] Request finished in 3.6269ms 404 
+2021-07-20 00:02:59.655 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:02:59.659 -03:00 [INF] Request finished in 3.6827ms 404 
+2021-07-20 00:02:59.683 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:59.686 -03:00 [INF] Request finished in 3.6284ms 404 
+2021-07-20 00:02:59.692 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:02:59.695 -03:00 [INF] Request finished in 3.2777ms 404 
+2021-07-20 00:02:59.713 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:59.716 -03:00 [INF] Request finished in 3.2096ms 404 
+2021-07-20 00:02:59.721 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:02:59.724 -03:00 [INF] Request finished in 2.5003ms 404 
+2021-07-20 00:02:59.741 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:02:59.735Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:02:59.743 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:02:59.747 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:02:59.756 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:02:59.758 -03:00 [INF] Request finished in 17.43ms 200 application/json
+2021-07-20 00:02:59.762 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:02:59.735Z%22}&id=_N2ThUEkguKb6z1QTejdJQ&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:02:59.765 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:02:59.767 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:03:02.141 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/Chat/IndexNovo  
+2021-07-20 00:03:02.146 -03:00 [INF] Executing endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:03:02.155 -03:00 [INF] Route matched with {action = "IndexNovo", controller = "Chat", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IndexNovo() on controller RIAT.UI.Web.Controllers.ChatController (RIAT.UI.Web).
+2021-07-20 00:03:02.193 -03:00 [INF] Executing action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) - Validation state: "Valid"
+2021-07-20 00:03:02.195 -03:00 [INF] Executed action method RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1478ms.
+2021-07-20 00:03:02.198 -03:00 [INF] Executing ViewResult, running view IndexNovo.
+2021-07-20 00:03:02.205 -03:00 [INF] Entity Framework Core 3.1.11 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-07-20 00:03:02.254 -03:00 [INF] Executed DbCommand (44ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2021-07-20 00:03:02.262 -03:00 [INF] Executed ViewResult - view IndexNovo executed in 64.7523ms.
+2021-07-20 00:03:02.265 -03:00 [INF] Executed action RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web) in 101.342ms
+2021-07-20 00:03:02.270 -03:00 [INF] Executed endpoint 'RIAT.UI.Web.Controllers.ChatController.IndexNovo (RIAT.UI.Web)'
+2021-07-20 00:03:02.274 -03:00 [INF] Request finished in 133.3083ms 200 text/html; charset=utf-8
+2021-07-20 00:03:02.347 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:03:02.356 -03:00 [INF] Request finished in 8.5866ms 404 
+2021-07-20 00:03:02.364 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/js/signalr/dist/browser/signalr.js.map  
+2021-07-20 00:03:02.370 -03:00 [INF] Request finished in 5.6798ms 404 
+2021-07-20 00:03:02.402 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:03:02.406 -03:00 [INF] Request finished in 3.8627ms 404 
+2021-07-20 00:03:02.413 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/bootstrap/js/bootstrap.min.js.map  
+2021-07-20 00:03:02.418 -03:00 [INF] Request finished in 5.1818ms 404 
+2021-07-20 00:03:02.446 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:03:02.450 -03:00 [INF] Request finished in 3.5115ms 404 
+2021-07-20 00:03:02.456 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/assets/parallax/jarallax.min.js.map  
+2021-07-20 00:03:02.459 -03:00 [INF] Request finished in 3.142ms 404 
+2021-07-20 00:03:02.501 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:03:02.495Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:03:02.506 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:03:02.509 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:03:02.512 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:03:02.515 -03:00 [INF] Request finished in 14.426ms 200 application/json
+2021-07-20 00:03:02.521 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:03:02.495Z%22}&id=Ut5oV1XIKGFa8LMeQI-7Zw&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:03:02.524 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:03:02.526 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:03:09.741 -03:00 [INF] Mensagem Enviada1
+2021-07-20 00:05:12.487 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:03:02.495Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:05:12.487 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost/RIAT.UI.Web/chat/negotiate?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:02:59.735Z%22}&negotiateVersion=1 text/plain;charset=UTF-8 0
+2021-07-20 00:05:12.498 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:05:12.498 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:05:12.503 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:05:12.515 -03:00 [INF] Executing endpoint '/chat/negotiate'
+2021-07-20 00:05:12.520 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:05:12.528 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%22316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa%22,%22name%22:%22Marcel%20Teste%20Paciente%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:03:02.495Z%22}&id=B-XTa1qXh-3CoJZBSHzazQ&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:05:12.537 -03:00 [INF] Request finished in 104.7115ms 200 application/json
+2021-07-20 00:05:12.541 -03:00 [INF] Executed endpoint '/chat/negotiate'
+2021-07-20 00:05:12.542 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:05:12.553 -03:00 [INF] Request finished in 120.1176ms 200 application/json
+2021-07-20 00:05:12.552 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/RIAT.UI.Web/chat?user={%22signalRConnectionId%22:%224b75386f-4512-4d4f-bbe9-f93ed122f657%22,%22name%22:%22Ana%20Moura%22,%22oneSignalId%22:%22f5f08a16-d4d5-497f-a123-0cecdc0a5816%22,%22dtConnection%22:%222021-07-20T03:02:59.735Z%22}&id=KjucEodOQybQDxZaALbQkg&access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiI1ZDI0YTQ4MzA2NjY0ZTBjYTI2OGRlMGMxYmVlMjk5YiIsInVuaXF1ZV9uYW1lIjoibWFyY2VsQHJpc20uY29tLmJyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im1hcmNlbEByaXNtLmNvbS5iciIsInN1YiI6Im1hcmNlbEByaXNtLmNvbS5iciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMzE2ZDFmNzQtNjNkMC00NGJjLWI4ZTAtZmUxYzBjM2Q5YmFhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiUGFjaWVudGVzIiwibmJmIjoxNjI1NzY0MTk5LCJleHAiOjE2NTczMDAxOTksImlzcyI6IkV4ZW1wbG9Jc3N1ZXIiLCJhdWQiOiJFeGVtcGxvQXVkaWVuY2UifQ.yMgSAXOgWyV92lCpXK9226e0WsnQKiV0sk2t4Z1bM7Xp_M2RQLnjsGlPC6hKQ5JUTc-k8SyAp8Sl6gNjNj-vPJD4iIEoSOX1gRheMzO4CFq8VdqOQHx5qL9BPQqddvAX8MUtGCeg5A6T0g0GntApoYVMXv_OnMCve-AWLciUOZOe6gwMQSs8mfDFzlTWUN2YhifzL86oUQ2x9o7wcV19_8EWBOdskFCXbqKUs7T_5Ma5IMh2jDNnqWsbqj_tsR7mFyADyJllf98G-om4Jeb2DpV6SKE-5kuIjKAB0cHQJpN6gPcEwkw1dOE3dOqD1NM-eVP4GdUZnvNEek9N_er8Ow  
+2021-07-20 00:05:12.560 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:05:12.566 -03:00 [INF] CORS policy execution successful.
+2021-07-20 00:05:12.574 -03:00 [INF] Executing endpoint '/chat'
+2021-07-20 00:05:12.647 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:05:12.672 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:05:12.675 -03:00 [INF] Request finished in 132913.5766ms 101 
+2021-07-20 00:05:12.692 -03:00 [INF] Request finished in 130171.0411ms 101 
+2021-07-20 00:05:19.683 -03:00 [INF] Mensagem Enviada1
+2021-07-20 00:10:27.651 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:10:27.699 -03:00 [INF] Request finished in 315170.95ms 101 
+2021-07-20 00:10:28.517 -03:00 [INF] Application is shutting down...
+2021-07-20 00:10:28.517 -03:00 [INF] Executed endpoint '/chat'
+2021-07-20 00:10:28.517 -03:00 [INF] Request finished in 315967.0933ms 101 

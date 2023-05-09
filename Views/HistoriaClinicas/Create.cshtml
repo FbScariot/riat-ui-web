@@ -1,0 +1,66 @@
+﻿@model RIAT.DAL.Entity.Models.HistoriaClinica
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>HistoriaClinica</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PaciIdPacienteNavigation.NomePaciente" class="control-label"></label>
+                <select asp-for="PaciIdPaciente" class="form-control" asp-items="ViewBag.PaciIdPaciente"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="HiclContatoReferencia" class="control-label"></label>
+                <input asp-for="HiclContatoReferencia" class="form-control" />
+                <span asp-validation-for="HiclContatoReferencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HiclNmPlanoSaude" class="control-label"></label>
+                <input asp-for="HiclNmPlanoSaude" class="form-control" />
+                <span asp-validation-for="HiclNmPlanoSaude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HiclMotivoConsulta" class="control-label"></label>
+                <input asp-for="HiclMotivoConsulta" class="form-control" />
+                <span asp-validation-for="HiclMotivoConsulta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HiclDtAtivacao" class="control-label"></label>
+                <input asp-for="HiclDtAtivacao" class="form-control" />
+                <span asp-validation-for="HiclDtAtivacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HiclDtDesativacao" class="control-label"></label>
+                <input asp-for="HiclDtDesativacao" class="form-control" />
+                <span asp-validation-for="HiclDtDesativacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HiclStAtivo" class="control-label"></label>
+                <input asp-for="HiclStAtivo" class="form-control" />
+                <span asp-validation-for="HiclStAtivo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdAtendimento" class="control-label"></label>
+                <select asp-for="IdAtendimento" class="form-control" asp-items="ViewBag.IdAtendimento"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

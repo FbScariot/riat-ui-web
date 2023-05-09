@@ -1,0 +1,164 @@
+﻿@model RIAT.DAL.Entity.Models.SintomaAtendimento
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>@Localizer["PageType"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdAtendimentoNavigation.PaciIdPacienteNavigation.NomePaciente" class="control-label"></label>
+                <select name="PaciIdPaciente" id="PaciIdPaciente" class="form-control" asp-items="ViewBag.PaciIdPaciente"></select>
+            </div>
+            @*<div class="form-group">
+                    <label asp-for="IdAtendimentoNavigation.ProfIdProfissionalNavigation.NomeProfissional" class="control-label"></label>
+                    <select asp-for="IdAtendimentoNavigation.ProfIdProfissionalNavigation.NomeProfissional" class="form-control" asp-items="ViewBag.ProfIdProfissional"></select>
+                </div>*@
+            <div class="form-group">
+                <label asp-for="IdAtendimentoNavigation.AtenDtAgendamento" class="control-label"></label>
+                <select asp-for="IdAtendimento" class="form-control" asp-items="ViewBag.IdAtendimento" disabled></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DopaIdDoencaPacienteNavigation.DoenIdDoencaNavigation.DoenNmHipotese" class="control-label"></label>
+                <select asp-for="DopaIdDoencaPaciente" class="form-control" asp-items="ViewBag.DopaIdDoencaPaciente" disabled></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="SintIdSintomaNavigation.SintNomeSintoma" class="control-label"></label>
+                <select asp-for="SintIdSintoma" class="form-control" asp-items="ViewBag.SintIdSintoma" disabled></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="SidhCdPeso" class="control-label"></label>
+                <input asp-for="SidhCdPeso" class="form-control" />
+                <span asp-validation-for="SidhCdPeso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value=@Localizer["btnCreate"] class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">@Localizer["btnBackList"]</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<script type="text/javascript">
+    $('#PaciIdPaciente').change(
+        function ()
+        {
+            var idPaciente = $("#PaciIdPaciente").val();
+
+            var selectAtendimentos = $('#IdAtendimento');
+            selectAtendimentos.empty();
+
+            if (idPaciente == '0')
+            {
+                selectAtendimentos.append($('<option/>', {
+                    value: 0,
+                    text: "-- Primeiro selecione um Paciente --"
+                }));
+                $('#IdAtendimento').prop('disabled', true);
+            }
+            else if (idPaciente != null && idPaciente != '0')
+            {
+                $.getJSON('@Url.Action("GetAtendimentos")', { idPaciente: idPaciente },
+
+                    function (atendimentos) {
+                        if (atendimentos != null && !jQuery.isEmptyObject(atendimentos)) {
+                            $.each(atendimentos, function (index, atendimento) {
+                                selectAtendimentos.append($('<option/>',
+                                    {
+                                        value: atendimento.value,
+                                        text: atendimento.text
+                                    }
+                                ));
+                            });
+                        };
+                    }
+                );
+                $('#IdAtendimento').prop('disabled', false);
+            }
+
+            var selectDoencas = $('#DopaIdDoencaPaciente');
+            selectDoencas.empty();
+
+            if (idPaciente == '0')
+            {
+                selectDoencas.append($('<option/>', {
+                    value: 0,
+                     text: "-- Primeiro selecione um Paciente --"
+                }));
+                $('#DopaIdDoencaPaciente').prop('disabled', true);
+            }
+            else if (idPaciente != null && idPaciente != '0')
+            {
+                $.getJSON('@Url.Action("GetDoencas")', { idPaciente: idPaciente },
+
+                    function (doencas)
+                    {
+                        if (doencas != null && !jQuery.isEmptyObject(doencas))
+                        {
+                            $.each(doencas, function (index, doenca)
+                            {
+                                selectDoencas.append($('<option/>',
+                                {
+                                    value: doenca.value,
+                                    text: doenca.text
+                                }
+                                ));
+                            });
+                        };
+                    }
+                );
+                $('#DopaIdDoencaPaciente').prop('disabled', false);
+            }
+        });
+
+    $('#DopaIdDoencaPaciente').change(
+        function ()
+        {
+            var idDoenca = $("#DopaIdDoencaPaciente").val();
+
+            var selectSintomas = $('#SintIdSintoma');
+            selectSintomas.empty();
+
+            if (idDoenca == '0')
+            {
+                selectSintomas.append($('<option/>', {
+                    value: 0,
+                    text: "-- Primeiro selecione uma Doença --"
+                }));
+                $('#SintIdSintoma').prop('disabled', true);
+            }
+            else if (idDoenca != null && idDoenca != '0')
+            {
+                $.getJSON('@Url.Action("GetSintomas")', { idDoenca: idDoenca },
+
+                    function (sintomas) {
+                        if (sintomas != null && !jQuery.isEmptyObject(sintomas)) {
+                            $.each(sintomas, function (index, sintoma) {
+                                selectSintomas.append($('<option/>',
+                                    {
+                                        value: sintoma.value,
+                                        text: sintoma.text
+                                    }
+                                ));
+                            });
+                        };
+                    }
+                );
+                $('#SintIdSintoma').prop('disabled', false);
+            }
+        });
+</script>

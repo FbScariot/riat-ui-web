@@ -1,0 +1,4 @@
+06/06/2021 23:29:21: dados enviado na conexão: {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-06-07T02:29:12.677Z"}
+06/06/2021 23:29:21: Usuários conectados: 1
+06/06/2021 23:29:36: dados enviado na conexão: {"signalRConnectionId":"316d1f74-63d0-44bc-b8e0-fe1c0c3d9baa","name":"Marcel Teste Paciente","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-06-07T02:29:35.981Z"}
+06/06/2021 23:29:36: Usuários conectados: 1

@@ -1,0 +1,192 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-WebApplication2-0F2D11CD-DFC9-4F2D-B505-761EE0DA3B90</UserSecretsId>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <AssemblyName>RIAT.UI.Web</AssemblyName>
+    <RootNamespace>RIAT.UI.Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\**" />
+    <Compile Remove="Views\Chat\**" />
+    <Compile Remove="Views\HistoriaClinicas1\**" />
+    <Compile Remove="Views\HistoriaClinicas\**" />
+    <Compile Remove="Views\Pacientes_old\**" />
+    <Compile Remove="Views\SintomaDoencaHistoriaclinicas\**" />
+    <Compile Remove="Views\Sintomas1\**" />
+    <Compile Remove="Views\Sintomas_old\**" />
+    <Compile Remove="wwwroot\Archive %282%29\**" />
+    <Compile Remove="wwwroot\assets - Copia\**" />
+    <Compile Remove="wwwroot\Geral\**" />
+    <Compile Remove="wwwroot\Identity\**" />
+    <Compile Remove="wwwroot\js\twilio.js\**" />
+    <Compile Remove="wwwroot\Menu Novo\**" />
+    <Compile Remove="wwwroot\oxigenio\**" />
+    <Compile Remove="wwwroot\signalr.js\**" />
+    <Compile Remove="wwwroot\__MACOSX\**" />
+    <Content Remove="Helpers\**" />
+    <Content Remove="Views\Chat\**" />
+    <Content Remove="Views\HistoriaClinicas1\**" />
+    <Content Remove="Views\HistoriaClinicas\**" />
+    <Content Remove="Views\Pacientes_old\**" />
+    <Content Remove="Views\SintomaDoencaHistoriaclinicas\**" />
+    <Content Remove="Views\Sintomas1\**" />
+    <Content Remove="Views\Sintomas_old\**" />
+    <Content Remove="wwwroot\Archive %282%29\**" />
+    <Content Remove="wwwroot\assets - Copia\**" />
+    <Content Remove="wwwroot\Geral\**" />
+    <Content Remove="wwwroot\Identity\**" />
+    <Content Remove="wwwroot\js\twilio.js\**" />
+    <Content Remove="wwwroot\Menu Novo\**" />
+    <Content Remove="wwwroot\oxigenio\**" />
+    <Content Remove="wwwroot\signalr.js\**" />
+    <Content Remove="wwwroot\__MACOSX\**" />
+    <EmbeddedResource Remove="Helpers\**" />
+    <EmbeddedResource Remove="Views\Chat\**" />
+    <EmbeddedResource Remove="Views\HistoriaClinicas1\**" />
+    <EmbeddedResource Remove="Views\HistoriaClinicas\**" />
+    <EmbeddedResource Remove="Views\Pacientes_old\**" />
+    <EmbeddedResource Remove="Views\SintomaDoencaHistoriaclinicas\**" />
+    <EmbeddedResource Remove="Views\Sintomas1\**" />
+    <EmbeddedResource Remove="Views\Sintomas_old\**" />
+    <EmbeddedResource Remove="wwwroot\Archive %282%29\**" />
+    <EmbeddedResource Remove="wwwroot\assets - Copia\**" />
+    <EmbeddedResource Remove="wwwroot\Geral\**" />
+    <EmbeddedResource Remove="wwwroot\Identity\**" />
+    <EmbeddedResource Remove="wwwroot\js\twilio.js\**" />
+    <EmbeddedResource Remove="wwwroot\Menu Novo\**" />
+    <EmbeddedResource Remove="wwwroot\oxigenio\**" />
+    <EmbeddedResource Remove="wwwroot\signalr.js\**" />
+    <EmbeddedResource Remove="wwwroot\__MACOSX\**" />
+    <None Remove="Helpers\**" />
+    <None Remove="Views\Chat\**" />
+    <None Remove="Views\HistoriaClinicas1\**" />
+    <None Remove="Views\HistoriaClinicas\**" />
+    <None Remove="Views\Pacientes_old\**" />
+    <None Remove="Views\SintomaDoencaHistoriaclinicas\**" />
+    <None Remove="Views\Sintomas1\**" />
+    <None Remove="Views\Sintomas_old\**" />
+    <None Remove="wwwroot\Archive %282%29\**" />
+    <None Remove="wwwroot\assets - Copia\**" />
+    <None Remove="wwwroot\Geral\**" />
+    <None Remove="wwwroot\Identity\**" />
+    <None Remove="wwwroot\js\twilio.js\**" />
+    <None Remove="wwwroot\Menu Novo\**" />
+    <None Remove="wwwroot\oxigenio\**" />
+    <None Remove="wwwroot\signalr.js\**" />
+    <None Remove="wwwroot\__MACOSX\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\AtendimentoesController - Copy.cs" />
+    <Compile Remove="Controllers\DoencaHistoriaClinicasController.cs" />
+    <Compile Remove="Controllers\DoencasController1.cs" />
+    <Compile Remove="Controllers\HistoriaClinicasController.cs" />
+    <Compile Remove="Controllers\HistoriaClinicasController1.cs" />
+    <Compile Remove="Controllers\Pacientes1Controller.cs" />
+    <Compile Remove="Controllers\SintomaDoencaHistoriaclinicasController.cs" />
+    <Compile Remove="Controllers\SintomasController1.cs" />
+    <Compile Remove="Controllers\Sintomas_oldController.cs" />
+    <Compile Remove="Extensions\ApplicationClaimsPrincipalFactory.cs" />
+    <Compile Remove="Extensions\IdentityConfig.cs" />
+    <Compile Remove="Extensions\IdentityExtensions.cs" />
+    <Compile Remove="Hubs\ChatHub - Copy.cs" />
+    <Compile Remove="Hubs\ChatHub2.cs" />
+    <Compile Remove="Hubs\Hub.cs" />
+    <Compile Remove="Models\Annotations\EspecialidadeMetadata.cs" />
+    <Compile Remove="Models\Annotations\ProfissionalEspecialistumMetadata.cs" />
+    <Compile Remove="Models\Annotations\TipoProfissionalMetadata.cs" />
+    <Compile Remove="Models\Partials\Especialidade.cs" />
+    <Compile Remove="Models\Partials\GrauInstrucao.cs" />
+    <Compile Remove="Models\Partials\Hipotese.cs" />
+    <Compile Remove="Models\Partials\MotivoQueixa.cs" />
+    <Compile Remove="Models\Partials\Paciente .cs" />
+    <Compile Remove="Models\Partials\PacienteAtendimentoMotivoQueixa.cs" />
+    <Compile Remove="Models\Partials\PacienteIdentificacao.cs" />
+    <Compile Remove="Models\Partials\PacienteTelefone.cs" />
+    <Compile Remove="Models\Partials\ProfissionalEspecialistum.cs" />
+    <Compile Remove="Models\Partials\TipoProfissional.cs" />
+    <Compile Remove="Models\Partials\Variavel.cs" />
+    <Compile Remove="Services\UserManager.cs" />
+    <Compile Remove="Views\SintomaAtendimentoes\InlineEdit.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Atendimentoes\Index - Copy.cshtml" />
+    <Content Remove="Views\Shared\_Layout - Copy %282%29.cshtml" />
+    <Content Remove="Views\Shared\_Layout - Copy.cshtml" />
+    <Content Remove="Views\Shared\_Layout - Novo.cshtml" />
+    <Content Remove="Views\Shared\_Layout_old.cshtml" />
+    <Content Remove="Views\Shared\_LoginPartial - Novo.cshtml" />
+    <Content Remove="Views\Shared\_LoginPartial-old.cshtml" />
+    <Content Remove="Views\SintomaAtendimentoes\InlineEdit.cshtml" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\project.mobirise" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Shared\_Layout.cshtml.bak" />
+    <None Remove="Views\Shared\_LoginPartial - Novo.cshtml.bak" />
+    <None Remove="Views\Shared\_LoginPartial.cshtml.bak" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNet.Security.OAuth.LinkedIn" Version="3.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime;
+ build;
+ native;
+ contentfiles;
+ analyzers;
+ buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="3.1.8" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>none</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Resources\Areas\Identity\Pages\Account\Manage\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\DoencaHistoriaClinicas\Create.cshtml" />
+    <None Include="Views\DoencaHistoriaClinicas\Delete.cshtml" />
+    <None Include="Views\DoencaHistoriaClinicas\Details.cshtml" />
+    <None Include="Views\DoencaHistoriaClinicas\Edit.cshtml" />
+    <None Include="Views\DoencaHistoriaClinicas\Index.cshtml" />
+    <None Include="Views\Video\Index.cshtml" />
+    <None Include="wwwroot\images\logo-rism.png" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+  </ItemGroup>
+
+</Project>

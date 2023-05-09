@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "unpkg",
+      "library": "@microsoft/signalr@latest",
+      "destination": "wwwroot/js/signalr/",
+      "files": [
+        "dist/browser/signalr.js",
+        "dist/browser/signalr.min.js"
+      ]
+    },
+    {
+      "library": "signalr.js@2.4.1",
+      "destination": "wwwroot/signalr.js/"
+    }
+  ,
+{
+  "library": "twilio.js@1.2.0",
+  "destination": "wwwroot/js/twilio.js/"
+}
+,
+{
+  "library": "twilio.js@1.2.0",
+  "destination": "wwwroot/js/twilio.js/"
+}
+]
+}

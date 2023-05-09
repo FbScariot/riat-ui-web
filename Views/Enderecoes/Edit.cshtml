@@ -1,0 +1,59 @@
+﻿@model RIAT.DAL.Entity.Models.Endereco
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Endereco</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="EndeNmLogradouro" class="control-label"></label>
+                <input asp-for="EndeNmLogradouro" class="form-control" />
+                <span asp-validation-for="EndeNmLogradouro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndeCdNumero" class="control-label"></label>
+                <input asp-for="EndeCdNumero" class="form-control" />
+                <span asp-validation-for="EndeCdNumero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndeNmComplemento" class="control-label"></label>
+                <input asp-for="EndeNmComplemento" class="form-control" />
+                <span asp-validation-for="EndeNmComplemento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndeNmBairro" class="control-label"></label>
+                <input asp-for="EndeNmBairro" class="form-control" />
+                <span asp-validation-for="EndeNmBairro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstaIdSigla" class="control-label"></label>
+                <select asp-for="EstaIdSigla" class="form-control" asp-items="ViewBag.EstaIdSigla"></select>
+                <span asp-validation-for="EstaIdSigla" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndeNmCidade" class="control-label"></label>
+                <input asp-for="EndeNmCidade" class="form-control" />
+                <span asp-validation-for="EndeNmCidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

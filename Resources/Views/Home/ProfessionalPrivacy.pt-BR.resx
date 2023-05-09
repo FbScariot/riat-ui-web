@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Description_Privacy" xml:space="preserve">
+    <value>&lt;p&gt;A RIAT SERVIÇOS DE SAÚDE LTDA. - ME, é uma pessoa jurídica de direito privado, inscrita no CNPJ sob o nº 09.253.654/0001-00, com sede na Avenida São Jorge, 2960, sala 202, São Jorge, em Manaus/AM, CEP 69.030-680.&lt;/p&gt;
+                    &lt;p&gt;A RIAT tem o propósito de oferecer uma plataforma totalmente digital para centralização de informações e consultas terapêuticas e psicológicas, de modo que os profissionais possam atender aos seus pacientes de forma c, bem como ter acesso ao histórico de informações de cada paciente consultado para manter um atendimento humanizado e personalizado, otimizando o atendimento psicológico e tornando a saúde mental mais acessível.&lt;/p&gt;
+                    &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt; 1. Definições&lt;/strong&gt;&lt;/p&gt;
+
+                    &lt;p&gt;Ao ler o nosso Termo de Uso Profissional, entenda o significado das palavras/expressões conforme indicação:&lt;/p&gt;
+                    &lt;table style="border-style: solid;border-color:black; border-width:1px; width:100%"&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Conteúdo&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Toda e qualquer informação contida no website ou aplicativo, independente do formato (texto, áudio, vídeo, imagem, dados, etc.).&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Prestador de Serviço&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Pessoas físicas, habilitados como psicólogos interessados em prestar os serviços na plataforma desenvolvida pela RIAT.&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Usuários&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Pessoas físicas, pacientes, interessadas em usufruir os serviços na plataforma desenvolvida pela RIAT.&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Política de Privacidade&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Regras sobre a utilização pela RIAT dos dados pessoais inseridos na plataforma pelo prestador de serviço.&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Tratamento de Dados&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Operação de coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração de dados.&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;ANPD/LGPD&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Agência Nacional de Proteção de Dados, autoridade prevista na LGPD – Lei Geral de Proteção de Dados, nº 13.709/2018.&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Formulários&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Formulários de pesquisa disponibilizados no &lt;em&gt;website&lt;/em&gt;, utilizados pelos prestadores de serviços para cadastrar seus dados, coletados utilização exclusiva na plataforma desenvolvida pela RIAT.&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;&lt;em&gt;Website&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Página institucional na internet de titularidade da RIAT&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px; white-space:nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Aplicativo (&lt;em&gt;App&lt;/em&gt;)&lt;/strong&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid;border-color:black; border-width:1px"&gt;
+                                    &lt;p&gt;Aplicativo de titularidade da RIAT&lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;2. Do Serviço Voluntário Temporário: Campanha “RIAT Contra a COVID-19”&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;2.1. A pandemia do Coronavírus também traz consigo uma epidemia em saúde mental. Como uma empresa de saúde mental que nasceu na Argentina e também atua no Brasil, a RIAT é inquieta e sempre se questiona sobre o que pode fazer além dos serviços usuais para contribuir com a comunidade.&lt;/p&gt;
+                    &lt;p&gt;2.2. Por essa razão, foi desenvolvido um plantão de assistência psicológica com uma equipe de profissionais em saúde mental, com atendimento por 24 (vinte e quatro) horas diárias, para receber por meio de chamadas, mensagens, áudios ou outras formas de contato os casos de pessoas que precisam deste atendimento e suporte.&lt;/p&gt;
+                    &lt;p&gt;2.3. Através da plataforma, realiza-se uma triagem e determina-se o tipo de atendimento necessário, priorizando de imediato a contenção emocional e as informações relevantes para cada usuário.&lt;/p&gt;
+                    &lt;p&gt;2.4. Após a triagem descrita na cláusula 2.3, a RIAT identifica o tipo de profissional especializado que irá atender o Usuário. O atendimento é feito de forma virtual e com agendamento prévio.&lt;/p&gt;
+                    &lt;p&gt;2.5. O serviço prestado por parte da RIAT e de seus Voluntários, aqui denominados Prestadores de Serviço, terá o prazo de duração de 03 (três) meses a contar do lançamento e disponibilização da plataforma.&lt;/p&gt;
+                    &lt;p&gt;2.6. Expirado o referido prazo, as atividades da RIAT se manterão de forma remunerada, nos limites estabelecidos e determinados por seu contrato social e órgãos reguladores.&lt;/p&gt;
+                    &lt;p&gt;2.7. A RIAT esclarece que após o encerramento da Campanha “RIAT Contra a Covid-19”, os Voluntários cadastrados terão a faculdade de cadastrarem-se como Profissionais Prestadores de Serviço, os quais serão remunerados consoante explicitado em posterior Termo de Uso a ser aderido.&lt;/p&gt;
+                    &lt;p&gt;2.8. A RIAT esclarece, também, que é conferido ao Usuário o direito de manter-se vinculado à plataforma após o encerramento da Campanha “RIAT Contra a Covid-19”, circunstância a qual também deverá aderir aos Termos de Uso específicos para pacientes.&lt;/p&gt;
+                    &lt;p&gt;2.9. A RIAT informa que o serviço por ela realizado, seja para atender aos fins de seu objeto social ou para a finalidade voluntária específica da campanha “RIAT Contra a Covid-19”, não constitui qualquer tipo de propaganda ou publicidade de profissionais.&lt;/p&gt;
+                    &lt;p&gt;2.10. Nos termos da cláusula 2.9, a RIAT informa que não faz publicidade ou propaganda dos profissionais ou dos serviços por eles prestados e age dentro das normas dos órgãos reguladores de sua atividade.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;3. Aceite dos Termos de Uso&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;3.1. O Prestador de Serviço que acessar o &lt;em&gt;website&lt;/em&gt; ou aplicativo da RIAT ou seu conteúdo, bem como preencher os formulários para coleta de dados e utilizar os serviços neles oferecidos está concordando expressamente, de forma livre, informada e sem reservas, com as condições estipuladas neste Termo e com suas cláusulas, manifestando seu consentimento inclusive sobre os tratamentos de dados também especificados neste Termo.&lt;/p&gt;
+                    &lt;p&gt;3.2. A RIAT reserva o direito de realizar alterações e atualizações nos Termos, a qualquer momento, sem a necessidade de aviso prévio. Em caso de alterações dos Termos que restrinjam direitos do Prestador de Serviço, a RIAT poderá comunicar tal alteração, ao seu critério, através dos Meios de Comunicação. Todavia, esta liberalidade não afasta a responsabilidade do Prestador de Serviço de verificar periodicamente os Termos.&lt;/p&gt;
+                    &lt;p&gt;3.3. Caso o Prestador de Serviço continue acessando o &lt;em&gt;App&lt;/em&gt; ou &lt;em&gt;Website&lt;/em&gt; através de aparelho telefônico ou computador após eventuais alterações dos Termos por parte da RIAT, tal ato constituirá no seu consentimento em vincular-se aos Termos alterados.&lt;/p&gt;
+                    &lt;p&gt;3.4. A qualquer tempo, o Prestador de Serviço que não concordar com os Termos, deverá comunicar ao suporte da RIAT o seu pedido de desligamento, com intuito de que sejam adotadas as medidas necessárias para o reencaminhamento dos pacientes atendidos por ele. Após a confirmação do reencaminhamento, o Prestador de Serviço terá seu cadastro e acesso excluídos da plataforma.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;4. Política de Privacidade e Tratamento de Dados&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;4.1. A Lei nº 12.965/2014 traz a necessidade de ser estabelecida uma política de privacidade quanto ao uso da internet, sendo um direito de todos os envolvidos.&lt;/p&gt;
+                    &lt;p&gt;4.2. Ao utilizar o &lt;em&gt;website&lt;/em&gt; ou &lt;em&gt;App&lt;/em&gt; da RIAT, o Prestador de Serviço fica ciente de que o tratamento de dados e seu armazenamento perdurarão enquanto durar o cadastramento e a prestação de serviços na plataforma e terão a finalidade de facilitar no fornecimento do serviço, gerar estudos de mercado e estudos na área da psicologia, bem como promover divulgação de marketing da RIAT.&lt;/p&gt;
+                    &lt;p&gt;4.3. A RIAT atende à legislação pátria sobre tratamento de dados, especificamente a Lei nº 13.709/2018 (LGPD) e a Lei nº 12.965/2014, garantindo a segurança na utilização dos dados cadastrados de todos os seus clientes, prestadores de serviços e demais pessoas envolvidas na plataforma. Também se atenta para a segurança e proteção na utilização de dados efetuada pelos seus parceiros e utiliza métodos para garantir o anonimato dos dados coletados.&lt;/p&gt;
+                    &lt;p&gt;4.4. Ao aceitar os Termos de Uso e acessar a plataforma, o Prestador de Serviço adere às regras da plataforma, ficando ciente de que os dados coletados e produzidos a partir do atendimento prestado serão utilizados pela RIAT de acordo com a estrita finalidade do negócio. &lt;/p&gt;
+                    &lt;p&gt;4.5. Com a adesão aos Termos, a RIAT poderá compartilhar os dados de forma &lt;em&gt;online&lt;/em&gt; ou &lt;em&gt;off-line&lt;/em&gt; entre os envolvidos na prestação de serviços e gestão da plataforma, através de relatórios sistêmicos ou registros previamente arquivados, respeitando a sua finalidade no uso desses registros, bem como se compromete a não compartilhar com terceiros sem envolvimento na plataforma os dados sigilosos do Prestador de Serviço, salvo por determinação judicial, força de lei ou outra demanda específica em caráter de exceção.&lt;/p&gt;
+                    &lt;p&gt;4.6. Os envolvidos na prestação de serviços pela plataforma da RIAT, colaboradores ou terceirizados, firmam termos de confidencialidade com a obrigação de manter absoluto sigilo sobre todas as informações referentes à RIAT, ao Prestador de Serviço ou o próprio serviço prestado e de abster-se de qualquer uso indevido, a seu próprio benefício ou de terceiros. &lt;/p&gt;
+                    &lt;p&gt;4.7. Qualquer violação aos termos de confidencialidade terá encaminhamento conforme legislação brasileira.&lt;/p&gt;
+                    &lt;p&gt;4.8. O Usuário poderá requerer o cancelamento do compartilhamento de dados de sua titularidade, a qualquer tempo, entrando em contato com os canais de atendimento da RIAT. Não havendo qualquer pedido de exclusão, o Prestador de Serviço fica ciente de que os dados seguirão armazenados enquanto forem necessários para a prestação do serviço, de acordo com a finalidade da RIAT, e para análise estatística. Com a exclusão, o Prestador de Serviço fica ciente de que poderá inviabilizar o serviço prestado pela plataforma.&lt;/p&gt;
+                    &lt;p&gt;4.9. A RIAT poderá manter servidor em ambiente exterior ao Brasil, devidamente protegido e mantendo-se a segurança dos dados compartilhados na plataforma, ficando o Prestador de Serviço ciente e de acordo de que pode ocorrer a transferência internacional de seus dados.&lt;/p&gt;
+                    &lt;p&gt;4.10. A RIAT é responsável por escolher empresas prestadoras de serviço que prezem pelas medidas de segurança, técnicas e administrativas hábeis para a proteção de dados, mas se exime da responsabilidade em caso de atentado &lt;em&gt;hacker&lt;/em&gt; ou outra falha tecnológica que possa viabilizar acessos não autorizados ou situação acidental ou ilícita de perda, alteração, destruição, comunicação ou outro tratamento indevido do uso de dados, comprometendo-se a comunicar à ANPD qualquer ocorrência de incidentes desta ordem que possa causar riscos ao usuário.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;5. Cadastro&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;5.1. Para utilização do serviço, o Prestador de Serviço deverá registrar-se e manter uma conta pessoal na plataforma, a qual informará seus dados pessoais em formulários disponibilizados no &lt;em&gt;App&lt;/em&gt; ou &lt;em&gt;Website&lt;/em&gt;.&lt;/p&gt;
+                    &lt;p&gt;5.2. O Prestador de Serviço deverá ter capacidade civil, possuir diploma de bacharel em Psicologia expedido por instituição de ensino superior devidamente reconhecida pela autoridade educacional do País e estar regularmente inscrito no Conselho Regional de Psicologia de sua Unidade Federativa ou, se estrangeiro, em órgão equivalente.&lt;/p&gt;
+                    &lt;p&gt;5.3. Após receber a documentação, a RIAT efetuará uma análise desta e poderá aceitar ou recusar a solicitação de cadastro do Prestador de Serviço. A RIAT também poderá realizar a checagem de antecedentes criminais e quaisquer outras verificações que considerar oportunas ou que sejam exigidas pela legislação aplicável.&lt;/p&gt;
+                    &lt;p&gt;5.4. O perfil do Prestador de Serviço é exclusivo e intransferível, estando o mesmo comprometido, mediante aceitação dos Termos, a não compartilhar sua Conta com terceiros, sendo vedada a transferência de seus dados de acesso, sob pena de cancelamento imediato da Conta de Prestador de Serviço, além de encaminhamento do caso às autoridades públicas para análise de eventuais penalidades criminais e civis aplicáveis.&lt;/p&gt;
+                    &lt;p&gt;5.5. A RIAT se reserva ao direito de solicitar documentos adicionais para confirmação de cadastros, bem como outros métodos de identificação e autenticação do Prestador de Serviço (como, por exemplo, reconhecimento facial), por ocasião do cadastro e enquanto o Usuário utilizar e prestar os serviços a qualquer tempo. Mesmo após a confirmação do cadastro, é possível o cancelamento da conta caso sejam verificadas incongruências no processo de verificação, a exclusivo critério da RIAT.&lt;/p&gt;
+                    &lt;p&gt;5.6. As informações da conta são de exclusiva responsabilidade de quem as inseriu. Em caso de acarretarem danos ou prejuízos de qualquer espécie, as medidas cabíveis podem ser tomadas a fim de resguardar seus interesses e integridade de pacientes, outros Usuários e Prestadores de Serviço, além da própria RIAT.&lt;/p&gt;
+                    &lt;p&gt;5.7. Sob as penas da lei, o Prestador de Serviço compromete-se e declara estar ciente que a utilização de sua conta no &lt;em&gt;App&lt;/em&gt; e &lt;em&gt;Website&lt;/em&gt; consistirá apenas para os fins estritamente legais, legítimos e permitidos nestes Termos de Uso.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;6. Serviços&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;6.1. Os Serviços consistem na centralização de informações e consultas dos Usuários, de modo que os Prestadores de Serviço possam atender aos seus pacientes de forma &lt;em&gt;online&lt;/em&gt; e, excepcionalmente para os fins da campanha “RIAT Contra a Covid-19”, gratuita, bem como ter acesso ao histórico de informações de cada paciente consultado para manter um atendimento humanizado e personalizado, otimizando o atendimento psicológico e tornando a saúde mental mais acessível.&lt;/p&gt;
+                    &lt;p&gt;6.2. A RIAT concederá ao Prestador de Serviço uma licença limitada, pessoal, não exclusiva, intransferível, não comercial e plenamente revogável, para que seja utilizado o &lt;em&gt;App&lt;/em&gt; ou &lt;em&gt;Website&lt;/em&gt; em seu aparelho telefônico, &lt;em&gt;Tablet&lt;/em&gt; ou computador, em conformidade com as condições estabelecidas nestes Termos de Uso.&lt;/p&gt;
+                    &lt;p&gt;6.3. Através o &lt;em&gt;App&lt;/em&gt; ou &lt;em&gt;Website&lt;/em&gt;, o Usuário poderá agendar e realizar consultas psicológicas e/ou terapias com o Prestador de Serviço de sua escolha e nos horários disponibilizados pelo Usuário.&lt;/p&gt;
+                    &lt;p&gt;6.4. Ficará a critério do Prestador de Serviço requerer a RIAT que designe outro profissional ao paciente que deixar de comparecer na sessão agendada.&lt;/p&gt;
+                    &lt;p&gt;6.5. Os serviços intermediados através do &lt;em&gt;App&lt;/em&gt; e &lt;em&gt;Website&lt;/em&gt; não poderão ser desvirtuados, devendo as sessões estar adstritas à finalidade do negócio e aos Termos de Uso.&lt;/p&gt;
+                    &lt;p&gt;6.6. Caso o Prestador de Serviço identifique algum caso clínico de alta complexidade, poderá ser requerida ao corpo técnico da RIAT uma solicitação de Supervisão, cujo objetivo será auxiliar o Prestador de Serviço no atendimento do paciente e caso clínico relatado. A Supervisão tem por objetivo garantir um tratamento humanizado e eficiente ao paciente e dar suporte ao Prestador de Serviço em tomadas de decisão.&lt;/p&gt;
+                    &lt;p&gt;6.7. Os casos em que se faça necessária a intervenção de outras especialidades médicas, é livre ao Prestador de Serviço indicar profissional de sua confiança, desde que reporte a informação ao corpo técnico da RIAT para fins de avaliação, registro e conhecimento.&lt;/p&gt;
+                    &lt;p&gt;6.8. A RIAT reserva a si todos os direitos ao &lt;em&gt;App&lt;/em&gt; e &lt;em&gt;Website&lt;/em&gt; não expressamente concedidos aqui.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;7. Das Obrigações do Prestador de Serviço&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;7.1. O Prestador de Serviço deve respeitar todas as regras contidas nestes Termos de Uso e de toda legislação, regulamentos e códigos aplicáveis ao exercício de sua profissão.&lt;/p&gt;
+                    &lt;p&gt;7.2. Mediante aceitação dos Termos de Uso, o Prestador de Serviço compromete-se:&lt;/p&gt;
+                    &lt;p&gt;a) Responsabilizar-se integralmente pelo fornecimento de dados pessoais, os quais são exigidos em seu cadastro, bem como tem o dever de mantê-los atualizados;&lt;/p&gt;
+                    &lt;p&gt;b) Responsabilizar-se integralmente pela prestação de serviço;&lt;/p&gt;
+                    &lt;p&gt;c) Agir perante os pacientes Usuários e à RIAT com boa-fé, diligência, profissionalismo e respeito;&lt;/p&gt;
+                    &lt;p&gt;d) Obedecer e atender a todas as exigências legais e regulatórias referentes ao exercício da profissão de Psicólogo, incluindo pagamento de anuidade de seu Conselho, leis, regulamentos, códigos de ética e conduta, bem como às legislações aplicáveis à &lt;em&gt;Internet&lt;/em&gt;;&lt;/p&gt;
+                    &lt;p&gt;e) Não discriminar ou selecionar, por nenhum motivo, os pacientes;&lt;/p&gt;
+                    &lt;p&gt;f) Aceitar e concordar que poderá eventualmente ser avaliado pelos pacientes Usuários e/ou pelo corpo técnico da RIAT, circunstância a qual se presta para fins de eficiência do serviço;&lt;/p&gt;
+                    &lt;p&gt;g) Reportar ao Corpo Técnico da RIAT quadros clínicos de pacientes que sejam considerados de alto risco, circunstância na qual poderá ser avaliada em conjunto com o Prestador de Serviço intervenções e medidas que deverão ser adotadas.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;8. Do Acesso à Rede e Equipamentos&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;8.1. A RIAT se compromete a adotar todos os esforços possíveis e disponíveis para solucionar eventuais problemas que vierem a ocorrer junto ao seu &lt;em&gt;Website&lt;/em&gt; e &lt;em&gt;App&lt;/em&gt;, buscando retomar o seu normal funcionamento no menor tempo possível. &lt;/p&gt;
+                    &lt;p&gt;8.2. A RIAT não pode garantir o funcionamento integral e ininterrupto do &lt;em&gt;Website&lt;/em&gt; ou &lt;em&gt;App&lt;/em&gt;, ou ainda a inexistência de erros. Eventualmente, o &lt;em&gt;Website&lt;/em&gt; e o &lt;em&gt;App&lt;/em&gt; poderão estar indisponíveis por motivos técnicos ou falhas da &lt;em&gt;Internet&lt;/em&gt;, ou por motivo de evento fortuito ou de força maior, alheio ao controle da RIAT, não podendo esta ser responsabilizada por quaisquer danos que ocorrerem em razão disto.&lt;/p&gt;
+                    &lt;p&gt;8.3. Em observância a cláusula 8.1., além de manter o bom funcionamento do App e Website na maior medida possível, a RIAT deverá disponibilizar canais de atendimento para ajudar a solucionar dúvidas e problemas do Prestador de Serviço com a plataforma de atendimento &lt;em&gt;online&lt;/em&gt;.&lt;/p&gt;
+                    &lt;p&gt;8.4. O Prestador de Serviço entende e concorda que a utilização do Serviço demanda a aquisição de dispositivos de telefonia móvel, &lt;em&gt;Tablets&lt;/em&gt; ou computadores e a contratação de serviços de telecomunicação compatíveis com o uso do &lt;em&gt;App&lt;/em&gt; ou &lt;em&gt;Website&lt;/em&gt;, e que a utilização do Serviço poderá gerar cobranças por parte das operadoras de telecomunicações para conexão com a &lt;em&gt;Internet&lt;/em&gt;, por exemplo, produtos e serviços não disponibilizados pela RIAT, conforme cláusula 7.5.&lt;/p&gt;
+                    &lt;p&gt;8.5. O Prestador de Serviço é o responsável exclusivo por contratar e arcar com todo e qualquer custo e ônus relacionados à aquisição de seus dispositivos de acesso ao &lt;em&gt;App&lt;/em&gt; ou ao &lt;em&gt;Website&lt;/em&gt; e a contratação de seu serviço de telecomunicação.&lt;/p&gt;
+                    &lt;p&gt;8.6. A RIAT não é responsável pela disponibilidade, qualidade e manutenção de tais serviços de telecomunicação e o Prestador de Serviço entende que as condições do serviço de telecomunicações poderão afetar a experiência do Serviço.&lt;/p&gt;
+                    &lt;p&gt;8.7. A RIAT não será responsabilizada por qualquer problema relacionado ao Serviço decorrente direta ou indiretamente de inconsistências ou falhas nos dispositivos de telefonia móvel, &lt;em&gt;Tablets&lt;/em&gt; ou computadores e/ou nos serviços de telecomunicação.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;9. Da Responsabilidade pelos Serviços&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;9.1. A RIAT assume a responsabilidade por todos os problemas aos quais der causa injustificada.&lt;/p&gt;
+                    &lt;p&gt;9.2. A contratação dos serviços de psicologia é feita diretamente entre paciente e Prestador de Serviço, não sendo responsabilidade da RIAT quaisquer prejuízos ou danos decorrentes da relação estabelecida entre paciente e Prestador de Serviço.&lt;/p&gt;
+                    &lt;p&gt;9.3. O Prestador de Serviço compreende e concorda que a RIAT não será responsável por quaisquer condutas praticadas pelo Prestador de Serviço e que eventualmente causem danos ou prejuízos aos Usuários ou aos seus familiares.&lt;/p&gt;
+                    &lt;p&gt;9.4. O Prestador de Serviço será responsável pelos danos e prejuízos que causar em face dos pacientes ou seus familiares e concorda em indenizar e manter a RIAT indene em relação a quaisquer demandas, perdas ou prejuízos direta e indiretamente referentes aos atos que praticar;&lt;/p&gt;
+                    &lt;p&gt;9.5. O Prestador de Serviço é o único e exclusivo responsável por todos e quaisquer problemas relativos ao atendimento psicológico prestado, bem como por quaisquer condutas indevidas ou ilegais que pratique.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;10. INEXISTÊNCIA DE RELAÇÃO DE TRABALHO, VÍNCULO DE EMPREGO E OUTROS&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;10.1. NÃO SE ESTABELECE OU CONSTITUI ENTRE O PRESTADOR DE SERVIÇO E A RIAT QUALQUER VÍNCULO DE NATUREZA EMPREGATÍCIA, SOCIETÁRIA E/OU ECONÔMICA, SENDO CERTO QUE O PRESTADOR DE SERVIÇO TEM A LIBERDADE PARA REALIZAR CONSULTAS QUANDO QUISER, BEM COMO PARA CESSAR A UTILIZAÇÃO DO APLICATIVO A QUALQUER MOMENTO, OBSERVADO O DISPOSTO NA CLÁUSULA 3.4. DESTE TERMO.&lt;/p&gt;
+                    &lt;p&gt;10.2. EMBORA CONTE COM CORPO TÉCNICO, ESCLARECE-SE E REITERA-SE QUE FINALIDADE DO OBJETO SOCIAL DA RIAT É INTERMEDIAR E FACILITAR A CONTRATAÇÃO DE SERVIÇOS DE TERAPÊUTICOS E DE PSICOLOGIA PARA OS USUÁRIOS CADASTRADOS NA PLATAFORMA, ATENDENDO AOS PROPÓSITOS DA CAMPANHA VOLUNTÁRIA “RIAT CONTRA A COVID-19”, BEM COMO GERAR ESTUDOS NA ÁREA DE PSICOLOGIA.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;11. Da Suspeita de Fraude&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;11.1. A RIAT não se responsabiliza por qualquer conduta fraudulenta que tenha sido praticada pelo Prestador de Serviço, podendo, inclusive, impedir, em razão delas, a manutenção de acesso deste no &lt;em&gt;App&lt;/em&gt; e &lt;em&gt;Website.&lt;/em&gt;&lt;/p&gt;
+                    &lt;p&gt;11.2. A título de esclarecimento, a RIAT considera como fraude a apresentação de documentos falsos, exigências de remuneração aos Usuários pacientes, conluio com profissionais de outras especialidades para fins de remuneração própria ou de terceiros, a realização de consultas que não foram requeridas pelos pacientes, toda e qualquer conduta que seja lesiva ao presente Termo, à legislação, regulamentos e códigos aplicáveis ao exercício da profissão de Psicólogo.&lt;/p&gt;
+                    &lt;p&gt;11.3. A RIAT analisará caso a caso as suspeitas de fraude e poderá suspender o seu acesso à plataforma, de forma a evitar risco de dano à RIAT e ao Usuário paciente.&lt;/p&gt;
+                    &lt;p&gt;11.4.Caso se constate a conduta fraudulenta, a RIAT excluirá o acesso e o cadastro do Prestador de Serviço na plataforma, reportará o caso às autoridades competentes e promoverá as medidas judiciais ou extrajudiciais cabíveis.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;12. Propriedade Intelectual&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;12.1. As marcas, nomes, logotipos, nomes de domínio de demais sinais distintivos, bem como todo e qualquer conteúdo, desenho, arte, &lt;em&gt;layout&lt;/em&gt; publicado no &lt;em&gt;App&lt;/em&gt; ou &lt;em&gt;Website&lt;/em&gt; e o próprio serviço são de propriedade exclusiva da RIAT.&lt;/p&gt;
+                    &lt;p&gt;12.2. São vedados quaisquer atos ou contribuições tendentes à descompilação, engenharia reversa, modificação de características, ampliação, alteração, mesclagem ou incorporação em quaisquer outros programas ou sistemas do &lt;em&gt;App&lt;/em&gt;, &lt;em&gt;Website&lt;/em&gt; ou serviço.&lt;/p&gt;
+                    &lt;p&gt;12.3. Toda e qualquer forma de reprodução do App, Website ou serviço, total ou parcial, permanente, temporária ou provisória, de forma gratuita ou onerosa, sob quaisquer modalidades, formas ou títulos é expressamente vedada.&lt;/p&gt;
+
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;13. Comunicação&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;13.1. Caso o Prestador de Serviço se inscreva no formulário de &lt;em&gt;newsletters&lt;/em&gt; da RIAT consente em receber &lt;em&gt;e-mails&lt;/em&gt; promocionais no endereço eletrônico cadastrado, podendo a qualquer tempo desativar esse envio.&lt;/p&gt;
+                    &lt;p&gt;13.2. Ao se cadastrar na plataforma da RIAT, o Prestador de Serviço autoriza o contato via &lt;em&gt;e-mail&lt;/em&gt;, telefone ou &lt;em&gt;WhatsApp&lt;/em&gt; quando for necessário para tratar de assuntos referentes à prestação de serviço da plataforma, bem como comunicações comerciais de recomendação de serviços ou novas funcionalidades do &lt;em&gt;Website&lt;/em&gt; ou &lt;em&gt;App&lt;/em&gt;.&lt;/p&gt;
+                    &lt;p&gt;13.3. Caso o Prestador de Serviço não tenha interesse nas comunicações comerciais da RIAT, poderá formalizar por &lt;em&gt;e-mail&lt;/em&gt; o pedido de descadastramento.&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;strong&gt;14. Disposições Gerais&lt;/strong&gt;&lt;/p&gt;
+                    &lt;p&gt;14.1. Estes termos constituem o acordo integral entre o Prestador de Serviço e a RIAT e regerão a utilização da plataforma, substituindo qualquer acordo anteriormente estabelecido.&lt;/p&gt;
+                    &lt;p&gt;14.2. Caso a RIAT deixe de exercer ou executar qualquer direito ou dispositivo destes Termos, não será caracterizado como renúncia de direito ou dispositivo, tampouco constituirá novação.&lt;/p&gt;
+                    &lt;p&gt;14.3. Caso qualquer dispositivo dos Termos for considerado ilegal, inválido ou inexequível, por um tribunal competente ou por qualquer legislação que venha a ser promulgada, as partes concordam que o restante dos Termos não será afetado, permancendo os outros dispositivos dos Termos em pleno vigor e efeito.&lt;/p&gt;
+                    &lt;p&gt;14.4. Incindindo a circunstância descrita na Cláusula 14.3., as partes concordam em substituir as disposições tidas como ilegais, inválidas ou inexequíveis para fins de conteúdo e finalidade dos presentes Termos.&lt;/p&gt;
+                    &lt;p&gt;14.5. A RIAT se reserva ao direito de, a qualquer tempo, modificar ou descontinuar, temporariamente ou permanentemente, a prestação de serviço ou parte dela, com ou sem notificação.&lt;/p&gt;
+                    &lt;p&gt;14.6. O Prestador de Serviço concorda que a RIAT não será responsabilizada, nem terá qualquer obrigação adicional, implícita ou explícita, para consigo ou terceiros em razão de qualquer modificação, suspensão ou desativação do serviço.&lt;/p&gt;
+                    &lt;p&gt;14.7. Em caso de modificação, suspensão ou desativação do serviço, a RIAT deverá notificar o Prestador de Serviço para que seja providenciada a continuidade do tratamento de seus pacientes em ambiente distinto da plataforma, a qual não se confunde com a notificação descrita na Cláusula 14.5.&lt;/p&gt;
+                    &lt;p&gt;14.8. Todas as notificações, intimações, ofícios e/ou qualquer outro oficial de cientificação da RIAT deverão ocorrer em seu endereço de sede, informado no preâmbulo do presente Termo.&lt;/p&gt;
+                    &lt;p&gt;14.9. Estes termos e o relacionamento estabelecido entre o Prestador de Serviço e a RIAT serão regidos pelas Leis da República Federativa do Brasil, ficando eleito o Foro da Comarca de Manaus/AM como sendo o único competente para dirimir quaisquer litígios ou demandas que venham a envolver as partes em relação ao uso da plataforma disponbilizada.&lt;/p&gt;
+                    &lt;p&gt;14.10. As partes concordam e declaram que se submetem exclusivamente à competência única e exclusiva dos Tribunais localizados no Brasil.&lt;/p&gt;</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Termos de uso profissional</value>
+  </data>
+</root>

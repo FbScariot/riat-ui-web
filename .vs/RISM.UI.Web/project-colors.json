@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4d5d09a3-aa4b-4bd8-89c9-90c619ee9060": {
+      "ProjectGuid": "4d5d09a3-aa4b-4bd8-89c9-90c619ee9060",
+      "DisplayName": "RISM.UI.Web",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

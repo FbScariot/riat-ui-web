@@ -1,0 +1,93 @@
+﻿@model RIAT.DAL.Entity.Models.Profissional
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<div class="container">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h1>@Localizer["PageType"]</h1>
+            <div class="modal-header">
+                <h4>@ViewData["Title"]</h4>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    <dt>
+                        @Localizer["PersonCode"]
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.IdPessoa)
+                    </dd>
+                    <dt>
+                        @Localizer["ProfessionalName"]
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.NomeProfissional)
+                    </dd>
+                    <dt>
+                        @Localizer["ProfessionalType"]
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.TiprIdTipoProfissionalNavigation.TiprNmTipoProfissional)
+                    </dd>
+                    <dt>
+                        @Localizer["ProfessionalNumber"]
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfNrCrp)
+                    </dd>
+                    <dt>
+                        @Localizer["ProfessionalCDEPSI"]
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfCdEPsi)
+                    </dd>
+                    @*<dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>*@
+                    <dt>
+                        @Localizer["ProfessionalInternalCurriculum"]
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfTxMiniCurriculoInterno)
+                    </dd>
+                    <dt>
+                        @Localizer["ProfessionalPublicCurriculum"]
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfTxMiniCurriculoPublico)
+                    </dd>
+                    @*<dt>
+                        @Html.DisplayNameFor(model => model.ProfStAtivo)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfStAtivo)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfDtAtivacao)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfDtAtivacao)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfDtDesativacao)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfDtDesativacao)
+                    </dd>*@
+                </dl>
+            </div>
+            <div class="modal-footer">
+                @if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+                {
+                    <a asp-action="Edit" asp-route-id="@Model.IdPessoa">@Localizer["btnEdit"]</a>
+                }
+                | <a asp-action="Index">@Localizer["btnBackList"]</a>
+            </div>
+        </div>
+    </div>
+</div>

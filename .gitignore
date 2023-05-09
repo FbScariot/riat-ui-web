@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/bin/Debug/netcoreapp3.1
+/obj
+/bin/publish
+/bin/Release/netcoreapp3.1
+/bin/Versão Web 20200607.zip
+/bin/publish.zip
+/wwwroot/__MACOSX
+/wwwroot/project.mobirise
+/wwwroot/oxigenio
+/wwwroot/Menu Novo
+/wwwroot/index.html
+/wwwroot/Archive (2)

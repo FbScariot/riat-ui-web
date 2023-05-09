@@ -1,0 +1,54 @@
+11/18/2021 10:16:00 PM: Entrou no método OnConnectedAsync.
+11/18/2021 10:16:00 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:15:53.782Z"}
+11/18/2021 10:16:00 PM: Context.ConnectionId : AWR02JYmJDS-2K8w3dGV1g
+11/18/2021 10:16:00 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+11/18/2021 10:16:00 PM: Saiu no método OnConnectedAsync.
+11/18/2021 10:21:33 PM: Entrou no método OnDisconnectedAsync.
+11/18/2021 10:21:33 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:15:53.782Z"}
+11/18/2021 10:21:33 PM: Context.ConnectionId : AWR02JYmJDS-2K8w3dGV1g
+11/18/2021 10:21:33 PM: Saiu no método OnDisconnectedAsync.
+11/18/2021 10:33:02 PM: Entrou no método OnConnectedAsync.
+11/18/2021 10:33:02 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:32:56.714Z"}
+11/18/2021 10:33:02 PM: Context.ConnectionId : 9a7pAm0nFgkqNEJ7E3RVeQ
+11/18/2021 10:33:02 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+11/18/2021 10:33:02 PM: Saiu no método OnConnectedAsync.
+11/18/2021 10:33:24 PM: Entrou no método OnDisconnectedAsync.
+11/18/2021 10:33:24 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:32:56.714Z"}
+11/18/2021 10:33:24 PM: Context.ConnectionId : 9a7pAm0nFgkqNEJ7E3RVeQ
+11/18/2021 10:33:24 PM: Saiu no método OnDisconnectedAsync.
+11/18/2021 10:33:51 PM: Entrou no método OnConnectedAsync.
+11/18/2021 10:33:51 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:33:24.794Z"}
+11/18/2021 10:33:51 PM: Context.ConnectionId : qOdOmtQ-p_jBIxBmXumyIg
+11/18/2021 10:33:51 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+11/18/2021 10:33:51 PM: Saiu no método OnConnectedAsync.
+11/18/2021 10:33:59 PM: Entrou no método OnDisconnectedAsync.
+11/18/2021 10:33:59 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:33:24.794Z"}
+11/18/2021 10:33:59 PM: Context.ConnectionId : qOdOmtQ-p_jBIxBmXumyIg
+11/18/2021 10:33:59 PM: Saiu no método OnDisconnectedAsync.
+11/18/2021 10:37:10 PM: Entrou no método OnConnectedAsync.
+11/18/2021 10:37:10 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:33:59.968Z"}
+11/18/2021 10:37:10 PM: Context.ConnectionId : F-rT-Ms3ewJNgWhDZ0ySLw
+11/18/2021 10:37:10 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+11/18/2021 10:37:10 PM: Saiu no método OnConnectedAsync.
+11/18/2021 10:44:42 PM: Entrou no método OnDisconnectedAsync.
+11/18/2021 10:44:42 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:33:59.968Z"}
+11/18/2021 10:44:42 PM: Context.ConnectionId : F-rT-Ms3ewJNgWhDZ0ySLw
+11/18/2021 10:44:42 PM: Saiu no método OnDisconnectedAsync.
+11/18/2021 10:56:22 PM: Entrou no método OnConnectedAsync.
+11/18/2021 10:56:22 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:56:19.684Z"}
+11/18/2021 10:56:22 PM: Context.ConnectionId : EHVEbUx-FT9BKsJk5qL4ew
+11/18/2021 10:56:23 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+11/18/2021 10:56:23 PM: Saiu no método OnConnectedAsync.
+11/18/2021 10:57:13 PM: Entrou no método OnDisconnectedAsync.
+11/18/2021 10:57:13 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T01:56:19.684Z"}
+11/18/2021 10:57:13 PM: Context.ConnectionId : EHVEbUx-FT9BKsJk5qL4ew
+11/18/2021 10:57:13 PM: Saiu no método OnDisconnectedAsync.
+11/18/2021 11:14:28 PM: Entrou no método OnConnectedAsync.
+11/18/2021 11:14:28 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T02:14:23.456Z"}
+11/18/2021 11:14:28 PM: Context.ConnectionId : qdowz_9CqJ9fmRBYPg8JPQ
+11/18/2021 11:14:29 PM: Context encontrado em Context.User.Identity.Name : informes@riat.com.ar
+11/18/2021 11:14:29 PM: Saiu no método OnConnectedAsync.
+11/18/2021 11:29:24 PM: Entrou no método OnDisconnectedAsync.
+11/18/2021 11:29:24 PM: Dados recebidos em Context.GetHttpContext().Request.Query['user'] : {"signalRConnectionId":"4b75386f-4512-4d4f-bbe9-f93ed122f657","name":"Ana Moura","oneSignalId":"f5f08a16-d4d5-497f-a123-0cecdc0a5816","dtConnection":"2021-11-19T02:14:23.456Z"}
+11/18/2021 11:29:24 PM: Context.ConnectionId : qdowz_9CqJ9fmRBYPg8JPQ
+11/18/2021 11:29:24 PM: Saiu no método OnDisconnectedAsync.

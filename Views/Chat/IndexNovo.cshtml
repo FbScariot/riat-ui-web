@@ -1,0 +1,35 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using RIAT.DAL.Entity.Models;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@*@{
+        ViewData["Title"] = "Chat";
+    }*@
+<input type="hidden" id="hdName" value="@UserManager.GetUserAsync(User).Result.FirstName @UserManager.GetUserAsync(User).Result.LastName" />
+<input type="hidden" id="hdUserId" value="@UserManager.GetUserAsync(User).Result.Id" />
+<input type="text" id="hdOneSignalId" value="f5f08a16-d4d5-497f-a123-0cecdc0a5816" />
+<div class="main">
+</div>
+<div class="chats_wrapper">
+</div>
+<style>
+    section,
+    .container,
+    .container-fluid {
+        position: initial;
+        word-wrap: break-word;
+    }
+
+    .cid-smnhYhFqkG a:not([href]):not([tabindex]) {
+        font-size: medium;
+        color: #2196F3;
+        padding: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<script src="~/lib/jquery/dist/jquery-3.6.0.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/siteNovo.js" asp-append-version="true"></script>
+@*<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>*@

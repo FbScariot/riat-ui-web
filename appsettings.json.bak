@@ -1,0 +1,20 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=sqlserverriat.cviigh8slog3.sa-east-1.rds.amazonaws.com; Database=RIAT_PRODUCAO;User ID=admin;Password=tNIHSANB5vBifImQrrFu;MultipleActiveResultSets=true"    
+  },
+  "EmailSettings": {
+    "MailServer": "email-ssl.com.br",
+    "MailPort": 587,
+    "SenderName": "Atendimento RIAT",
+    "Sender": "atendimento@riat.com.br",
+    "Password": "@Atendimentoriat2020"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}

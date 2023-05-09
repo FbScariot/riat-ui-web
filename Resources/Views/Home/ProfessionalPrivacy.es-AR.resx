@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Description_Privacy" xml:space="preserve">
+    <value>&lt;p&gt; RIAT SERVIÇOS DE SAÚDE LTDA. - es una corredora y agencia de servicios de psicología y psicoanálisis, registrada en el CNPJ con el número 09.253.654/0001-00, con sede en Manaus/AM, en Av. São Jorge, nº 2.960, sala 202, Bairro São Jorge, CEP 69.030-680. &lt;/p&gt;
+                    &lt;p&gt; El propósito de RIAT es ofrecer una plataforma totalmente digital para centralizar la información y las consultas, para que los profesionales puedan atender a sus pacientes en línea &lt;em&gt; y &lt;/em&gt;, así como tener acceso al historial de información de cada paciente consultado para mantener una atención humanizada y personalizada, optimizando la atención psicológica y haciendo más accesible la salud mental. &lt;/p&gt;
+                    &lt;p&gt; &amp;nbsp; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 1. Definiciones &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; Al leer nuestro Término de uso profesional, comprenda el significado de las palabras/expresiones como se indica: &lt;/p&gt;
+                    &lt;table style="border-style: solid; border-color: black; border-width: 1px; width: 100%"&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Contenido &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Toda la información contenida en el &lt;em&gt; sitio web &lt;/em&gt; o la aplicación, independientemente del formato (texto, audio, video, imagen, datos, etc.). &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Proveedor de servicios &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Particulares, titulados como psicólogos interesados ​​en prestar servicios en la plataforma desarrollada por RIAT. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Usuarios &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Personas, pacientes, interesados ​​en utilizar los servicios de la plataforma desarrollada por RIAT. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Política de privacidad &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Normas sobre el uso por parte de RIAT de los datos personales introducidos en la plataforma por el prestador del servicio. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Procesamiento de datos &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Operación de recopilar, producir, recibir, clasificar, usar, acceder, reproducir, transmitir, distribuir, procesar, archivar, almacenar, eliminar, evaluar o controlar información, modificar, comunicar, transferir, difundir o extraer datos. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; ANPD/LGPD &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Agencia Nacional de Protección de Datos, autoridad prevista en la LGPD - Ley General de Protección de Datos, nº 13.709/2018. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Fórmulas &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Formularios de investigación disponibles en el &lt;em&gt; sitio web &lt;/em&gt;, utilizados por los proveedores de servicios para registrar sus datos, recopilados exclusivamente para su uso en la plataforma desarrollada por RIAT. &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt;&lt;strong&gt;&lt;em&gt; Sitio web&lt;/em&gt; &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Página web institucional propiedad de RIAT &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px; white-space: nowrap;"&gt;
+                                    &lt;p&gt; &lt;strong&gt; Aplicación (&lt;em&gt;Aplicación&lt;/em&gt;) &lt;/strong&gt; &lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td style="border-style: solid; border-color: black; border-width: 1px"&gt;
+                                    &lt;p&gt; Aplicación propiedad de RIAT &lt;/p&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 2. Aceptación de las condiciones de uso &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 2.1. El Prestador de Servicios que acceda al &lt;em&gt; sitio web &lt;/em&gt; o la aplicación RIAT o su contenido, así como la cumplimentación de los formularios de recogida de datos y la utilización de los servicios ofrecidos en los mismos, acepta expresamente, de forma libre, informada y sin reservas , con las condiciones estipuladas en este Plazo y con sus cláusulas, expresando su consentimiento incluso sobre los tratamientos de datos también especificados en este Plazo. &lt;/p&gt;
+                    &lt;p&gt; 2.2. RIAT se reserva el derecho de realizar cambios y actualizaciones a los Términos, en cualquier momento, sin necesidad de previo aviso. En caso de cambios en los Términos que restrinjan los derechos del Proveedor de Servicios, RIAT puede comunicar dicho cambio, a su discreción, a través de los Medios. Sin embargo, esta liberalidad no elimina la responsabilidad del Proveedor de servicios de verificar periódicamente los Términos. &lt;/p&gt;
+                    &lt;p&gt; 2.3. Si el Proveedor de servicios continúa accediendo a la &lt;em&gt; Aplicación &lt;/em&gt; o al &lt;em&gt; Sitio web &lt;/em&gt; a través de un teléfono o computadora después de cualquier cambio en los Términos por parte de RIAT, dicho acto constituirá su consentimiento para vincularlo. consulte los Términos modificados. &lt;/p&gt;
+                    &lt;p&gt; 2.4. En cualquier momento, el Proveedor de Servicios que no esté de acuerdo con los Términos, deberá comunicar a RIAT sustentar su solicitud de rescisión, con la intención de adoptar las medidas necesarias para la derivación de los pacientes atendidos por él. Después de la confirmación del reenvío, el Proveedor de Servicios verá excluido su registro y acceso de la plataforma. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 3.Política de privacidad y procesamiento de datos &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 3.1. La Ley 12.965/2014 trae la necesidad de establecer una política de privacidad en cuanto al uso de Internet, siendo un derecho de todos los involucrados. &lt;/p&gt;
+                    &lt;p&gt; 3.2. Al utilizar el &lt;em&gt; sitio web &lt;/em&gt; o la &lt;em&gt; aplicación &lt;/em&gt; de RIAT, el Proveedor de servicios es consciente de que el procesamiento y almacenamiento de datos durará mientras dure el registro y la prestación del servicio en la plataforma. y tendrá la finalidad de facilitar la prestación del servicio, generar estudios de mercado y estudios en el campo de la psicología, así como promover la divulgación de marketing de RIAT. &lt;/p&gt;
+                    &lt;p&gt; 3.3. RIAT cumple con la legislación nacional en materia de tratamiento de datos, en concreto la Ley N ° 13.709/2018 (LGPD) y la Ley N ° 12.965/2014, garantizando la seguridad en el uso de los datos registrados de todos sus clientes, prestadores de servicios y demás personas involucradas. en la plataforma. También está atento a la seguridad y protección en el uso de datos que hacen sus socios y utiliza métodos para garantizar el anonimato de los datos recopilados. &lt;/p&gt;
+                    &lt;p&gt; 3.4. Al aceptar los Términos de Uso y acceder a la plataforma, el Proveedor de Servicios se adhiere a las reglas de la plataforma, siendo consciente de que los datos recopilados y producidos a partir del servicio prestado serán utilizados por RIAT de acuerdo con el estricto propósito del negocio. &lt;/ p&gt;
+                    &lt;p&gt; 3.5. Con el cumplimiento de los Términos, RIAT podrá compartir datos &lt;em&gt; online &lt;/em&gt; o &lt;em&gt; offline &lt;/em&gt; entre los involucrados en la prestación de servicios y gestión de la plataforma, a través de informes sistémicos o registros previamente archivados, respetando su finalidad en el uso de estos registros, así como el compromiso de no compartir los datos confidenciales del Proveedor de Servicios con terceros sin participación en la plataforma, salvo por orden judicial, fuerza de ley u otra exigencia específica como excepción . &lt;/p&gt;
+                    &lt;p&gt; 3.6. Los involucrados en la prestación de servicios a través de la plataforma RIAT, empleados o subcontratados, firman términos de confidencialidad con la obligación de mantener absoluta confidencialidad sobre toda la información relativa a RIAT, el Prestador de Servicios o el propio servicio y abstenerse de cualquier uso indebido, para su propio beneficio o el de otros. &lt;/p&gt;
+                    &lt;p&gt; 3.7. Cualquier violación de los términos de confidencialidad estará sujeta a la ley brasileña. &lt;/p&gt;
+                    &lt;p&gt; 3.8. El Usuario puede solicitar la cancelación del intercambio de datos de su propiedad, en cualquier momento, contactando los canales de servicio de RIAT. En ausencia de cualquier solicitud de exclusión, el Prestador del Servicio es consciente de que los datos permanecerán almacenados mientras sean necesarios para la prestación del servicio, de acuerdo con la finalidad de RIAT, y para el análisis estadístico. Con la exclusión, el Proveedor de Servicios es consciente de que puede hacer que el servicio brindado por la plataforma sea inviable. &lt;/p&gt;
+                    &lt;p&gt; 3.9. RIAT podrá mantener un servidor en un entorno fuera de Brasil, debidamente protegido y manteniendo la seguridad de los datos compartidos en la plataforma, dando a conocer y de acuerdo al Proveedor de Servicios que la transferencia internacional de sus datos puede ocurrir. &lt;/p&gt;
+                    &lt;p&gt; 3.10. RIAT es responsable de elegir proveedores de servicios que valoren las medidas de seguridad, técnicas y administrativas para la protección de datos, pero se exime de responsabilidad en caso de un ataque de piratas informáticos u otra falla tecnológica. posibilitar el acceso no autorizado o situación accidental o ilícita de pérdida, alteración, destrucción, comunicación u otro tratamiento indebido del uso de los datos, comprometiéndose a informar a la ANPD cualquier ocurrencia de incidencias de esta naturaleza que puedan ocasionar riesgos al usuario. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 4. Registro &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; 4.1. Para utilizar el servicio, el Proveedor de Servicios debe registrarse y mantener una cuenta personal en la plataforma, la cual informará sus datos personales y bancarios en formularios disponibles en la &lt;em&gt; Aplicación &lt;/em&gt; o &lt;em&gt; Sitio web &lt;/em&gt; . &lt;/p&gt;
+                    &lt;p&gt; 4.2. El Prestador de Servicios deberá tener capacidad civil, ser titular de una Licenciatura en Psicología expedida por una institución de educación superior debidamente reconocida por la autoridad educativa del país y estar inscrito regularmente en el Consejo Regional de Psicología de su Unidad Federativa o, en caso de ser extranjero, en un organismo equivalente con validación en Brasil. &lt;/p&gt;
+                    &lt;p&gt; 4.3. Una vez recibida la documentación, RIAT realizará un análisis de esta y podrá aceptar o rechazar la solicitud de registro del Proveedor de Servicios. RIAT también puede realizar verificaciones de antecedentes penales y cualquier otra verificación que considere apropiada o que sea requerida por la ley aplicable. &lt;/p&gt;
+                    &lt;p&gt; 4.4. El perfil del Proveedor de Servicios es exclusivo e intransferible, y se compromete, una vez aceptadas las Condiciones, a no compartir su cuenta con terceros, quedando prohibida la transferencia de sus datos de acceso, bajo pena de cancelación inmediata de la cuenta del Proveedor de Servicios. , además de remitir el caso a las autoridades públicas para el análisis de las sanciones penales y civiles aplicables. &lt;/p&gt;
+                    &lt;p&gt; 4.5. RIAT se reserva el derecho de solicitar documentos adicionales para confirmar registros, así como otros métodos de identificación y autenticación del Proveedor de Servicios (como, por ejemplo, reconocimiento facial), al registrarse y al usar y brindar servicios a cualquier hora. Incluso después de confirmar el registro, es posible cancelar la cuenta si se encuentran inconsistencias en el proceso de verificación, a criterio exclusivo de RIAT. &lt;/p&gt;
+                    &lt;p&gt; 4.6. La información de la cuenta es responsabilidad exclusiva de la persona que la ingresó. En caso de ocasionar daños o perjuicios de cualquier tipo, se podrán tomar las medidas oportunas para salvaguardar sus intereses y la integridad de los pacientes, otros Usuarios y Prestadores de Servicios, además del propio RIAT. &lt;/p&gt;
+                    &lt;p&gt; 4.7. Bajo las sanciones de la ley, el Proveedor de Servicios se compromete y declara ser consciente de que el uso de su cuenta en la &lt;em&gt; Aplicación &lt;/em&gt; y &lt;em&gt; Sitio web &lt;/em&gt; solo será para fines estrictamente legales, legítimo y permitido en estos Términos de uso. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 5. Servicios &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; 5.1. Los Servicios consisten en la centralización de la información y consultas de los Usuarios, de manera que los Prestadores de Servicios puedan atender a sus pacientes de forma online y pagada, así como tener acceso al historial de información de cada paciente consultado para mantener un servicio humanizado y personalizado, optimizando la atención psicológica y haciendo más accesible la salud mental. &lt;/p&gt;
+                    &lt;p&gt; 5.2. El Prestador del Servicio otorgará a RIAT las autorizaciones necesarias para la correcta ejecución del servicio, nombrando a su representante para que, en su nombre, realice el cobro de créditos, disponga el pago, compensación y reconocimiento de deudas, dé y exija descargo, promueva la liquidación de activos y, sobre todo, actuar en el mejor interés de los representados. &lt;/p&gt;
+                    &lt;p&gt; 5.3. RIAT otorgará al Proveedor de servicios una licencia limitada, personal, no exclusiva, intransferible, no comercial y totalmente revocable para usar la &lt;em&gt; Aplicación &lt;/em&gt; o el &lt;em&gt; Sitio web &lt;/em&gt; en su teléfono. , &lt;em&gt; Tablet &lt;/em&gt; o computadora, de acuerdo con las condiciones establecidas en estos Términos de uso. &lt;/p&gt;
+                    &lt;p&gt; 5.4. A través de la &lt;em&gt; App &lt;/em&gt; o &lt;em&gt; Website &lt;/em&gt;, el Usuario puede programar y realizar consultas psicológicas y/o terapias con el Prestador de Servicios de su elección y en los horarios que el Prestador proporcione. &lt;/ P &gt;
+                    &lt;p&gt; 5.5. Dependerá del Proveedor de Servicios establecer una multa para el paciente que no se presente a la sesión programada. &lt;/p&gt;
+                    &lt;p&gt; 5.6. Los servicios intermediados a través de la &lt;em&gt; Aplicación &lt;/em&gt; y el &lt;em&gt; Sitio web &lt;/em&gt; no se pueden distorsionar, y las sesiones deben restringirse al propósito del negocio y los Términos de uso. &lt;/p&gt;
+                    &lt;p&gt; 5.7. Si el Proveedor de Servicios identifica un caso clínico de alta complejidad, podrá solicitar al personal técnico de RIAT que brinde Supervisión para asistirlo en la atención del paciente y el caso clínico reportado. La supervisión tiene como objetivo garantizar un tratamiento humanizado y eficiente al paciente y apoyar al Proveedor de Servicios en la toma de decisiones. &lt;/p&gt;
+                    &lt;p&gt; 5.8. Para los casos en los que sea necesaria la intervención de otras especialidades médicas, el Proveedor de Servicios es libre de indicar un profesional de su confianza, siempre y cuando reporte la información al personal técnico del RIAT con fines de valoración, registro y conocimiento. &lt;/p&gt;
+                    &lt;p&gt; 5.9.A RIAT se reserva todos los derechos sobre la &lt;em&gt; Aplicación &lt;/em&gt; y el &lt;em&gt; Sitio web &lt;/em&gt; que no se otorgan expresamente aquí. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 6. Obligaciones del proveedor de servicios &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; 6.1. El Proveedor de Servicios debe respetar todas las reglas contenidas en estos Términos de Uso y toda la legislación, normativa y códigos aplicables al ejercicio de su profesión. &lt;/p&gt;
+                    &lt;p&gt; 6.2. Tras la aceptación de los Términos de uso, el Proveedor de servicios se compromete a: &lt;/p&gt;
+                    a) Ser plenamente responsable de proporcionar los datos personales y bancarios, que son requeridos en su registro, así como el deber de mantenerlos actualizados;
+                    b) Asumir plena responsabilidad por la prestación de servicios;
+                    c) Actuar ante los pacientes Usuarios y RIAT con buena fe, diligencia, profesionalismo y respeto;
+                    d) Obedecer y cumplir con todos los requisitos legales y reglamentarios relacionados con el ejercicio de la profesión de Psicólogo, incluido el pago de cuotas anuales por parte del Directorio, leyes, reglamentos, códigos de ética y conducta, así como las leyes aplicables a la
+                    &lt;em&gt; Internet &lt;/em&gt;;
+                    e) No discriminar ni seleccionar, por ningún motivo, pacientes;
+                    f) Pagar la tasa de intermediación a RIAT;
+                    g) Aceptar y estar de acuerdo en que eventualmente pueda ser evaluado por los Usuarios pacientes y/o por el personal técnico de RIAT con fines de eficiencia del servicio;
+                    h) Informar al Personal Técnico del RIAT los cuadros clínicos de los pacientes que se consideren de alto riesgo para evaluar conjuntamente las intervenciones y medidas que deban adoptarse.
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 7. Equipo y acceso a la red &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 7.1 RIAT se compromete a adoptar todos los esfuerzos posibles y disponibles para resolver cualquier problema que pueda ocurrir con su &lt;em&gt; Sitio web &lt;/em&gt; y &lt;em&gt; Aplicación &lt;/em&gt;, buscando retomar su normalidad en el menor tiempo posible. &lt;/p&gt;
+                    &lt;p&gt; 7.2. RIAT no puede garantizar el funcionamiento completo e ininterrumpido del &lt;em&gt; Sitio web &lt;/em&gt; o la &lt;em&gt; Aplicación &lt;/em&gt; &lt;em&gt;, &lt;/em&gt; o la ausencia de errores. Finalmente, el &lt;em&gt; sitio web &lt;/em&gt; &amp;nbsp; y la &lt;em&gt; Aplicación &lt;/em&gt; puede no estar disponible debido a razones técnicas o fallas del &lt;em&gt; I &lt;/em&gt; &lt;em&gt; nternet &lt;/em&gt;, o debido a un evento fortuito o fuerza mayor, fuera de control RIAT, y no se hace responsable de los daños que se produzcan como resultado de esto. &lt;/p&gt;
+                    &lt;p&gt; 7.3. En cumplimiento de la cláusula 7.1., Además de mantener el correcto funcionamiento de la &lt;em&gt; Aplicación &lt;/em&gt; y el &lt;em&gt; Sitio web &lt;/em&gt; en la mayor medida posible, RIAT proporcionará canales de servicio para ayudar a resolver dudas y problemas. del Proveedor de servicios con la plataforma de servicios &lt;em&gt; en línea &lt;/em&gt;. &lt;/p&gt;
+                    &lt;p&gt; 7.4. El Proveedor de Servicios entiende y acepta que el uso del Servicio requiere la compra de dispositivos de telefonía móvil, &lt;em&gt; Tablets &lt;/em&gt; o computadoras y la contratación de servicios de telecomunicaciones compatibles con el uso de la &lt;em&gt; App &lt;/em&gt; &gt; o &lt;em&gt; Sitio web &lt;/em&gt;, y que el uso del Servicio puede generar cargos por parte de dichas empresas de telecomunicaciones por la conexión a &lt;em&gt; Internet &lt;/em&gt;, por ejemplo. Estos productos y servicios no están disponibles por RIAT, según la cláusula 7.5. &lt;/p&gt;
+                    &lt;p&gt; 7.5. El Proveedor de Servicios es el único responsable de contratar y asumir todos y cada uno de los costos y cargos relacionados con la adquisición de sus dispositivos de acceso a la &lt;em&gt; App &lt;/em&gt; o &lt;em&gt; Sitio web &lt;/em&gt; y la contratación de su servicio de telecomunicaciones. &lt;/p&gt;
+                    &lt;p&gt; 7.6. RIAT no es responsable de la disponibilidad, calidad y mantenimiento de dichos servicios de telecomunicaciones y el Proveedor de Servicios entiende que las condiciones del servicio de telecomunicaciones pueden afectar la experiencia de la plataforma. &lt;/p&gt;
+                    &lt;p&gt; 7.7. RIAT no será responsable de ningún problema relacionado directa o indirectamente con inconsistencias o fallas en dispositivos de telefonía móvil, &lt;em&gt; Tablets &lt;/em&gt; o computadoras y/o servicios de telecomunicaciones. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 8. Pagos a proveedores de servicios no vinculados a planes de atención médica &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 8.1. La remuneración del Proveedor de Servicios que no esté vinculada a los planes de salud se basará en la consulta realizada y se basará en la Tabla de Tarifas establecida por el Consejo Federal de Psicología de Brasil. &lt;/p&gt;
+                    &lt;p&gt; 8.2. RIAT cobrará las cantidades adeudadas por los Usuarios. Los importes se constituyen como Retribución por Intermediación por parte del Proveedor de Servicios, como se describe en 8.1. &lt;/p&gt;
+                    &lt;p&gt; 8.3. Luego de que el Administrador de la Tarjeta de Crédito haya realizado el pago de la consulta realizada por el Usuario a RIAT, se estipula el plazo de 72 (setenta y dos) horas para el pago de las tasas adeudadas al Proveedor de Servicios. &lt;/p&gt;
+                    &lt;p&gt; 8.4. El pago mencionado en la Cláusula 8.3 se realizará de acuerdo con los datos bancarios registrados por el Proveedor de Servicios en la plataforma. &lt;/p&gt;
+                    &lt;p&gt; 8.5. Como remuneración por la intermediación de la prestación del servicio, RIAT cobrará el porcentaje del 30% (treinta por ciento) sobre el monto de las tarifas percibidas por el Proveedor de Servicios. &lt;/p&gt;
+                    &lt;p&gt; 8.5.1 El monto de la remuneración de RIAT, en el porcentaje del 30% (treinta por ciento) será descontado cuando se produzca el pago por parte del Usuario, es decir, antes del pago al Proveedor de Servicios. &lt;/p&gt;
+                    &lt;p&gt; 8.6. Junto con el recibo de pago descrito en la Cláusula 8.3, RIAT enviará el Informe de servicio y la Factura al &lt;em&gt; correo electrónico &lt;/em&gt; del Proveedor. &lt;/p&gt;
+                    &lt;p&gt; 8.7. RIAT no se hace responsable de la falta o retraso de la transferencia debido a: &lt;/p&gt;
+
+                    &lt;p&gt; a) Cualquier problema con la cuenta bancaria informada por el Proveedor de servicios; &lt;/p&gt;
+                    &lt;p&gt; b) Incoherencia de los datos informados por el proveedor de servicios; &lt;/p&gt;
+                    &lt;p&gt; c) Fallos en el sistema de pago electrónico proporcionado por terceros o por las Empresas Socias; &lt;/p&gt;
+                    &lt;p&gt; d) Caso fortuito o fuerza mayor; &lt;/p&gt;
+                    &lt;p&gt; e) Cualquier problema derivado de la acción o inacción del Proveedor de Servicios, incluyendo, pero no limitado a, las hipótesis de divergencia entre el monto cobrado por el servicio y la consulta efectivamente realizada; y &lt;/p&gt;
+                    &lt;p&gt; f) Necesidad de analizar el pago durante un período de tiempo razonable por cualquier motivo, incluida la evidencia de conducta fraudulenta. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 9. Pagos a proveedores de servicios vinculados a planes de atención médica &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 9.1. La retribución del Prestador de Servicios vinculados a los planes asistenciales se basará en la consulta realizada y se basará en la retribución de los montos establecidos en un contrato suscrito entre los planes y RIAT. &lt;/p&gt;
+                    &lt;p&gt; 9.2 El Prestador de Servicios podrá acceder, en cualquier momento, previa solicitud, a la cláusula contractual que informa los precios practicados mediante consulta, dejando el resto de cláusulas confidenciales. &lt;/p&gt;
+                    &lt;p&gt; 9.3. RIAT cobrará las cantidades adeudadas por los Usuarios, las cuales se constituyen como Retribución por Intermediación por parte del Proveedor de Servicios, según se describe en 9.1. &lt;/p&gt;
+                    &lt;p&gt; 9.4. Una vez que el operador del plan de salud abona a RIAT el pago de la consulta realizada por el Usuario, se estipula un plazo de 72 (setenta y dos) horas para el pago de las tarifas adeudadas al Proveedor de Servicios. &lt;/p&gt;
+                    &lt;p&gt; 9.5. El pago mencionado en la Cláusula 9.4 se realizará de acuerdo con los datos bancarios registrados por el Proveedor de Servicios en la plataforma. &lt;/p&gt;
+                    &lt;p&gt; 9.6. Como remuneración por la intermediación de la prestación del servicio, RIAT cobrará el porcentaje del 30% (treinta por ciento) sobre el monto de las tarifas percibidas por el Proveedor de Servicios. &lt;/p&gt;
+                    &lt;p&gt; 9.6.1 El valor de la remuneración de RIAT, en el porcentaje del 30% (treinta por ciento) se descontará cuando se produzca el pago del plan de salud, es decir, antes del pago al Proveedor de Servicios. &lt;/ p &gt;
+                    &lt;p&gt; 9,7. Junto con el recibo de pago descrito en la Cláusula 9.4, RIAT enviará el Informe de servicio y la Factura al &lt;em&gt; correo electrónico &lt;/em&gt; del Proveedor. &lt;/p&gt;
+                    &lt;p&gt; 9,8. RIAT no se hace responsable de la falta o retraso de la transferencia debido a: &lt;/p&gt;
+
+                    &lt;p&gt; a) Cualquier problema con la cuenta bancaria informada por el Proveedor de servicios; &lt;/p&gt;
+                    &lt;p&gt; b) Incoherencia de los datos informados por el proveedor de servicios; &lt;/p&gt;
+                    &lt;p&gt; c) Fallos en el sistema de pago electrónico proporcionado por terceros o por las Empresas Socias; &lt;/p&gt;
+                    &lt;p&gt; d) Caso fortuito o fuerza mayor; &lt;/p&gt;
+                    &lt;p&gt; e) Cualquier problema derivado de la acción o inacción del Proveedor de Servicios, incluyendo, pero no limitado a, las hipótesis de divergencia entre el monto cobrado por el servicio y la consulta efectivamente realizada; y &lt;/p&gt;
+                    &lt;p&gt; f) Necesidad de analizar el pago durante un período de tiempo razonable por cualquier motivo, incluida la evidencia de conducta fraudulenta. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 10. Responsabilidad por los servicios &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 10.1. RIAT asume la responsabilidad de todos los problemas que dé causa injustificada. &lt;/p&gt;
+                    &lt;p&gt; 10.2. Los servicios de psicología se contratan directamente entre el paciente y el Proveedor de Servicios, y RIAT no se hace responsable de las pérdidas o daños que surjan de la relación establecida entre el paciente y el Proveedor de Servicios. &lt;/p&gt;
+                    &lt;p&gt; 10.3. El Proveedor de Servicios comprende y acepta que RIAT no será responsable de ninguna conducta que practique y que pueda causar daños o pérdidas a los Usuarios o sus familias. &lt;/p&gt;
+                    &lt;p&gt; 10.4. El Prestador de Servicios será responsable de los daños y perjuicios que cause a sus pacientes o sus familiares y se compromete a indemnizarlos y mantener indemne a RIAT en relación a cualesquiera reclamaciones, pérdidas o perjuicios referidos directa e indirectamente a los actos que realice; p&gt;
+                    &lt;p&gt; 10.5. El Proveedor de Servicios es única y exclusivamente responsable de todos y cada uno de los problemas relacionados con la atención psicológica brindada, así como de cualquier conducta indebida o ilegal. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 11. Seguro &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; 11.1. A pesar de que RIAT no es responsable de la atención psicológica brindada en la plataforma, los Prestadores de Servicios se beneficiarán de una Póliza de Seguro de Errores y Omisiones Profesionales contratada por RIAT, cuya cobertura es exclusiva para las incidencias que se produzcan en las consultas y tratamientos prestados en la plataforma. englobando eventos de fallecimiento, incapacidad permanente o temporal y gastos médicos y hospitalarios, dentro de los límites previstos en la Política antes mencionada. &lt;/p&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 12. SIN RELACIÓN DE TRABAJO, VÍNCULO DE TRABAJO Y OTROS &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 12.1. NINGÚN EMPLEO, VINCULACIÓN SOCIETARIA Y/O ECONÓMICA NO SE ESTABLECE O CONSTITUYE ENTRE EL PROVEEDOR DEL SERVICIO Y RIAT, ESTANDO SEGURO DE QUE EL PROVEEDOR DEL SERVICIO TIENE LA LIBERTAD DE REALIZAR CONSULTAS SIEMPRE QUE USTED QUIERA UTILIZARLO TAMBIÉN COMO UN USO DEL CLIENTE EN CUALQUIER MOMENTO, OBSERVANDO LAS DISPOSICIONES DE LA CLÁUSULA 2.4. ESTE TÉRMINO. &lt;/p&gt;
+                    &lt;p&gt; 12.2. Si bien cuenta con personal técnico, se aclara y reitera que el OBJETO SOCIAL DE RIAT ES INTERMEDIAR Y FACILITAR LA CONTRATACIÓN DE SERVICIOS DE PSICOLOGÍA PARA LOS USUARIOS INSCRITOS EN LA PLATAFORMA, ASÍ COMO GENERAR ESTUDIOS EN EL ÁREA DE PSICOLOGÍA.
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 13. Por sospecha de fraude &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 13.1. RIAT no se hace responsable de ninguna conducta fraudulenta que haya sido practicada por el Prestador de Servicios, pudiendo incluso impedir, debido a ellos, el mantenimiento de este acceso en la &lt;em&gt; App &lt;/em&gt; y &lt;em&gt; Website. &lt;/ en&gt; &lt;/p&gt;
+                    &lt;p&gt; 13.2. En aras de la claridad, RIAT considera fraude la presentación de documentos falsos, requisitos de retribución extra para los usuarios pacientes, colusión con profesionales de otras especialidades con el fin de remunerarse a sí mismo oa terceros, la realización de consultas que no fueron requeridas por los pacientes, así como todas y cada una de las conductas lesivas del presente Plazo, la legislación, normativa y códigos aplicables al ejercicio de la profesión de Psicólogo. &lt;/p&gt;
+                    &lt;p&gt; 13.3. RIAT analizará la sospecha de fraude caso por caso y puede retener el pago de tarifas para el Proveedor de servicios, así como suspender su acceso a la plataforma, con el fin de evitar el riesgo de daños a ellos mismos y al Usuario paciente. &lt;/ P &gt;
+                    &lt;p&gt; 13.4. Si se detecta una conducta fraudulenta, RIAT excluirá el acceso y registro del Proveedor de Servicios en la plataforma, denunciará el caso a las autoridades competentes y promoverá las medidas judiciales o extrajudiciales oportunas. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 14. Propiedad intelectual &lt;/strong&gt; &lt;/p&gt;
+
+                    &lt;p&gt; 14.1. Las marcas, nombres, logotipos, nombres de dominio y otros signos distintivos, así como cualquier contenido, diseño, arte, &lt;em&gt; maquetación &lt;/em&gt; publicados en la &lt;em&gt; Aplicación &lt;/em&gt; o &lt;em&gt; Sitio web &lt;/em&gt; además del servicio en sí son propiedad exclusiva de RIAT. &lt;/p&gt;
+                    &lt;p&gt; 14.2. Quedan prohibidos los actos o aportaciones dirigidos a la descompilación, ingeniería inversa, modificación de características, ampliación, alteración, fusión o incorporación en cualesquiera otros programas o sistemas de la &lt;em&gt; App &lt;/em&gt;, &lt;em&gt; Sitio web &lt;/em&gt; o servicio. . &lt;/p&gt;
+                    &lt;p&gt; 14.3. Todas y cada una de las formas de reproducción de la &lt;em&gt; App &lt;/em&gt;, &lt;em&gt; Sitio Web &lt;/em&gt; o servicio, total o parcial, permanente, temporal o provisional, gratuita o contra pago, bajo cualesquiera modalidades, formas o títulos. está expresamente prohibido. &lt;/p&gt;
+
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 15. Comunicación &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; 15.1. Si el Proveedor de Servicios se suscribe al formulario de &lt;em&gt; boletines &lt;/em&gt; de RIAT, acepta recibir &lt;em&gt; correos electrónicos &lt;/em&gt; promocionales en la dirección de correo electrónico registrada. Este envío puede desactivarse en cualquier momento previa solicitud. &lt;/p&gt;
+                    &lt;p&gt; 15.2. Al registrarse en la plataforma RIAT, el Proveedor de Servicios autoriza el contacto vía &lt;em&gt; correo electrónico &lt;/em&gt;, teléfono o &lt;em&gt; WhatsApp, &lt;/em&gt; cuando sea necesario, para tratar asuntos relacionados con la prestación de los servicios. servicio de plataforma, así como para comunicaciones comerciales recomendando servicios o nuevas funcionalidades del &lt;em&gt; Sitio web &lt;/em&gt; o &lt;em&gt; Aplicación &lt;/em&gt;. &lt;/p&gt;
+                    &lt;p&gt; 15.3. Si el Proveedor de Servicios no está interesado en las comunicaciones comerciales de RIAT, puede formalizar por &lt;em&gt; correo electrónico &lt;/em&gt; la solicitud de baja. &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; &amp;nbsp; &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; &lt;strong&gt; 16. Disposiciones generales &lt;/strong&gt; &lt;/p&gt;
+                    &lt;p&gt; 16.1. Estos términos constituyen el acuerdo completo entre el Proveedor de Servicios y RIAT y regirán el uso de la plataforma, reemplazando cualquier acuerdo previamente establecido. &lt;/p&gt;
+                    &lt;p&gt; 16.2. Si RIAT no ejerce o hace cumplir cualquier derecho o disposición de estos Términos, dicha medida no se caracterizará como una renuncia al derecho o disposición, ni constituirá una novación. &lt;/p&gt;
+                    &lt;p&gt; 16.3. Si alguna disposición del Término es considerada ilegal, inválida o inaplicable, por un tribunal competente o por cualquier legislación que pueda promulgarse, las partes acuerdan que el resto del Término no se verá afectado, y las demás disposiciones permanecerán en pleno vigor y efecto. &lt;/p&gt;
+                    &lt;p&gt; 16.4. Incidente de la circunstancia descrita en la Cláusula 15.3., Las partes acuerdan reemplazar las disposiciones consideradas ilegales, inválidas o inaplicables para los propósitos del contenido y propósito de este Término. &lt;/p&gt;
+                    &lt;p&gt; 16.5. RIAT se reserva el derecho, en cualquier momento, de modificar o interrumpir, temporal o definitivamente, la prestación del servicio o parte del mismo, con o sin previo aviso. &lt;/p&gt;
+                    &lt;p&gt; 16.6. El Proveedor de Servicios acepta que RIAT no será responsable, ni tendrá obligaciones adicionales, implícitas o explícitas, ante usted o terceros debido a cualquier modificación, suspensión o desactivación del servicio. &lt;/p&gt;
+                    &lt;p&gt; 16.7. En caso de modificación, suspensión o desactivación del servicio, RIAT deberá notificar al Proveedor del Servicio para que se brinde la continuidad del tratamiento de sus pacientes en un entorno distinto a la plataforma. La notificación puede enviarse por cualquier medio de comunicación registrado. &lt;/p&gt;
+                    &lt;p&gt; 16.8. Todas las notificaciones, citaciones, cartas y/o cualquier otro medio oficial de investigación científica de RIAT deben tener lugar en su dirección registrada en el preámbulo de este Término. &lt;/p&gt;
+                    &lt;p&gt; 16,9. Este término y la relación que se establezca entre el Proveedor de Servicios y RIAT se regirá por las Leyes de la República Federativa de Brasil, siendo elegido el Tribunal de Distrito de Manaus/AM como único órgano competente para resolver las controversias o demandas que puedan involucrar al partes con respecto al uso de la plataforma disponible. &lt;/p&gt;
+                    &lt;p&gt; 16.10. Las partes acuerdan y declaran que están sujetas exclusivamente a la jurisdicción exclusiva de los Tribunales ubicados en Brasil. &lt;/p&gt;</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Condiciones de uso personal</value>
+  </data>
+</root>

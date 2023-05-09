@@ -1,0 +1,45 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using RIAT.DAL.Entity.Models;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+    <div id="header">
+        SignalR Chat Room
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div id="divContainer">
+        <div id="divLogin" class="login">
+            <div>
+                Your Name:<br />
+                @UserManager.GetUserAsync(User).Result.FirstName
+            </div>
+            <div id="divButton">
+                <input id="btnStartChat" type="button" class="submitButton" value="Start Chat" />
+            </div>
+        </div>
+
+        <div id="divChat" class="chatRoom">
+            <div class="title">
+                Welcome to Chat Room [<span id='spanUser'></span>]
+
+            </div>
+            <div class="content">
+                <div id="divChatWindow" class="chatWindow">
+                </div>
+                <div id="divusers" class="users">
+                </div>
+            </div>
+            <div class="messageBar">
+                <input class="textbox" type="text" id="txtMessage" />
+                <input id="btnSendMsg" type="button" value="Send" class="submitButton" />
+            </div>
+        </div>
+
+        <input id="hdId" type="hidden" />
+        <input id="hdUserName" type="hidden" />
+    </div>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat2.js"></script>

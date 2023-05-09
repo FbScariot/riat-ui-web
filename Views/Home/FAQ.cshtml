@@ -1,0 +1,108 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+
+<section class="content16 cid-smR72H8GLn" id="content16-l">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="mbr-section-head align-center mb-4">
+                    <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2">
+                        <strong>@Localizer["Title"]</strong>
+                    </h3>
+                    <hr />
+                </div>
+                <div id="bootstrap-accordion_3" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse1_3" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7">
+                                    <strong>Como irei atender os Pacientes?</strong>
+                                </h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse1_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_3">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4" style="text-align:justify;">
+                                    Existem duas formas de atendimento de Pacientes:
+                                    <br />
+                                        - Para o 1º atendimento - o paciente entra no Chat através do site da RISM, os psicólogos cadastrados que já tenham instalado em seus celulares o aplicativo de Chat
+                                        App Mobile Tawk.to receberão um chamado e quem aceitar o chamado conversa com o paciente, então o Psicólogo irá criar uma sala de atendimento através do site da RISM,
+                                        se logando e clicando no menu em 1º Atendimento e enviar o link para o Paciente via chat e clicar no link 'Abrir sala de atendimento', após isso os dois passam a conversar pela sala de atendimento.
+                                    <br />- Para os próximos atendimentos aos seus Pacientes - você irá criar consultas pelo site e quando criar tanto você quanto o paciente receberão um - as 
+                                    consultasserão agendadas e acontecerão através dos links que chegam por e-mail tanto para o Paciente quanto para o Psicólogo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse2_3" aria-expanded="false" aria-controls="collapse2">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7">
+                                    <strong>
+                                        Onde oncontro os Apps?
+                                    </strong>
+                                </h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse2_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_3">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">
+                                    Aplicativo para receber as notificações dos primeiros atendimentos dos Pacientes:
+                                    <br /><strong>Para Android link <a href="https://play.google.com/store/apps/details?id=to.tawk.android">aqui</a></strong>
+                                    <br /><strong>Para IOS link <a href="https://apps.apple.com/app/www-tawk-to/id907458277">aqui</a></strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<section class="testimonials1 cid-smnesz215L" id="testimonials1-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="media-container-column col-lg-8">
+                    <h1>@ViewData["Title"]</h1>
+                    <div method="post" class="mbr-form form-with-styler">
+                        <h4> @Localizer["Description"]</h4>
+                        <hr />
+                        <div class="">
+                            <div class="accordion">
+                                <input type="radio" name="select" class="accordion-select" checked />
+                                <div class="accordion-title"><span>Como irei atender os Pacientes?</span></div>
+                                <div class="accordion-content">
+                                    Existem duas formas de atendimento de Pacientes:
+                                    - Para o 1º atendimento - o paciente entra no Chat através do App ou site da RISM (o App para IOS ainda não está liberado na Apple Store),
+                                    os psicólogos cadastrados que já tenham instalado em seus celulares o aplicativo de Chat App Mobile Tawk.to
+                                    <a href="https://play.google.com/store/apps/details?id=to.tawk.android> Android</a>
+                                    <a href="https://apps.apple.com/app/www-tawk-to/id907458277> IOS</a> receberão um chamado e o que aceitar irá conversar pelo tawk.to com o paciente;
+                                    - Para os próximos atendimentos aos seus Pacientes - você irá criar consultas pelo site e quando criar tanto você quanto o paciente receberão um - as consultas serão agendadas e acontecerão através dos links que chegam por e-mail tanto para o Paciente quanto para o Psicólogo.
+                                    do Tawk.to receberão um chamado e o que aceitar irá conversar pelo tawk.to com o paciente;
+                                </div>
+                                <input type="radio" name="select" class="accordion-select" />
+                                <div class="accordion-title"><span>Sou Paciente, como irei entrar vídeo conferência da consulta?</span></div>
+                                <div class="accordion-content">
+                                    Você tem duas formas de entrar na vídeo conferência da consulta:
+                                    - pelo APP ou Site - em Consultas e procure  na lista de consultas a consulta com a data e hora agendada e clique no link Vídeo Conferência para entrar;
+                                    - pelo E-mail - procure no seu e-mail um e-mail enviado por atendimento@rism.com.br verifique se este e-mail contém a data e hora agendada  e click no link 'Link para Paciente' para entrar;
+                                    - pela agenda - procure na data da consulta um agendamento  um e-mail enviado por atendimento@rism.com.br verifique se este e-mail contém a data e hora agendada  e click no link 'Link para Paciente' para entrar;
+                                </div>
+                                <input type="radio" name="select" class="accordion-select" />
+                                <div class="accordion-title"><span>Title</span></div>
+                                <div class="accordion-content">Content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@

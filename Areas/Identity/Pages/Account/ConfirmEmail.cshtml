@@ -1,0 +1,9 @@
+﻿@page
+@model ConfirmEmailModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+<h2>@Html.DisplayFor(modelItem => modelItem.StatusMessage)</h2>

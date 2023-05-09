@@ -1,0 +1,31 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using RIAT.DAL.Entity.Models;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@*@{
+        ViewData["Title"] = "Chat";
+    }*@
+<div class="main">
+</div>
+<div class="chats_wrapper">
+</div>
+<style>
+    section,
+    .container,
+    .container-fluid {
+        position: initial;
+        word-wrap: break-word;
+    }
+
+    .cid-smnhYhFqkG a:not([href]):not([tabindex]) {
+        font-size: medium;
+        color: #2196F3;
+        padding: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<script src="~/js/siteNovo.js" asp-append-version="true"></script>
+<script src="~/lib/jquery/dist/jquery-3.6.0.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>

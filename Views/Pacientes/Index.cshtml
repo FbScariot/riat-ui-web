@@ -1,0 +1,180 @@
+﻿@model IEnumerable<RIAT.DAL.Entity.Models.Paciente>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    @if (User.IsInRole("Administradores"))
+    {
+        <a asp-action="Create">@Localizer["CreateNew"]</a>
+    }
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Localizer["PersonCode"]
+            </th>
+            <th>
+                @Localizer["PatientName"]
+            </th>
+            <th>
+                @Localizer["ProfessionalName"]
+            </th>
+            <th>
+                @Localizer["PatientEmail"]
+            </th>
+            @*<th>
+                        @Html.DisplayNameFor(model => model.PaciCdPassaporte)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PaciCdRegistroGeral)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PaciStEstadoCivil)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PaciNmMae)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PaciNmPai)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PaciNmProfissao)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PaciTxEncaminhadoPor)
+                    </th>
+                <th>
+                    @Localizer["PatientStatus"]
+                </th>
+                <th>
+                        @Html.DisplayNameFor(model => model.PaciDtAtivacao)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PaciDtDesativacao)
+                    </th>
+                <th>
+                    @Localizer["ContractType"]
+                </th>
+                <th>
+                        @Html.DisplayNameFor(model => model.GrinIdGrauInstrucaoNavigation)
+                    </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdPessoa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomePaciente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfIdProfissionalResponsavelNavigation.NomeProfissional)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                @*<td>
+                             @Html.DisplayFor(modelItem => item.PaciCdPassaporte)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.PaciCdRegistroGeral)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.PaciStEstadoCivil)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.PaciNmMae)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.PaciNmPai)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.PaciNmProfissao)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.PaciTxEncaminhadoPor)
+                         </td>
+                     <td>
+                         @Html.DisplayFor(modelItem => item.PaciStAtivo)
+                     </td>
+                    <td>
+                             @Html.DisplayFor(modelItem => item.PaciDtAtivacao)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.PaciDtDesativacao)
+                         </td>
+                     <td>
+                         @Html.DisplayFor(modelItem => item.PaciTpContratacaoNavigation.TiprNmTipoContratacao)
+                     </td>
+                     <td>
+                             @Html.DisplayFor(modelItem => item.GrinIdGrauInstrucaoNavigation.GrinNmGrauInstrucao)
+                         </td>*@
+                <td>
+
+                    @*<button class="btn btn-primary edit" data-id="@item.IdPessoa">@Localizer["Edit"]</button> |
+                        <button class="btn btn-primary details" data-id="@item.IdPessoa">@Localizer["Details"]</button> |*@
+                    @if (User.IsInRole("Administradores") || User.IsInRole("Pacientes"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.IdPessoa">@Localizer["Edit"]</a>
+                    }
+                    | <a asp-action="Details" asp-route-id="@item.IdPessoa">@Localizer["Details"]</a> |
+
+                    @if (User.IsInRole("Administradores"))
+                    {
+                        @*<button class="btn btn-primary delete" data-id="@item.IdPessoa">@Localizer["Delete"]</button>*@
+                        <a asp-action="Delete" asp-route-id="@item.IdPessoa">@Localizer["Delete"]</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@*<div id="modal" class="modal fade"/>
+
+    @section scripts{
+        <script>
+            $(function () {
+                $(".details").click(function () {
+                    var id = $(this).attr("data-id");
+                    //alert(id);
+                    $("#modal").load("Pacientes/Details?id=" + id, function () {
+                        $("#modal").modal();
+                    })
+                });
+
+                $(".edit").click(function () {
+                    var id = $(this).attr("data-id");
+                    //alert(id);
+                    $("#modal").load("Pacientes/Edit?id=" + id, function () {
+                        $("#modal").modal();
+                    })
+                });
+
+                $(".delete").click(function () {
+                    var id = $(this).attr("data-id");
+                    //alert(id);
+                    $("#modal").load("Pacientes/Delete?id=" + id, function () {
+                        $("#modal").modal();
+                    })
+                });
+
+                $(".create").click(function () {
+                    $("#modal").load("Pacientes/Create", function () {
+                        $("#modal").modal();
+                    })
+                });
+
+            })
+        </script>
+    }*@

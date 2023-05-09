@@ -1,0 +1,88 @@
+﻿@model IEnumerable<RIAT.DAL.Entity.Models.Atendimento>;
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    @if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+    {
+        <a asp-action="Create">@Localizer["CreateNew"]</a>
+    }
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Localizer["ProfessionalName"]
+            </th>
+            <th>
+                @Localizer["PatientName"]
+            </th>
+            @*<th>
+                @Localizer["AppointmentType"]
+            </th>*@
+            <th>
+                @Localizer["AppointmentSchedulingDate"]
+            </th>
+            @*<th>
+                @Localizer["AppointmentStatus"]
+            </th>*@
+            <th>
+                @Localizer["VideoConferencia"]
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfIdProfissionalNavigation.NomeProfissional)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PaciIdPacienteNavigation.NomePaciente)
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.TipaIdTipoAtendimentoNavigation.TipaNmTipoAtendimento)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.AtenDtAgendamento)
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.AtenStAgendamento)
+                </td>*@
+                <td>
+                    @if (item.VideoConferencia != null)
+                    {
+                        if (User.IsInRole("Pacientes"))
+                        {
+                            <a href="@item.VideoConferencia.Split('?')[0]">@Localizer["VideoConferencia"]</a>
+                        }
+                        else
+                        {
+                            <a href=@item.VideoConferencia>@Localizer["VideoConferencia"]</a>
+                        }
+                    }
+                </td>
+                <td>
+                    @if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id">@Localizer["Edit"]</a>
+                    }
+                    | <a asp-action="Details" asp-route-id="@item.Id">@Localizer["Details"]</a> |
+
+                    @if (User.IsInRole("Profissionais") || User.IsInRole("Administradores"))
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id">@Localizer["Delete"]</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

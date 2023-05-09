@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <location path="." inheritInChildApplications="false">
+    <system.webServer>
+      <handlers>
+        <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+      </handlers>
+      <aspNetCore processPath=".\RIAT.API.Web.exe" arguments="exec &quot;C:\Projetos\RIAT\Aplicações\RIAT.API.Web\bin\Release\netcoreapp2.2\RIAT.API.Web.dll&quot;" stdoutLogEnabled="false" hostingModel="InProcess" stdoutLogFile=".\logs\stdout" />
+    </system.webServer>
+  </location>
+</configuration>

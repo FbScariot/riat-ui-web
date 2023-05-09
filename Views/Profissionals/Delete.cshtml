@@ -1,0 +1,95 @@
+﻿@model RIAT.DAL.Entity.Models.Profissional
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<div class="container">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h1>@Localizer["Title"]</h1>
+            <div class="modal-header">
+                <h4>@ViewData["PageType"]</h4>
+                <hr />
+                <h3>@Localizer["DeleteThisQuestion"]</h3>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.IdPessoa)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.IdPessoa)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.NomeProfissional)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.NomeProfissional)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.TiprIdTipoProfissionalNavigation.TiprNmTipoProfissional)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.TiprIdTipoProfissionalNavigation.TiprNmTipoProfissional)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfNrCrp)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfNrCrp)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfCdEPsi)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfCdEPsi)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfTxMiniCurriculoInterno)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfTxMiniCurriculoInterno)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfTxMiniCurriculoPublico)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfTxMiniCurriculoPublico)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfStAtivo)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfStAtivo)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfDtAtivacao)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfDtAtivacao)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ProfDtDesativacao)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ProfDtDesativacao)
+                    </dd>
+                </dl>
+
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="IdPessoa" />
+                    <input type="submit" class="btn btn-primary btn-form display-4" value=@Localizer["btnDelete"] />
+                    <a asp-action="Index">@Localizer["btnBackList"]</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

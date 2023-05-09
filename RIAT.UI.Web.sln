@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "..\WebApplication2\WebApplication2.csproj", "{C0514AC7-DC78-463A-A038-30F0C97C0340}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneSignal.RestAPIv3.Client.Sample.ConsoleApp.NetCore", "..\OneSignal.RestAPIv3.Client-master\OneSignal.RestAPIv3.Client.Sample.ConsoleApp.NetCore\OneSignal.RestAPIv3.Client.Sample.ConsoleApp.NetCore.csproj", "{96389E4D-F36B-433F-9D6F-D15E306AE1D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneSignal.RestAPIv3.Client", "..\OneSignal.RestAPIv3.Client-master\OneSignal.RestAPIv3.Client\OneSignal.RestAPIv3.Client.csproj", "{4A82B201-4DFF-44C7-A789-D0386191EDFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneSignal.RestAPIv4.Client", "..\OneSignal.RestAPIv4.Client\OneSignal.RestAPIv4.Client.csproj", "{58998DE3-267E-4C90-8F54-86217F6577B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\ConsoleApp1\ConsoleApp1.csproj", "{98C604FE-184F-4D49-B597-0E24FE6D50B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "..\ClassLibrary1\ClassLibrary1.csproj", "{544D9210-C279-4C20-B664-956D4D00285B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RIAT.UI.Web", "RIAT.UI.Web.csproj", "{9F67FA78-4FFF-41C3-8AFB-0B3C1C0367C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0514AC7-DC78-463A-A038-30F0C97C0340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0514AC7-DC78-463A-A038-30F0C97C0340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0514AC7-DC78-463A-A038-30F0C97C0340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0514AC7-DC78-463A-A038-30F0C97C0340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96389E4D-F36B-433F-9D6F-D15E306AE1D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96389E4D-F36B-433F-9D6F-D15E306AE1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96389E4D-F36B-433F-9D6F-D15E306AE1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96389E4D-F36B-433F-9D6F-D15E306AE1D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A82B201-4DFF-44C7-A789-D0386191EDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A82B201-4DFF-44C7-A789-D0386191EDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A82B201-4DFF-44C7-A789-D0386191EDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A82B201-4DFF-44C7-A789-D0386191EDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58998DE3-267E-4C90-8F54-86217F6577B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58998DE3-267E-4C90-8F54-86217F6577B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58998DE3-267E-4C90-8F54-86217F6577B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58998DE3-267E-4C90-8F54-86217F6577B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C604FE-184F-4D49-B597-0E24FE6D50B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C604FE-184F-4D49-B597-0E24FE6D50B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C604FE-184F-4D49-B597-0E24FE6D50B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C604FE-184F-4D49-B597-0E24FE6D50B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{544D9210-C279-4C20-B664-956D4D00285B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{544D9210-C279-4C20-B664-956D4D00285B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{544D9210-C279-4C20-B664-956D4D00285B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{544D9210-C279-4C20-B664-956D4D00285B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F67FA78-4FFF-41C3-8AFB-0B3C1C0367C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F67FA78-4FFF-41C3-8AFB-0B3C1C0367C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F67FA78-4FFF-41C3-8AFB-0B3C1C0367C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F67FA78-4FFF-41C3-8AFB-0B3C1C0367C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_SortFileContentOnSave = False
+		RESX_PrefixTranslations = False
+		RESX_ConfirmAddLanguageFile = True
+		RESX_AutoCreateNewLanguageFiles = True
+		RESX_ResXSortingComparison = CurrentCulture
+		SolutionGuid = {3B5E9F6F-0C7E-475B-97B4-6237F268EEB3}
+	EndGlobalSection
+EndGlobal

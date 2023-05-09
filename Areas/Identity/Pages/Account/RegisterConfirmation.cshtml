@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer;
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+    <p>
+        @Localizer["ErrorMessage"]
+    </p>
+    }
+    else
+    {
+        <p>
+            @Localizer["SucessMessage"]
+        </p>
+    }
+}
